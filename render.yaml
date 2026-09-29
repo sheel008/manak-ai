@@ -56,12 +56,12 @@ services:
 
     envVars:
       - key: VITE_API_TARGET
-        value: https://manak-backend.onrender.com
+        value: https://manak-backend-pu3z.onrender.com
 
     routes:
       - type: rewrite
         source: /api/*
-        destination: https://manak-backend.onrender.com/api/*
+        destination: https://manak-backend-pu3z.onrender.com/api/*
 
       - type: rewrite
         source: /*
