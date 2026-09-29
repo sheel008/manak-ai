@@ -33,18 +33,17 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# Parse CORS origins from config
-cors_raw = getattr(config, "CORS_ORIGINS", "*")
-if cors_raw == "*" or not cors_raw:
-    origins = ["*"]
-else:
-    origins = [o.strip() for o in cors_raw.split(",") if o.strip()]
+# Production CORS configuration
+origins = [
+    "https://manak-frontend.onrender.com",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
-    allow_origin_regex=r"https://.*\.onrender\.com" if "*" not in origins else None,
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
