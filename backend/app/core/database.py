@@ -35,6 +35,7 @@ CREATE TABLE IF NOT EXISTS standards (
     international_equivalent TEXT,
     title_hindi TEXT,
     embedding vector(%(dim)s)
+    
 );
 
 CREATE TABLE IF NOT EXISTS certification_rules (
@@ -43,7 +44,8 @@ CREATE TABLE IF NOT EXISTS certification_rules (
     aliases TEXT[] DEFAULT '{}',
     is_qco_mandatory BOOLEAN DEFAULT FALSE,
     applicable_is_number TEXT,
-    enforcement_date DATE
+    enforcement_date DATE,
+    UNIQUE(product_name, applicable_is_number)
 );
 
 CREATE TABLE IF NOT EXISTS reviews (
@@ -99,6 +101,8 @@ CREATE INDEX IF NOT EXISTS idx_standards_department ON standards(department);
 CREATE INDEX IF NOT EXISTS idx_standards_sector ON standards(sector);
 CREATE INDEX IF NOT EXISTS idx_standards_qco_required ON standards(qco_required);
 CREATE INDEX IF NOT EXISTS idx_standards_status ON standards(status);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_certification_rules_product_is
+ON certification_rules(product_name, applicable_is_number);
 """
 
 
