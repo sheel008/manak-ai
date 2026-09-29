@@ -17,7 +17,7 @@ export default function ChatMessage({
 
   const isUser = message.role === 'user';
 
-  // Basic Markdown-like renderer for structured text
+  // Markdown renderer for structured text
   const renderFormattedContent = (content = '') => {
     if (!content) return null;
 
@@ -25,57 +25,79 @@ export default function ChatMessage({
     return lines.map((line, idx) => {
       const trimmed = line.trim();
 
+      // Heading 1 or 2
+      if (trimmed.startsWith('# ') || trimmed.startsWith('## ')) {
+        const headingText = trimmed.replace(/^#{1,2}\s*/, '');
+        return (
+          <h3 key={idx} className="text-base font-bold text-[#16294D] mt-3.5 mb-2 first:mt-0 pb-1 border-b border-[#DDD9D0]">
+            {renderInlineMarkdown(headingText)}
+          </h3>
+        );
+      }
+
       // Heading 3
       if (trimmed.startsWith('### ')) {
+        const headingText = trimmed.replace(/^###\s*/, '');
         return (
           <h4 key={idx} className="text-sm font-bold text-[#16294D] mt-3.5 mb-1.5 first:mt-0 pb-1 border-b border-[#EDEBE5]">
-            {trimmed.replace(/^###\s*/, '')}
+            {renderInlineMarkdown(headingText)}
           </h4>
         );
       }
+
       // Heading 4 / Subheading
       if (trimmed.startsWith('#### ')) {
+        const headingText = trimmed.replace(/^####\s*/, '');
         return (
           <h5 key={idx} className="text-xs font-bold text-[#16294D] mt-2 mb-1">
-            {trimmed.replace(/^####\s*/, '')}
+            {renderInlineMarkdown(headingText)}
           </h5>
         );
       }
-      // Bullet items
-      if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
-        const itemText = trimmed.replace(/^[-*]\s*/, '');
+
+      // Bullet items (handles -, *, +, •, and lines starting with **• or • **)
+      const bulletMatch = trimmed.match(/^(\*\*•\s*|•\s*|\*\s*|\-\s*|\+\s*)(.*)$/);
+      if (bulletMatch) {
+        let itemText = bulletMatch[2];
+        if (bulletMatch[1].startsWith('**•')) {
+          itemText = `**${itemText}`;
+        }
         return (
-          <div key={idx} className="flex items-start gap-1.5 ml-2 mb-1 text-[13px] leading-relaxed">
-            <span className="text-[#2F6F5E] font-bold">•</span>
-            <span>{renderInlineMarkdown(itemText)}</span>
+          <div key={idx} className="flex items-start gap-2 ml-2 mb-1.5 text-[13px] leading-relaxed">
+            <span className="text-[#2F6F5E] font-bold select-none">•</span>
+            <div className="flex-1">{renderInlineMarkdown(itemText)}</div>
           </div>
         );
       }
+
       // Numbered items
-      if (/^\d+\.\s/.test(trimmed)) {
-        const itemText = trimmed.replace(/^\d+\.\s*/, '');
-        const match = trimmed.match(/^(\d+)\./);
-        const num = match ? match[1] : '•';
+      const numMatch = trimmed.match(/^(\d+)[\.)]\s+(.*)$/);
+      if (numMatch) {
+        const num = numMatch[1];
+        const itemText = numMatch[2];
         return (
-          <div key={idx} className="flex items-start gap-1.5 ml-2 mb-1 text-[13px] leading-relaxed">
-            <span className="text-[#16294D] font-bold text-xs">{num}.</span>
-            <span>{renderInlineMarkdown(itemText)}</span>
+          <div key={idx} className="flex items-start gap-2 ml-2 mb-1.5 text-[13px] leading-relaxed">
+            <span className="text-[#16294D] font-bold text-xs select-none">{num}.</span>
+            <div className="flex-1">{renderInlineMarkdown(itemText)}</div>
           </div>
         );
       }
+
       // Blockquotes
-      if (trimmed.startsWith('> ')) {
+      if (trimmed.startsWith('>')) {
         const quoteText = trimmed.replace(/^>\s*/, '');
         return (
-          <blockquote key={idx} className="my-2 pl-3 border-l-2 border-[#2F6F5E] text-xs italic text-[#4B4845] bg-[#FAFAF8] py-1">
-            {quoteText}
+          <blockquote key={idx} className="my-2 pl-3 border-l-2 border-[#2F6F5E] text-xs italic text-[#4B4845] bg-[#FAFAF8] py-1.5 rounded-r">
+            {renderInlineMarkdown(quoteText)}
           </blockquote>
         );
       }
+
       // Empty line spacing
       if (!trimmed) {
         return <div key={idx} className="h-1.5" />;
       }
+
       // Regular paragraph
       return (
         <p key={idx} className="mb-1.5 text-[13px] leading-relaxed last:mb-0">
@@ -86,23 +108,64 @@ export default function ChatMessage({
   };
 
   const renderInlineMarkdown = (text = '') => {
-    // Splits **bold** and `code`
-    const parts = text.split(/(\*\*.*?\*\*|`.*?`)/g);
+    if (!text) return null;
+    // Strip raw HTML and SVG tags so they never leak into visible text
+    const clean = text
+      .replace(/<svg\b[^>]*>[\s\S]*?<\/svg>/gi, '')
+      .replace(/<[^>]+>/g, '');
+
+    // Splits code, links, bold, and italics safely
+    const regex = /(`[^`]+`|\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|(?<!\*)\*[^*]+(?<!\*)\*)/g;
+    const parts = clean.split(regex);
+
     return parts.map((part, i) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return (
-          <strong key={i} className="font-semibold text-[#16294D]">
-            {part.slice(2, -2)}
-          </strong>
-        );
-      }
-      if (part.startsWith('`') && part.endsWith('`')) {
+      if (!part) return null;
+
+      // Inline code
+      if (part.startsWith('`') && part.endsWith('`') && part.length >= 2) {
         return (
           <code key={i} className="font-mono text-xs bg-[#EDEBE5] px-1 py-0.5 rounded text-[#16294D]">
             {part.slice(1, -1)}
           </code>
         );
       }
+
+      // Markdown Link: [text](url)
+      if (part.startsWith('[') && part.includes('](') && part.endsWith(')')) {
+        const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (match) {
+          return (
+            <a
+              key={i}
+              href={match[2]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#2155A3] underline hover:text-[#16294D] font-medium"
+            >
+              {match[1]}
+            </a>
+          );
+        }
+      }
+
+      // Bold: **text**
+      if (part.startsWith('**') && part.endsWith('**') && part.length >= 4) {
+        return (
+          <strong key={i} className="font-semibold text-[#16294D]">
+            {part.slice(2, -2)}
+          </strong>
+        );
+      }
+
+      // Italic: *text*
+      if (part.startsWith('*') && part.endsWith('*') && part.length >= 2) {
+        return (
+          <em key={i} className="italic text-[#2C2A29]">
+            {part.slice(1, -1)}
+          </em>
+        );
+      }
+
       return part;
     });
   };
@@ -114,7 +177,7 @@ export default function ChatMessage({
           <p className="text-[13px] leading-relaxed whitespace-pre-wrap">{message.content}</p>
         </div>
         <div className="flex-shrink-0 w-7 h-7 rounded-md flex items-center justify-center bg-[#16294D] text-white shadow-2xs mt-0.5">
-          <User size={14} />
+          <User size={14} aria-hidden="true" focusable="false" />
         </div>
       </div>
     );
@@ -128,14 +191,14 @@ export default function ChatMessage({
   return (
     <div className="flex max-w-[95%] md:max-w-[90%] mr-auto items-start gap-2.5">
       <div className="flex-shrink-0 w-7 h-7 rounded-md flex items-center justify-center bg-[#2F6F5E] text-white shadow-2xs mt-0.5">
-        <Bot size={15} />
+        <Bot size={15} aria-hidden="true" focusable="false" />
       </div>
 
       <div className="flex-1 bg-white border border-[#DDD9D0] text-[#111111] rounded-lg p-4 md:p-5 shadow-sm">
         {/* Error notice if present */}
         {message.error && (
           <div className="flex items-center gap-2 mb-3 p-2.5 rounded-md bg-[#FAEBE9] border border-[#E8AFAA] text-[#8C2B22] text-xs">
-            <AlertTriangle size={14} className="flex-shrink-0" />
+            <AlertTriangle size={14} className="flex-shrink-0" aria-hidden="true" focusable="false" />
             <span>{message.error}</span>
           </div>
         )}

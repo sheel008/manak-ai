@@ -10,7 +10,7 @@ export default function RelatedStandardsCard({ standards = [] }) {
   return (
     <div className="mt-3 rounded-lg border border-[#DDD9D0] bg-white p-3.5 shadow-2xs">
       <div className="flex items-center gap-1.5 mb-2.5">
-        <BookOpen size={14} className="text-[#16294D]" />
+        <BookOpen size={14} className="text-[#16294D]" aria-hidden="true" focusable="false" />
         <span className="text-[11px] font-semibold uppercase tracking-wider text-[#5C5A55]">
           {t('chat.normativeHeading')}
         </span>
@@ -26,7 +26,7 @@ export default function RelatedStandardsCard({ standards = [] }) {
             <span className="font-mono text-xs font-semibold text-[#16294D] group-hover:text-[#1E3761]">
               {isNum}
             </span>
-            <ExternalLink size={12} className="text-[#8A8580] group-hover:text-[#16294D] flex-shrink-0 transition-transform group-hover:translate-x-0.5" />
+            <ExternalLink size={12} className="text-[#8A8580] group-hover:text-[#16294D] flex-shrink-0 transition-transform group-hover:translate-x-0.5" aria-hidden="true" focusable="false" />
           </Link>
         ))}
       </div>

@@ -204,7 +204,7 @@ export default function Chat() {
               onClick={handleResetSession}
               className="gap-1.5 text-xs text-[#4B4845] cursor-pointer"
             >
-              <RotateCcw size={13} />
+              <RotateCcw size={13} aria-hidden="true" focusable="false" />
               <span>{t('chat.newSession')}</span>
             </Button>
           )}
@@ -218,7 +218,7 @@ export default function Chat() {
             {messages.length === 0 && (
               <div className="py-4 flex flex-col items-center text-center max-w-xl mx-auto">
                 <div className="w-10 h-10 rounded-lg bg-[#16294D] text-[#F0A500] flex items-center justify-center mb-2.5 shadow-2xs">
-                  <Bot size={22} />
+                  <Bot size={22} aria-hidden="true" focusable="false" />
                 </div>
                 <h2 className="text-base font-bold text-[#111111] mb-1">
                   {t('chat.welcomeHeading')}
@@ -229,7 +229,7 @@ export default function Chat() {
 
                 <div className="w-full text-left">
                   <div className="flex items-center gap-1.5 mb-2 px-1">
-                    <Sparkles size={13} className="text-[#F0A500]" />
+                    <Sparkles size={13} className="text-[#F0A500]" aria-hidden="true" focusable="false" />
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#4B4845]">
                       {t('chat.suggestedInquiries')}
                     </span>
@@ -243,14 +243,14 @@ export default function Chat() {
                         className="text-left p-2.5 rounded-md bg-white border border-[#DDD9D0] hover:border-[#16294D] hover:bg-[#F4F3EF] transition-all duration-150 text-xs font-medium text-[#111111] shadow-2xs group flex items-center justify-between cursor-pointer"
                       >
                         <span className="truncate pr-2">{chip}</span>
-                        <Send size={11} className="text-[#8A8580] group-hover:text-[#16294D] group-hover:translate-x-0.5 transition-transform shrink-0" />
+                        <Send size={11} className="text-[#8A8580] group-hover:text-[#16294D] group-hover:translate-x-0.5 transition-transform shrink-0" aria-hidden="true" focusable="false" />
                       </button>
                     ))}
                   </div>
                 </div>
 
                 <div className="mt-5 flex items-center gap-1.5 text-[11px] text-[#5C5A55] bg-[#EDEBE5] px-3 py-1 rounded-md">
-                  <ShieldCheck size={13} className="text-[#2F6F5E]" />
+                  <ShieldCheck size={13} className="text-[#2F6F5E]" aria-hidden="true" focusable="false" />
                   <span>{t('chat.zeroHallucination')}</span>
                 </div>
               </div>
@@ -290,7 +290,7 @@ export default function Chat() {
                 className="absolute right-1.5 h-8 w-10 bg-[#16294D] hover:bg-[#1E3761] disabled:opacity-40 disabled:hover:bg-[#16294D] text-white rounded-md flex items-center justify-center transition-colors cursor-pointer"
                 aria-label="Send query"
               >
-                <Send size={14} />
+                <Send size={14} aria-hidden="true" focusable="false" />
               </button>
             </form>
           </div>

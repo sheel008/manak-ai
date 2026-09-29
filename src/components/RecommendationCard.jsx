@@ -50,7 +50,7 @@ export default function RecommendationCard({ recommendation, onSave, isSaved = f
             </span>
           )}
           <span className="inline-flex items-center gap-1 text-[11px] font-medium text-[#4B4845] bg-[#F4F3EF] border border-[#DDD9D0] px-2 py-0.5 rounded">
-            <Layers size={11} className="opacity-70" />
+            <Layers size={11} className="opacity-70" aria-hidden="true" focusable="false" />
             {category}
           </span>
           {isQco && (
@@ -66,7 +66,7 @@ export default function RecommendationCard({ recommendation, onSave, isSaved = f
             conf.badgeClass
           )}
         >
-          <Award size={12} />
+          <Award size={12} aria-hidden="true" focusable="false" />
           {conf.label}
         </span>
       </div>
@@ -103,6 +103,7 @@ export default function RecommendationCard({ recommendation, onSave, isSaved = f
       <div className="flex items-center justify-between gap-2 pt-2.5 border-t border-[#EDEBE5]">
         <button
           type="button"
+          aria-label={isSaved ? t('chat.savedToLibrary') : t('chat.saveToLibrary')}
           onClick={() => onSave && onSave(is_number)}
           className={clsx(
             'inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded border transition-colors cursor-pointer',
@@ -111,16 +112,21 @@ export default function RecommendationCard({ recommendation, onSave, isSaved = f
               : 'bg-white text-[#4B4845] border-[#DDD9D0] hover:bg-[#F4F3EF] hover:text-[#16294D]'
           )}
         >
-          {isSaved ? <BookmarkCheck size={14} /> : <Bookmark size={14} />}
+          {isSaved ? (
+            <BookmarkCheck size={14} aria-hidden="true" focusable="false" />
+          ) : (
+            <Bookmark size={14} aria-hidden="true" focusable="false" />
+          )}
           <span>{isSaved ? t('chat.savedToLibrary') : t('chat.saveToLibrary')}</span>
         </button>
 
         <Link
           to={`/standard/${encodeURIComponent(is_number)}`}
+          aria-label={t('chat.viewSpecification')}
           className="inline-flex items-center gap-1 text-xs font-semibold text-white bg-[#16294D] hover:bg-[#1E3761] px-3 py-1.5 rounded shadow-2xs transition-colors"
         >
           <span>{t('chat.viewSpecification')}</span>
-          <ArrowUpRight size={13} />
+          <ArrowUpRight size={13} aria-hidden="true" focusable="false" />
         </Link>
       </div>
     </div>

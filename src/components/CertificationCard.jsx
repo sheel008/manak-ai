@@ -24,11 +24,11 @@ export default function CertificationCard({ qco = {} }) {
         <div className="flex items-center gap-2">
           {isMandatory ? (
             <div className="p-1 rounded bg-[#2F6F5E] text-white">
-              <ShieldCheck size={16} />
+              <ShieldCheck size={16} aria-hidden="true" focusable="false" />
             </div>
           ) : (
             <div className="p-1 rounded bg-[#8A8580] text-white">
-              <ShieldAlert size={16} />
+              <ShieldAlert size={16} aria-hidden="true" focusable="false" />
             </div>
           )}
           <span className="font-semibold text-xs uppercase tracking-wide">
@@ -50,7 +50,7 @@ export default function CertificationCard({ qco = {} }) {
 
       <div className="text-xs space-y-1.5 mt-2">
         <div className="flex items-start gap-1.5">
-          <FileText size={13} className="mt-0.5 flex-shrink-0 opacity-70" />
+          <FileText size={13} className="mt-0.5 flex-shrink-0 opacity-70" aria-hidden="true" focusable="false" />
           <span className="leading-relaxed">
             <strong>{t('chat.applicableRule')}</strong> {rule}
           </span>
@@ -58,7 +58,7 @@ export default function CertificationCard({ qco = {} }) {
 
         {enforcementDate && (
           <div className="flex items-center gap-1.5">
-            <Calendar size={13} className="opacity-70 flex-shrink-0" />
+            <Calendar size={13} className="opacity-70 flex-shrink-0" aria-hidden="true" focusable="false" />
             <span>
               <strong>{t('chat.enforcementDate')}</strong> {enforcementDate}
             </span>

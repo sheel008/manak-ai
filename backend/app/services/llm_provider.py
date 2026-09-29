@@ -1,15 +1,22 @@
-"""LLM Provider abstraction for MANAK-AI grounded response generation.
+"""LLM Provider abstraction for MANAK-AI grounded response generation and conversational interactions.
 
 Supports:
-1. Gemini Flash (if GEMINI_API_KEY is configured)
-2. OpenAI (if OPENAI_API_KEY is configured)
-3. FallbackProvider (Deterministic, zero external dependency, 100% grounded in BIS database)
+1. Groq (Llama 3.3 70B Versatile, OpenAI-compatible ultra-fast REST API)
+2. Gemini Flash (Google Generative Language REST API)
+3. OpenAI (GPT-4o-mini REST API)
+4. FallbackProvider (Deterministic, zero external dependency, 100% grounded in BIS database)
 """
 import os
 import re
 import json
 import logging
 from typing import Dict, Any, List, Optional
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 logger = logging.getLogger(__name__)
 
@@ -29,6 +36,16 @@ CRITICAL RULES:
    Section 6 — Suggested Follow-up Questions: 3 contextual follow-up prompts.
 """
 
+CONVERSATIONAL_SYSTEM_PROMPT = """You are MANAK-AI, an intelligent conversational AI assistant specializing in the Bureau of Indian Standards (BIS), Quality Control Orders (QCO), Indian Standards (IS), and public procurement specifications in India.
+
+ROLE & BEHAVIOR:
+1. For casual greetings, pleasantries, or general inquiries about your capabilities, respond in a natural, polite, concise, and professional tone.
+2. Introduce yourself clearly as MANAK-AI and briefly explain that you help users find applicable Indian Standards, verify mandatory QCO compliance / ISI mark rules, and understand procurement specifications.
+3. NEVER fabricate, hallucinate, or guess Indian Standard numbers (IS numbers), titles, clauses, or legal regulations.
+4. If the user asks a specific procurement or standard query (e.g. asking which standard applies to a product, or details of a standard), invite them to state the specific product, material, or standard so the system can look up verified BIS records.
+5. DO NOT format casual greetings as structured procurement recommendations. Keep conversational replies friendly and brief (1-3 short paragraphs or clean bullet points).
+6. Always maintain the requested conversation language.
+"""
 
 LANGUAGE_NAMES = {
     "en": "English",
@@ -359,12 +376,146 @@ class FallbackProvider:
 {sec6_head}
 {follow_up_lines}"""
 
+    def generate_conversational_response(self, message: str,
+                                         history: Optional[List[Dict[str, Any]]] = None,
+                                         lang: str = "en",
+                                         system_context: Optional[str] = None,
+                                         intent: Optional[str] = None,
+                                         intent_meta: Optional[Dict[str, Any]] = None) -> str:
+        """Deterministic conversational response requiring zero external API."""
+        from app.services.intent_router import classify_intent, build_conversational_response, Intent
+        if intent is not None:
+            try:
+                int_obj = Intent(intent)
+            except Exception:
+                int_obj = Intent.GREETING
+            meta = intent_meta or {}
+        else:
+            int_obj, meta = classify_intent(message)
+        return build_conversational_response(int_obj, meta, message, lang=lang)
+
+
+class GroqProvider:
+    """Groq Cloud API integration using OpenAI-compatible REST API.
+    
+    Provides high-speed inference on Groq LPUs.
+    Safe: zero secrets logged, graceful fallback on error, rate limit, or timeout.
+    """
+
+    def __init__(self, api_key: str, model: Optional[str] = None):
+        self.api_key = api_key.strip().strip('"').strip("'")
+        self.model = model or os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"
+        self.api_url = "https://api.groq.com/openai/v1/chat/completions"
+
+    def generate_response(self, query: str, standard: Dict[str, Any], qco: Dict[str, Any],
+                          related: List[str], evidence: List[Dict[str, str]],
+                          confidence: int, matched_specs: List[Dict[str, str]],
+                          overlapping_keywords: List[str],
+                          follow_up: List[str],
+                          lang: str = "en") -> Optional[str]:
+        """Generate polished grounded response using retrieved BIS/QCO context."""
+        import requests
+        prompt = _build_context_prompt(
+            query, standard, qco, related, evidence, confidence, matched_specs, overlapping_keywords, lang=lang
+        )
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": GROUNDED_SYSTEM_PROMPT},
+                {"role": "user", "content": prompt}
+            ],
+            "temperature": 0.1,
+            "max_tokens": 1024
+        }
+        try:
+            res = requests.post(self.api_url, headers=headers, json=payload, timeout=8)
+            if res.status_code == 200:
+                data = res.json()
+                choices = data.get("choices", [])
+                if choices:
+                    content = choices[0].get("message", {}).get("content")
+                    if content and content.strip():
+                        return content.strip()
+            else:
+                logger.warning(
+                    "Groq API error in generate_response (status %d): %s",
+                    res.status_code,
+                    res.text[:150]
+                )
+        except requests.Timeout:
+            logger.warning("Groq API timed out after 8s during grounded response generation")
+        except Exception as e:
+            logger.warning("Groq API grounded call failed: %s", type(e).__name__)
+        return None
+
+    def generate_conversational_response(self, message: str,
+                                         history: Optional[List[Dict[str, Any]]] = None,
+                                         lang: str = "en",
+                                         system_context: Optional[str] = None) -> Optional[str]:
+        """Generate conversational response for greetings and general inquiries."""
+        import requests
+        target_lang = LANGUAGE_NAMES.get(lang, "English")
+        sys_prompt = system_context or CONVERSATIONAL_SYSTEM_PROMPT
+        if lang and lang != "en":
+            sys_prompt += (
+                f"\n\nLANGUAGE INSTRUCTION:\n"
+                f"You MUST respond strictly in {target_lang}. "
+                f"Keep your tone polite, natural, and helpful in {target_lang}."
+            )
+
+        messages = [{"role": "system", "content": sys_prompt}]
+
+        if history:
+            for item in history[-6:]:
+                role = item.get("role")
+                content = item.get("content")
+                if role in ("user", "assistant") and content and isinstance(content, str):
+                    clean_content = content[:500] if len(content) > 500 else content
+                    messages.append({"role": role, "content": clean_content})
+
+        messages.append({"role": "user", "content": message})
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+        payload = {
+            "model": self.model,
+            "messages": messages,
+            "temperature": 0.5,
+            "max_tokens": 512
+        }
+        try:
+            res = requests.post(self.api_url, headers=headers, json=payload, timeout=6)
+            if res.status_code == 200:
+                data = res.json()
+                choices = data.get("choices", [])
+                if choices:
+                    content = choices[0].get("message", {}).get("content")
+                    if content and content.strip():
+                        return content.strip()
+            else:
+                logger.warning(
+                    "Groq API error in generate_conversational_response (status %d): %s",
+                    res.status_code,
+                    res.text[:150]
+                )
+        except requests.Timeout:
+            logger.warning("Groq API timed out after 6s during conversational response generation")
+        except Exception as e:
+            logger.warning("Groq API conversational call failed: %s", type(e).__name__)
+        return None
+
 
 class GeminiFlashProvider:
     """Gemini 1.5/2.0 Flash integration using Google Generative Language REST API."""
 
     def __init__(self, api_key: str):
-        self.api_key = api_key
+        self.api_key = api_key.strip().strip('"').strip("'")
 
     def generate_response(self, query: str, standard: Dict[str, Any], qco: Dict[str, Any],
                           related: List[str], evidence: List[Dict[str, str]],
@@ -395,12 +546,51 @@ class GeminiFlashProvider:
             logger.warning("Gemini Flash API call failed, falling back to deterministic: %s", e)
         return None
 
+    def generate_conversational_response(self, message: str,
+                                         history: Optional[List[Dict[str, Any]]] = None,
+                                         lang: str = "en",
+                                         system_context: Optional[str] = None) -> Optional[str]:
+        import requests
+        target_lang = LANGUAGE_NAMES.get(lang, "English")
+        sys_prompt = system_context or CONVERSATIONAL_SYSTEM_PROMPT
+        if lang and lang != "en":
+            sys_prompt += f"\n\nLANGUAGE INSTRUCTION:\nGenerate response strictly in {target_lang}."
+
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={self.api_key}"
+        contents = []
+        if history:
+            for item in history[-6:]:
+                role = item.get("role")
+                content = item.get("content")
+                if content and isinstance(content, str):
+                    gemini_role = "user" if role == "user" else "model"
+                    contents.append({"role": gemini_role, "parts": [{"text": content[:500]}]})
+        contents.append({"role": "user", "parts": [{"text": message}]})
+
+        payload = {
+            "system_instruction": {"parts": [{"text": sys_prompt}]},
+            "contents": contents,
+            "generationConfig": {"temperature": 0.5, "maxOutputTokens": 512}
+        }
+        try:
+            res = requests.post(url, json=payload, timeout=8)
+            if res.status_code == 200:
+                data = res.json()
+                candidates = data.get("candidates", [])
+                if candidates:
+                    parts = candidates[0].get("content", {}).get("parts", [])
+                    if parts and parts[0].get("text"):
+                        return parts[0]["text"].strip()
+        except Exception as e:
+            logger.warning("Gemini Flash conversational call failed: %s", type(e).__name__)
+        return None
+
 
 class OpenAIProvider:
     """OpenAI GPT-4o-mini integration."""
 
     def __init__(self, api_key: str):
-        self.api_key = api_key
+        self.api_key = api_key.strip().strip('"').strip("'")
 
     def generate_response(self, query: str, standard: Dict[str, Any], qco: Dict[str, Any],
                           related: List[str], evidence: List[Dict[str, str]],
@@ -434,13 +624,90 @@ class OpenAIProvider:
             logger.warning("OpenAI API call failed, falling back to deterministic: %s", e)
         return None
 
+    def generate_conversational_response(self, message: str,
+                                         history: Optional[List[Dict[str, Any]]] = None,
+                                         lang: str = "en",
+                                         system_context: Optional[str] = None) -> Optional[str]:
+        import requests
+        target_lang = LANGUAGE_NAMES.get(lang, "English")
+        sys_prompt = system_context or CONVERSATIONAL_SYSTEM_PROMPT
+        if lang and lang != "en":
+            sys_prompt += f"\n\nLANGUAGE INSTRUCTION:\nGenerate response strictly in {target_lang}."
+
+        messages = [{"role": "system", "content": sys_prompt}]
+        if history:
+            for item in history[-6:]:
+                role = item.get("role")
+                content = item.get("content")
+                if role in ("user", "assistant") and content and isinstance(content, str):
+                    messages.append({"role": role, "content": content[:500]})
+        messages.append({"role": "user", "content": message})
+
+        url = "https://api.openai.com/v1/chat/completions"
+        headers = {"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}
+        payload = {
+            "model": "gpt-4o-mini",
+            "messages": messages,
+            "temperature": 0.5,
+            "max_tokens": 512
+        }
+        try:
+            res = requests.post(url, headers=headers, json=payload, timeout=8)
+            if res.status_code == 200:
+                data = res.json()
+                choices = data.get("choices", [])
+                if choices and choices[0].get("message", {}).get("content"):
+                    return choices[0]["message"]["content"].strip()
+        except Exception as e:
+            logger.warning("OpenAI conversational API call failed: %s", type(e).__name__)
+        return None
+
 
 def get_llm_provider():
-    gemini_key = os.environ.get("GEMINI_API_KEY")
+    """Factory function returning configured LLM provider with safe fallback.
+    
+    Priority:
+    1. Explicit LLM_PROVIDER ('groq', 'gemini', 'openai')
+    2. Implicit detection based on GROQ_API_KEY, GEMINI_API_KEY, OPENAI_API_KEY
+    3. FallbackProvider (deterministic, zero external dependency)
+    """
+    provider_name = (os.environ.get("LLM_PROVIDER") or "").strip().lower()
+
+    if provider_name == "groq":
+        groq_key = os.environ.get("GROQ_API_KEY", "").strip()
+        if groq_key:
+            model = os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"
+            return GroqProvider(groq_key, model=model)
+        logger.warning("LLM_PROVIDER='groq' but GROQ_API_KEY is not configured. Falling back to FallbackProvider.")
+        return FallbackProvider()
+
+    if provider_name == "gemini":
+        gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
+        if gemini_key:
+            return GeminiFlashProvider(gemini_key)
+        logger.warning("LLM_PROVIDER='gemini' but GEMINI_API_KEY is not configured. Falling back to FallbackProvider.")
+        return FallbackProvider()
+
+    if provider_name == "openai":
+        openai_key = os.environ.get("OPENAI_API_KEY", "").strip()
+        if openai_key:
+            return OpenAIProvider(openai_key)
+        logger.warning("LLM_PROVIDER='openai' but OPENAI_API_KEY is not configured. Falling back to FallbackProvider.")
+        return FallbackProvider()
+
+    # Implicit detection if LLM_PROVIDER is not explicitly specified
+    groq_key = os.environ.get("GROQ_API_KEY", "").strip()
+    if groq_key:
+        model = os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"
+        return GroqProvider(groq_key, model=model)
+
+    gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if gemini_key:
         return GeminiFlashProvider(gemini_key)
-    openai_key = os.environ.get("OPENAI_API_KEY")
+
+    openai_key = os.environ.get("OPENAI_API_KEY", "").strip()
     if openai_key:
         return OpenAIProvider(openai_key)
+
     return FallbackProvider()
 

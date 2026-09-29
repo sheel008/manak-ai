@@ -12,7 +12,9 @@ Adheres strictly to:
 5. Full backward compatibility with existing tests and clients.
 """
 import re
+import sys
 import uuid
+import logging
 from typing import Dict, Any, List, Optional
 
 from app.core import config, database
@@ -20,6 +22,9 @@ from app.retrieval import vector_search, rerank
 from app.rules import related as related_rules, certification as cert_rules
 from app.evidence import builder as evidence_builder
 from app.services.llm_provider import get_llm_provider, FallbackProvider
+from app.services.intent_router import classify_intent, build_conversational_response, Intent, DEFAULT_FOLLOW_UPS
+
+logger = logging.getLogger(__name__)
 
 # In-memory chat sessions storage
 _chat_sessions: Dict[str, Dict[str, Any]] = {}
@@ -163,6 +168,27 @@ def _calculate_confidence(sim: float, kw_score: float, spec_score: float, cat_sc
     return int(round(norm))
 
 
+def _detect_language(text: str, default_lang: str = "en") -> str:
+    """Detect language if default is 'en' but text contains Indic scripts."""
+    if default_lang and default_lang.lower() in ("hi", "mr", "ta", "kn"):
+        return default_lang.lower()
+
+    # Tamil script: U+0B80 to U+0BFF
+    if any("\u0b80" <= c <= "\u0bff" for c in text):
+        return "ta"
+    # Kannada script: U+0C80 to U+0CFF
+    if any("\u0c80" <= c <= "\u0cff" for c in text):
+        return "kn"
+    # Devanagari script: U+0900 to U+097F
+    if any("\u0900" <= c <= "\u097f" for c in text):
+        marathi_indicators = ["नमस्कार", "आहे", "करा", "नाही", "पोलाद", "सिमेंट", "कूकर्स", "पाईप", "शिरस्त्राण"]
+        if any(w in text for w in marathi_indicators):
+            return "mr"
+        return "hi"
+
+    return default_lang or "en"
+
+
 def handle_chat(message: str, session_id: Optional[str] = None,
                 history: Optional[List[Dict[str, Any]]] = None,
                 lang: str = "en") -> Dict[str, Any]:
@@ -201,6 +227,60 @@ def handle_chat(message: str, session_id: Optional[str] = None,
         }
     session = _chat_sessions[sid]
 
+    effective_lang = _detect_language(raw_query, default_lang=lang)
+
+    # ── Intent Routing Layer (BEFORE expensive semantic search) ──
+    has_prev_standard = bool(session.get("last_standard"))
+    intent, intent_meta = classify_intent(raw_query, session_has_standard=has_prev_standard)
+
+    # For non-search intents (GREETING, GENERAL_CONVERSATION, DOCUMENT_QUERY, UNKNOWN / OUT_OF_DOMAIN):
+    # Return immediately WITHOUT running embedding generation or semantic vector search.
+    if intent in (Intent.GREETING, Intent.GENERAL_CONVERSATION, Intent.DOCUMENT_QUERY, Intent.UNKNOWN):
+        conv_answer = None
+        conv_follow_up = DEFAULT_FOLLOW_UPS.get(effective_lang, DEFAULT_FOLLOW_UPS.get(lang, DEFAULT_FOLLOW_UPS["en"]))
+
+        # For casual greetings and general conversation, use configured LLM provider (Groq / Gemini / OpenAI)
+        if intent in (Intent.GREETING, Intent.GENERAL_CONVERSATION):
+            llm = get_llm_provider()
+            session_history = history if history is not None else session.get("messages", [])
+            try:
+                conv_answer = llm.generate_conversational_response(
+                    message=raw_query,
+                    history=session_history,
+                    lang=effective_lang,
+                )
+            except Exception as e:
+                logger.warning("Conversational LLM response generation failed: %s", type(e).__name__)
+                conv_answer = None
+
+        # Fallback to deterministic responses if LLM is unavailable or failed
+        if not conv_answer:
+            conv_answer = build_conversational_response(intent, intent_meta, raw_query, lang=effective_lang)
+
+        session["messages"].append({"role": "user", "content": raw_query})
+        session["messages"].append({
+            "role": "assistant",
+            "content": conv_answer,
+            "citations": [],
+            "recommendations": [],
+            "qco": None,
+        })
+
+        return {
+            "intent": intent.value,
+            "query": raw_query,
+            "answer": conv_answer,
+            "recommendations": [],
+            "qco": None,
+            "related_standards": [],
+            "evidence": [],
+            "follow_up": conv_follow_up,
+            # Backward-compatible fields
+            "sessionId": sid,
+            "message": conv_answer,
+            "citations": [],
+        }
+
     # Resolve context from conversation history (e.g. follow-up question referencing previous standard)
     search_query = raw_query
     is_follow_up = False
@@ -229,7 +309,8 @@ def handle_chat(message: str, session_id: Optional[str] = None,
     if explicit_is:
         direct_match = _fetch_standard_by_is(explicit_is)
 
-    candidates = vector_search.vector_search(search_query, top_k=config.VECTOR_TOP_K)
+    vs_module = sys.modules.get("app.retrieval.vector_search", vector_search)
+    candidates = vs_module.vector_search(search_query, top_k=config.VECTOR_TOP_K)
     if is_follow_up and last_std:
         if not any(c.get("is_number") == last_std.get("is_number") for c in candidates):
             candidates.insert(0, {**last_std, "similarity": 0.95})
@@ -299,6 +380,7 @@ def handle_chat(message: str, session_id: Optional[str] = None,
         session["messages"].append({"role": "user", "content": raw_query})
         session["messages"].append({"role": "assistant", "content": abstain_text, "citations": []})
         return {
+            "intent": intent.value,
             "query": raw_query,
             "answer": abstain_text,
             "recommendations": [],
@@ -392,25 +474,26 @@ def handle_chat(message: str, session_id: Optional[str] = None,
     ]
 
     # 8. Follow-up Questions (3 Contextual Prompts in target language)
-    if lang == "hi":
+    target_lang = effective_lang if effective_lang in ("hi", "mr", "ta", "kn") else lang
+    if target_lang == "hi":
         follow_up = [
             f"क्या वर्तमान QCO आदेशों के तहत {top['is_number']} के लिए बीआईएस प्रमाणन अनिवार्य है?",
             f"{top['is_number']} में विशिष्ट तकनीकी विनिर्देश आवश्यकताएं क्या हैं?",
             f"{top['is_number']} के साथ कौन से प्रामाणिक संदर्भ मानक लागू होते हैं?",
         ]
-    elif lang == "mr":
+    elif target_lang == "mr":
         follow_up = [
             f"सध्याच्या QCO आदेशांनुसार {top['is_number']} साठी बीआयएस प्रमाणन अनिवार्य आहे का?",
             f"{top['is_number']} मध्ये विशिष्ट तांत्रिक तपशील काय आहेत?",
             f"{top['is_number']} सोबत कोणते मानक संदर्भ लागू होतात?",
         ]
-    elif lang == "ta":
+    elif target_lang == "ta":
         follow_up = [
             f"தற்போதைய QCO உத்தரவுகளின் கீழ் {top['is_number']}க்கு BIS சான்றிதழ் கட்டாயமா?",
             f"{top['is_number']} இன் குறிப்பிட்ட தொழில்நுட்ப விவரக்குறிப்புத் தேவைகள் என்ன?",
             f"{top['is_number']} உடன் பொருந்தக்கூடிய பிற இந்தியத் தரநிலைகள் யாவை?",
         ]
-    elif lang == "kn":
+    elif target_lang == "kn":
         follow_up = [
             f"ಪ್ರಸ್ತುತ QCO ಆದೇಶಗಳ ಅಡಿಯಲ್ಲಿ {top['is_number']} ಗೆ BIS ಪ್ರಮಾಣೀಕರಣ ಕಡ್ಡಾಯವೇ?",
             f"{top['is_number']} ನಲ್ಲಿನ ನಿರ್ದಿಷ್ಟ ತಾಂತ್ರಿಕ ವಿವರಣೆಗಳ ಅಗತ್ಯತೆಗಳು ಯಾವುವು?",
@@ -427,18 +510,22 @@ def handle_chat(message: str, session_id: Optional[str] = None,
     llm = get_llm_provider()
     answer = None
     if not isinstance(llm, FallbackProvider):
-        answer = llm.generate_response(
-            query=raw_query,
-            standard=top,
-            qco=qco,
-            related=related_list,
-            evidence=evidence,
-            confidence=top_item["confidence"],
-            matched_specs=top_item["matched_specs"],
-            overlapping_keywords=top_item["overlapping_keywords"],
-            follow_up=follow_up,
-            lang=lang,
-        )
+        try:
+            answer = llm.generate_response(
+                query=raw_query,
+                standard=top,
+                qco=qco,
+                related=related_list,
+                evidence=evidence,
+                confidence=top_item["confidence"],
+                matched_specs=top_item["matched_specs"],
+                overlapping_keywords=top_item["overlapping_keywords"],
+                follow_up=follow_up,
+                lang=target_lang,
+            )
+        except Exception as e:
+            logger.warning("LLM grounded response generation failed: %s", type(e).__name__)
+            answer = None
 
     if not answer:
         answer = FallbackProvider().generate_response(
@@ -451,7 +538,7 @@ def handle_chat(message: str, session_id: Optional[str] = None,
             matched_specs=top_item["matched_specs"],
             overlapping_keywords=top_item["overlapping_keywords"],
             follow_up=follow_up,
-            lang=lang,
+            lang=target_lang,
         )
 
     # Citations for backward compatibility
@@ -468,6 +555,7 @@ def handle_chat(message: str, session_id: Optional[str] = None,
     })
 
     return {
+        "intent": intent.value,
         "query": raw_query,
         "answer": answer,
         "recommendations": recommendations,

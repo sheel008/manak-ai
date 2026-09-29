@@ -19,6 +19,36 @@ except ImportError:
     _mock_embedding.embed_texts = lambda xs: [[0.1] * 384 for _ in xs]
     sys.modules["app.services.embedding"] = _mock_embedding
 
+# Standalone execution mocks for environments without psycopg2 or numpy installed
+if "psycopg2" not in sys.modules:
+    try:
+        import psycopg2
+    except ImportError:
+        _mock_pg = types.ModuleType("psycopg2")
+        _mock_pg.extras = types.ModuleType("psycopg2.extras")
+        _mock_pg.extras.RealDictCursor = object
+        _mock_pg.extras.Json = object
+        _mock_pg.pool = types.ModuleType("psycopg2.pool")
+        sys.modules["psycopg2"] = _mock_pg
+        sys.modules["psycopg2.extras"] = _mock_pg.extras
+        sys.modules["psycopg2.pool"] = _mock_pg.pool
+
+if "numpy" not in sys.modules:
+    try:
+        import numpy
+    except ImportError:
+        _mock_np = types.ModuleType("numpy")
+        _mock_np.array = list
+        _mock_np.dot = lambda a, b: sum(x * y for x, y in zip(a, b))
+        _mock_np.linalg = types.ModuleType("numpy.linalg")
+        _mock_np.linalg.norm = lambda a: 1.0
+        sys.modules["numpy"] = _mock_np
+
+if "app.retrieval.vector_search" not in sys.modules:
+    _mock_vs = types.ModuleType("app.retrieval.vector_search")
+    _mock_vs.vector_search = lambda q, top_k=10: []
+    sys.modules["app.retrieval.vector_search"] = _mock_vs
+
 
 def _load_standards():
     with open(os.path.join(DATA_DIR, "standards.json"), "r", encoding="utf-8") as f:
@@ -178,3 +208,20 @@ def test_multilingual_chat():
     assert "பிரிவு 1 — பரிந்துரை" in res_ta["answer"]
     assert "IS 4985" in res_ta["answer"]  # IS number preserved
     assert "தற்போதைய QCO" in res_ta["follow_up"][0]
+
+
+if __name__ == "__main__":
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8")
+    print("Running test_all_10_mandatory_queries...")
+    test_all_10_mandatory_queries()
+    print("test_all_10_mandatory_queries PASSED!")
+    print("Running test_conversation_follow_up...")
+    test_conversation_follow_up()
+    print("test_conversation_follow_up PASSED!")
+    print("Running test_multilingual_chat...")
+    test_multilingual_chat()
+    print("test_multilingual_chat PASSED!")
+    print("ALL TEST_CHAT_V2 TESTS PASSED!")

@@ -19,7 +19,7 @@ export default function EvidenceCard({ evidence = [] }) {
     <div className="mt-3 rounded-lg border border-[#DDD9D0] bg-[#FAFAF8] p-3.5 border-l-4 border-l-[#2F6F5E]">
       <div className="flex items-center justify-between gap-2 mb-1.5">
         <div className="flex items-center gap-1.5 text-[#2F6F5E]">
-          <Quote size={14} className="rotate-180" />
+          <Quote size={14} className="rotate-180" aria-hidden="true" focusable="false" />
           <span className="text-[11px] font-semibold uppercase tracking-wider text-[#5C5A55]">
             {t('chat.evidenceTitle')} {item.standard ? `(${item.standard})` : ''}
           </span>
@@ -42,12 +42,12 @@ export default function EvidenceCard({ evidence = [] }) {
           {expanded ? (
             <>
               <span>{t('chat.showLess')}</span>
-              <ChevronUp size={12} />
+              <ChevronUp size={12} aria-hidden="true" focusable="false" />
             </>
           ) : (
             <>
               <span>{t('chat.expandFull')} ({rawExcerpt.length} chars)</span>
-              <ChevronDown size={12} />
+              <ChevronDown size={12} aria-hidden="true" focusable="false" />
             </>
           )}
         </button>
