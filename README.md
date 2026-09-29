@@ -519,33 +519,6 @@ screenshots/
 └── chat.png
 ```
 
-Then reference them here:
-
-### Dashboard
-
-![MANAK-AI Dashboard](screenshots/dashboard.png)
-
-### Search Results
-
-![MANAK-AI Search Results](screenshots/search-results.png)
-
-### QCO Checker
-
-![MANAK-AI QCO Checker](screenshots/qco-checker.png)
-
-### Standard Details
-
-![MANAK-AI Standard Details](screenshots/standard-details.png)
-
-### Document Analysis
-
-![MANAK-AI Document Analysis](screenshots/document-analysis.png)
-
-### Chat
-
-![MANAK-AI Chat](screenshots/chat.png)
-
-> The screenshot files are placeholders for repository documentation. Add the actual screenshots after capturing the current application UI.
 
 ## Testing
 
