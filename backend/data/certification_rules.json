@@ -1,0 +1,4005 @@
+[
+  {
+    "product_name": "Ordinary Portland Cement",
+    "aliases": [
+      "OPC cement",
+      "ordinary portland cement",
+      "portland cement",
+      "53 grade cement",
+      "43 grade cement",
+      "cement specification",
+      "construction cement",
+      "binding material",
+      "compressive strength cement",
+      "setting time cement",
+      "clinker cement",
+      "concrete cement"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 269:2015",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement",
+    "aliases": [
+      "deformed",
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "testing",
+      "high",
+      "bars",
+      "certification",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1786:2008",
+    "enforcement_date": "2023-06-01"
+  },
+  {
+    "product_name": "Hot Rolled Medium and High Tensile Structural Steel",
+    "aliases": [
+      "structural steel",
+      "hot rolled steel",
+      "mild steel structural",
+      "steel section",
+      "steel plate",
+      "steel angle",
+      "steel beam",
+      "steel column",
+      "TMT structural",
+      "E250 steel",
+      "E350 steel",
+      "construction steel"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2062:2011",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Self-Ballasted LED Lamps for General Lighting Services",
+    "aliases": [
+      "LED",
+      "bulb",
+      "lamp",
+      "self-ballasted",
+      "household",
+      "lighting",
+      "energy efficient",
+      "lumen",
+      "CFL replacement",
+      "indoor lighting",
+      "E27",
+      "B22"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16102(Part 1):2012",
+    "enforcement_date": "2021-12-01"
+  },
+  {
+    "product_name": "Luminaires",
+    "aliases": [
+      "LED",
+      "street light",
+      "road lighting",
+      "luminaire",
+      "outdoor",
+      "IP65",
+      "wattage",
+      "photometric",
+      "street lamp",
+      "road light",
+      "pole mounted",
+      "highway lighting"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 10322(Part 5/Sec 4):2018",
+    "enforcement_date": "2022-01-01"
+  },
+  {
+    "product_name": "Luminaires",
+    "aliases": [
+      "luminaires",
+      "general",
+      "requirements",
+      "and",
+      "tests",
+      "lighting"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 10322(Part 1):2012",
+    "enforcement_date": "2022-01-01"
+  },
+  {
+    "product_name": "Safety of Household and Similar Electrical Appliances",
+    "aliases": [
+      "and",
+      "safety",
+      "quality",
+      "appliances",
+      "bis",
+      "specification",
+      "similar",
+      "electrical",
+      "india",
+      "testing"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 302(Part 1):2008",
+    "enforcement_date": "2026-03-01"
+  },
+  {
+    "product_name": "Switches for Domestic and Similar Purposes",
+    "aliases": [
+      "switches",
+      "for",
+      "domestic",
+      "and",
+      "similar",
+      "purposes",
+      "specification",
+      "switching"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3854:1997",
+    "enforcement_date": "2025-06-01"
+  },
+  {
+    "product_name": "Electrical Wiring Accessories",
+    "aliases": [
+      "electrical",
+      "wiring",
+      "accessories",
+      "specification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3851:2000",
+    "enforcement_date": "2025-06-01"
+  },
+  {
+    "product_name": "PVC Insulated Cables for Working Voltages up to and Including 1100V",
+    "aliases": [
+      "PVC cable",
+      "PVC insulated cable",
+      "1100V cable",
+      "electrical cable",
+      "wiring cable",
+      "LT cable",
+      "power cable",
+      "house wiring",
+      "low voltage cable",
+      "flexible cable",
+      "copper conductor cable"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 694:2010",
+    "enforcement_date": "2025-09-20"
+  },
+  {
+    "product_name": "Self-Ballasted Lamps for General Lighting Services",
+    "aliases": [
+      "safety",
+      "quality",
+      "bis",
+      "specification",
+      "lamps",
+      "self-ballasted",
+      "india",
+      "testing",
+      "certification",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13021:1991",
+    "enforcement_date": "2021-12-01"
+  },
+  {
+    "product_name": "Lamp Controlgear",
+    "aliases": [
+      "lamp",
+      "controlgear",
+      "particular",
+      "requirements",
+      "supplied",
+      "electronic",
+      "for",
+      "led"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15885(Part 2/Sec 13):2017",
+    "enforcement_date": "2021-12-01"
+  },
+  {
+    "product_name": "Plugs and Socket-Outlets of Rated Voltage up to and Including 250V",
+    "aliases": [
+      "plugs",
+      "and",
+      "socket",
+      "outlets",
+      "rated",
+      "voltage",
+      "including",
+      "250v"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1293:2019",
+    "enforcement_date": "2024-01-01"
+  },
+  {
+    "product_name": "Pressure Cookers for Domestic Use",
+    "aliases": [
+      "pressure",
+      "cookers",
+      "for",
+      "domestic",
+      "use",
+      "specification",
+      "cookware"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2347:2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Safety of Household and Similar Electrical Appliances",
+    "aliases": [
+      "safety",
+      "household",
+      "and",
+      "similar",
+      "electrical",
+      "appliances",
+      "particular",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 302(Part 2/Sec 15):2017",
+    "enforcement_date": "2026-03-01"
+  },
+  {
+    "product_name": "Electric Immersion Water Heaters",
+    "aliases": [
+      "electric",
+      "immersion",
+      "water",
+      "heaters",
+      "specification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1476:2020",
+    "enforcement_date": "2025-06-01"
+  },
+  {
+    "product_name": "Domestic Electric Food Mixers (Liquidizers, Grinders, Choppers)",
+    "aliases": [
+      "domestic",
+      "electric",
+      "food",
+      "mixers",
+      "liquidizers",
+      "grinders",
+      "choppers",
+      "specification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15123:2002",
+    "enforcement_date": "2026-03-01"
+  },
+  {
+    "product_name": "Sodium Tripolyphosphate (STPP)",
+    "aliases": [
+      "sodium",
+      "tripolyphosphate",
+      "stpp",
+      "specification",
+      "industrial",
+      "chemicals"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12795:2005",
+    "enforcement_date": "2026-03-01"
+  },
+  {
+    "product_name": "Linear Alkyl Benzene Sulphonic Acid (LABSA)",
+    "aliases": [
+      "linear",
+      "alkyl",
+      "benzene",
+      "sulphonic",
+      "acid",
+      "labsa",
+      "specification",
+      "industrial"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 6100:2019",
+    "enforcement_date": "2026-03-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "automotive",
+      "seat",
+      "india",
+      "testing",
+      "certification",
+      "belts",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2112:2000",
+    "enforcement_date": "2022-06-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "anchorages",
+      "for",
+      "seat",
+      "belt",
+      "assemblies",
+      "specification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14090:2010",
+    "enforcement_date": "2022-06-01"
+  },
+  {
+    "product_name": "Safety of Toys",
+    "aliases": [
+      "safety",
+      "toys",
+      "part",
+      "aspects",
+      "related",
+      "mechanical",
+      "and",
+      "physical"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9873(Part 1):2019",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "Safety of Toys",
+    "aliases": [
+      "safety",
+      "toys",
+      "part",
+      "flammability"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9873(Part 2):2017",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "Metal Food Cans for Beverages",
+    "aliases": [
+      "metal",
+      "food",
+      "cans",
+      "for",
+      "beverages",
+      "specification",
+      "packaging"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14000:2015",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Office Furniture",
+    "aliases": [
+      "office",
+      "furniture",
+      "work",
+      "chairs",
+      "specification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 17631:2021",
+    "enforcement_date": "2026-02-01"
+  },
+  {
+    "product_name": "Fire Safety Sprinklers — Specification",
+    "aliases": [
+      "fire",
+      "safety",
+      "quality",
+      "bis",
+      "specification",
+      "sprinklers",
+      "india",
+      "testing",
+      "certification",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15105:2002",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Lighting of Public Thoroughfares — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "thoroughfares",
+      "india",
+      "testing",
+      "public",
+      "certification",
+      "requirements",
+      "compliance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1944 (Part 1):1990",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Portland Pozzolana Cement — Specification",
+    "aliases": [
+      "cement",
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "portland",
+      "pozzolana",
+      "testing",
+      "certification",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1489 (Part 1):2015",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "PVC insulated (heavy duty) electric cables — Specification",
+    "aliases": [
+      "cables",
+      "specification",
+      "quality",
+      "bis",
+      "insulated",
+      "(heavy",
+      "india",
+      "electric",
+      "testing",
+      "pvc"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1554 (Part 1):1988",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Code of practice for electrical wiring installations — Specification",
+    "aliases": [
+      "wiring",
+      "specification",
+      "quality",
+      "bis",
+      "electrical",
+      "installations",
+      "for",
+      "india",
+      "code",
+      "certification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 732:1989",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Code of practice for earthing — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "for",
+      "testing",
+      "code",
+      "certification",
+      "requirements",
+      "earthing"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3043:1987",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Porcelain insulators for overhead power lines — Specification",
+    "aliases": [
+      "overhead",
+      "standard",
+      "quality",
+      "bis",
+      "specification",
+      "lines",
+      "india",
+      "for",
+      "power",
+      "testing"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1445:1977",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Geotextiles — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "testing",
+      "certification",
+      "geotextiles",
+      "requirements",
+      "compliance",
+      "standard"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15938:2011",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Cotton calico — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "calico",
+      "india",
+      "testing",
+      "certification",
+      "cotton",
+      "requirements",
+      "compliance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1544:1973",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Skimmed Milk Powder — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "powder",
+      "milk",
+      "skimmed",
+      "india",
+      "testing",
+      "certification",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3959:2004",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Processed Cereal Based Complementary Foods — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "cereal",
+      "complementary",
+      "foods",
+      "processed",
+      "india",
+      "testing",
+      "based"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 11536:2007",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Poultry Feeds — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "poultry",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance",
+      "feeds"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1374:2007",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Printing Ink for food packaging — Specification",
+    "aliases": [
+      "food",
+      "ink",
+      "specification",
+      "quality",
+      "bis",
+      "packaging",
+      "india",
+      "for",
+      "testing",
+      "certification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15495:2004",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Alum — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "alum",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance",
+      "standard"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 299:2012",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Rectified Spirit — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "rectified",
+      "india",
+      "testing",
+      "certification",
+      "spirit",
+      "compliance",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 323:2009",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Caustic Soda — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "caustic",
+      "soda",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 252:2013",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Automotive vehicles",
+    "aliases": [
+      "safety",
+      "quality",
+      "bis",
+      "specification",
+      "automotive",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15945:2012",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Pneumatic tyres for commercial vehicles — Specification",
+    "aliases": [
+      "pneumatic",
+      "quality",
+      "bis",
+      "specification",
+      "tyres",
+      "commercial",
+      "for",
+      "india",
+      "testing",
+      "certification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16010:2012",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Two Wheeler and Motorcycle Protective Helmets",
+    "aliases": [
+      "helmet",
+      "helmets",
+      "motorcycle helmet",
+      "two wheeler helmet",
+      "protective headgear",
+      "safety helmet"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16515:2017",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Safety glass for road vehicles — Specification",
+    "aliases": [
+      "standard",
+      "safety",
+      "quality",
+      "bis",
+      "road",
+      "specification",
+      "india",
+      "for",
+      "testing",
+      "certification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2553 (Part 2):2019",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Electric ceiling type fans — Specification",
+    "aliases": [
+      "standard",
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "electric",
+      "testing",
+      "certification",
+      "fans",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 374:2019",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Tape recorders — Specification",
+    "aliases": [
+      "tape",
+      "quality",
+      "bis",
+      "specification",
+      "india",
+      "recorders",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 4150:1993",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Domestic electric food mixers — Specification",
+    "aliases": [
+      "food",
+      "specification",
+      "quality",
+      "mixers",
+      "domestic",
+      "bis",
+      "india",
+      "electric",
+      "testing",
+      "certification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 4250:1980",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Domestic pressure cookers — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "domestic",
+      "pressure",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2347:2017",
+    "enforcement_date": "2026-10-01"
+  },
+  {
+    "product_name": "Corrugated fibreboard boxes — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "testing",
+      "corrugated",
+      "certification",
+      "boxes",
+      "requirements",
+      "fibreboard"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2771 (Part 1):1990",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Packaging code — Specification",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "packaging",
+      "india",
+      "testing",
+      "code",
+      "certification",
+      "requirements",
+      "compliance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 10106 (Part 1/Sec 1):1990",
+    "enforcement_date": "2026-08-15"
+  },
+  {
+    "product_name": "Ordinary Portland Cement, 43 Grade",
+    "aliases": [
+      "cement",
+      "opc",
+      "43 grade",
+      "compressive strength",
+      "portland",
+      "concrete"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8112:2013",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Ordinary Portland Cement, 53 Grade",
+    "aliases": [
+      "cement",
+      "opc",
+      "53 grade",
+      "high strength",
+      "portland",
+      "concrete"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12269:2013",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Portland Slag Cement",
+    "aliases": [
+      "slag cement",
+      "psc",
+      "blast furnace slag",
+      "marine concrete",
+      "blended cement"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 455:2015",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Portland Pozzolana Cement",
+    "aliases": [
+      "ppc",
+      "calcined clay",
+      "pozzolana",
+      "hydraulic cement",
+      "durable concrete"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1489 (Part 2):2015",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Steel Tubes for Structural Purposes",
+    "aliases": [
+      "structural steel",
+      "steel pipes",
+      "tubular structures",
+      "erw tubes",
+      "yield strength"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1161:2014",
+    "enforcement_date": "2024-04-01"
+  },
+  {
+    "product_name": "Hollow Steel Sections for Structural Use",
+    "aliases": [
+      "hollow sections",
+      "shs",
+      "rhs",
+      "square hollow section",
+      "rectangular hollow section",
+      "steel fabrication"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 4923:2017",
+    "enforcement_date": "2024-04-01"
+  },
+  {
+    "product_name": "Steel Pipes for Water and Sewage (168.3 to 2540 mm Outside Diameter)",
+    "aliases": [
+      "steel pipe",
+      "water transmission",
+      "saw pipe",
+      "helical seam",
+      "large diameter pipe",
+      "sewage"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3589:2001",
+    "enforcement_date": "2023-07-01"
+  },
+  {
+    "product_name": "Centrifugally Cast (Ductile) Iron Pressure Pipes for Water, Gas and Sewage",
+    "aliases": [
+      "di pipe",
+      "ductile iron",
+      "water supply",
+      "pressure pipe",
+      "centrifugal casting",
+      "socket and spigot"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8329:2000",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "UPVC Pipes for Soil and Waste Discharge System Inside Buildings",
+    "aliases": [
+      "swr pipe",
+      "upvc drainage",
+      "soil and waste",
+      "plumbing",
+      "building drainage"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13592:2013",
+    "enforcement_date": "2023-06-01"
+  },
+  {
+    "product_name": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables",
+    "aliases": [
+      "xlpe cable",
+      "power cable",
+      "1.1 kv",
+      "crosslinked polyethylene",
+      "armoured cable"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 7098 (Part 1):1988",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables",
+    "aliases": [
+      "ht cable",
+      "xlpe cable",
+      "11 kv",
+      "33 kv",
+      "high tension cable",
+      "power distribution"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 7098 (Part 2):2011",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Outdoor Type Oil Immersed Distribution Transformers up to and Including 2500 kVA, 33 kV",
+    "aliases": [
+      "distribution transformer",
+      "oil immersed",
+      "energy efficiency",
+      "bee star rating",
+      "total losses",
+      "substation"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1180 (Part 1):2014",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "Power Transformers",
+    "aliases": [
+      "power transformer",
+      "substation",
+      "high voltage",
+      "vector group",
+      "insulation levels"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2026 (Part 1):2011",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Electrical Accessories",
+    "aliases": [
+      "mcb",
+      "circuit breaker",
+      "overcurrent protection",
+      "short circuit",
+      "tripping curve",
+      "distribution board"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8828:1996",
+    "enforcement_date": "2020-09-01"
+  },
+  {
+    "product_name": "Residual Current Operated Circuit-Breakers without Integral Overcurrent Protection (RCCBs)",
+    "aliases": [
+      "rccb",
+      "elcb",
+      "residual current",
+      "earth leakage",
+      "electric shock protection",
+      "30 ma"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12640 (Part 1):2016",
+    "enforcement_date": "2020-09-01"
+  },
+  {
+    "product_name": "Information Technology Equipment",
+    "aliases": [
+      "it equipment",
+      "compulsory registration",
+      "crs",
+      "laptop",
+      "server",
+      "power adapter",
+      "electrical safety"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13252 (Part 1):2010",
+    "enforcement_date": "2013-07-03"
+  },
+  {
+    "product_name": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes",
+    "aliases": [
+      "lithium battery",
+      "li-ion",
+      "battery safety",
+      "short circuit",
+      "overcharge",
+      "thermal abuse",
+      "crs"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16046 (Part 2):2018",
+    "enforcement_date": "2018-05-13"
+  },
+  {
+    "product_name": "Portable Fire Extinguishers",
+    "aliases": [
+      "fire extinguisher",
+      "portable extinguisher",
+      "fire rating",
+      "abc powder",
+      "co2 extinguisher",
+      "hydrostatic test"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15683:2018",
+    "enforcement_date": "2020-03-01"
+  },
+  {
+    "product_name": "Packaged Drinking Water (Other Than Packaged Natural Mineral Water)",
+    "aliases": [
+      "packaged water",
+      "bottled water",
+      "drinking water",
+      "tds",
+      "reverse osmosis",
+      "isi mark mandatory",
+      "fssai"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14543:2016",
+    "enforcement_date": "2001-03-29"
+  },
+  {
+    "product_name": "Packaged Natural Mineral Water",
+    "aliases": [
+      "natural mineral water",
+      "spring water",
+      "packaged water",
+      "isi certification mandatory",
+      "fssai"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13428:2005",
+    "enforcement_date": "2001-03-29"
+  },
+  {
+    "product_name": "Automotive Fuels",
+    "aliases": [
+      "diesel fuel",
+      "hsd",
+      "bs vi",
+      "cetane number",
+      "sulphur content",
+      "automotive fuel"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1460:2017",
+    "enforcement_date": "2020-04-01"
+  },
+  {
+    "product_name": "Motor Gasoline",
+    "aliases": [
+      "petrol",
+      "gasoline",
+      "motor spirit",
+      "research octane number",
+      "ron 91",
+      "ethanol blended",
+      "bs vi"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2796:2017",
+    "enforcement_date": "2020-04-01"
+  },
+  {
+    "product_name": "Methanol (Methyl Alcohol)",
+    "aliases": [
+      "methanol",
+      "methyl alcohol",
+      "industrial chemical",
+      "purity",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 517:2020",
+    "enforcement_date": "2021-02-03"
+  },
+  {
+    "product_name": "Acetone",
+    "aliases": [
+      "acetone",
+      "solvent",
+      "chemical feedstock",
+      "distillation",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 170:2020",
+    "enforcement_date": "2021-02-03"
+  },
+  {
+    "product_name": "Personal Protective Equipment",
+    "aliases": [
+      "safety shoes",
+      "safety footwear",
+      "steel toe",
+      "impact resistance",
+      "200 joules",
+      "anti-skid",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15298 (Part 2):2016",
+    "enforcement_date": "2022-01-01"
+  },
+  {
+    "product_name": "Respiratory Protective Devices",
+    "aliases": [
+      "n95 mask",
+      "respirator",
+      "ffp2 mask",
+      "particulate filter",
+      "filtering facepiece",
+      "inhalation resistance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9473:2002",
+    "enforcement_date": "2020-04-01"
+  },
+  {
+    "product_name": "Specification for Industrial Safety Helmets",
+    "aliases": [
+      "safety helmet",
+      "hard hat",
+      "shock absorption",
+      "penetration resistance",
+      "construction safety",
+      "ppe"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2925:1984",
+    "enforcement_date": "2021-03-01"
+  },
+  {
+    "product_name": "Dimensions for Hot Rolled Steel Beam, Column, Channel and Angle Sections",
+    "aliases": [
+      "steel sections",
+      "i beam",
+      "ismb",
+      "channel section",
+      "ismc",
+      "angle section",
+      "sectional modulus",
+      "hot rolled steel"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 808:2021",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Dimensions for Round and Square Steel Bars for Structural and General Engineering Purposes",
+    "aliases": [
+      "steel bars",
+      "round bars",
+      "square bars",
+      "structural steel",
+      "engineering bars"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1732:1989",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Rolling and Cutting Tolerances for Hot-Rolled Steel Products",
+    "aliases": [
+      "steel tolerances",
+      "camber",
+      "sweep",
+      "out of square",
+      "cutting tolerance",
+      "rolling tolerance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1852:1985",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Hexagon Head Bolts, Screws and Nuts of Product Grade C",
+    "aliases": [
+      "hexagon bolt",
+      "fasteners",
+      "grade c",
+      "structural bolting",
+      "black bolts",
+      "m16",
+      "m20",
+      "m24"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1363 (Part 1):2019",
+    "enforcement_date": "2023-10-01"
+  },
+  {
+    "product_name": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B",
+    "aliases": [
+      "precision bolts",
+      "grade a bolts",
+      "high tensile bolts",
+      "fasteners",
+      "automotive bolts",
+      "class 8.8",
+      "class 10.9"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1364 (Part 1):2018",
+    "enforcement_date": "2023-10-01"
+  },
+  {
+    "product_name": "Technical Supply Conditions for Threaded Fasteners",
+    "aliases": [
+      "threaded fasteners",
+      "bolts and nuts",
+      "tensile strength",
+      "proof load",
+      "hydrogen embrittlement",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1367 (Part 1):2014",
+    "enforcement_date": "2023-10-01"
+  },
+  {
+    "product_name": "Hexagon Socket Head Cap Screws",
+    "aliases": [
+      "socket head cap screw",
+      "allen bolt",
+      "high tensile screw",
+      "grade 12.9",
+      "fasteners",
+      "machinery fasteners"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2269:2006",
+    "enforcement_date": "2023-10-01"
+  },
+  {
+    "product_name": "Steel Plates for Pressure Vessels for Intermediate and High Temperature Service Including Boilers",
+    "aliases": [
+      "boiler plates",
+      "pressure vessel steel",
+      "creep strength",
+      "high temperature steel",
+      "astm a516"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2002:2009",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Low-Voltage Switchgear and Controlgear",
+    "aliases": [
+      "low voltage switchgear",
+      "controlgear",
+      "ip degree",
+      "clearance and creepage",
+      "temperature rise",
+      "dielectric properties"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS/IEC 60947 (Part 1):2007",
+    "enforcement_date": "2020-11-01"
+  },
+  {
+    "product_name": "Low-Voltage Switchgear and Controlgear",
+    "aliases": [
+      "mccb",
+      "acb",
+      "moulded case circuit breaker",
+      "breaking capacity",
+      "icu",
+      "ics",
+      "short circuit",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS/IEC 60947 (Part 2):2016",
+    "enforcement_date": "2020-11-01"
+  },
+  {
+    "product_name": "Low-Voltage Switchgear and Controlgear",
+    "aliases": [
+      "isolator",
+      "switch disconnector",
+      "fuse unit",
+      "main switch",
+      "load break switch",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS/IEC 60947 (Part 3):2012",
+    "enforcement_date": "2020-11-01"
+  },
+  {
+    "product_name": "Low-Voltage Switchgear and Controlgear",
+    "aliases": [
+      "contactor",
+      "motor starter",
+      "dol starter",
+      "star delta",
+      "thermal overload relay",
+      "ac-3 duty",
+      "motor control"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS/IEC 60947 (Part 4/Sec 1):2012",
+    "enforcement_date": "2020-11-01"
+  },
+  {
+    "product_name": "Aluminium Conductors for Overhead Transmission Purposes",
+    "aliases": [
+      "acsr conductor",
+      "overhead transmission",
+      "aluminium conductor",
+      "steel reinforced",
+      "dog conductor",
+      "panther conductor",
+      "zebra conductor"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 398 (Part 2):1996",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Audio, Video and Similar Electronic Apparatus",
+    "aliases": [
+      "audio video",
+      "television",
+      "led tv",
+      "amplifier",
+      "crs mandatory",
+      "meity",
+      "electrical shock",
+      "fire safety"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 616:2017",
+    "enforcement_date": "2018-07-03"
+  },
+  {
+    "product_name": "Uninterruptible Power Systems (UPS)",
+    "aliases": [
+      "ups",
+      "uninterruptible power supply",
+      "inverter",
+      "battery backup",
+      "crs mandatory",
+      "safety test"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16242 (Part 1):2014",
+    "enforcement_date": "2015-05-11"
+  },
+  {
+    "product_name": "Rapid Hardening Portland Cement",
+    "aliases": [
+      "rapid hardening cement",
+      "high early strength",
+      "precast concrete",
+      "c3s rich",
+      "early deshirring"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8041:1990",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Sulphate Resisting Portland Cement",
+    "aliases": [
+      "sulphate resisting cement",
+      "srpc",
+      "coastal foundations",
+      "marine structures",
+      "c3a content",
+      "ettringite resistance"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12330:1988",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Porcelain Insulators for Overhead Power Lines with a Nominal Voltage Greater Than 1000 V",
+    "aliases": [
+      "porcelain insulator",
+      "disc insulator",
+      "pin insulator",
+      "overhead power line",
+      "creepage distance",
+      "flashover voltage"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 731:1971",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Bushings for Alternating Voltages Above 1000 Volts",
+    "aliases": [
+      "transformer bushing",
+      "condenser bushing",
+      "oip bushing",
+      "rip bushing",
+      "tan delta",
+      "high voltage"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2099:1986",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Conduits for Electrical Installations",
+    "aliases": [
+      "electrical conduit",
+      "wiring conduit",
+      "cable management",
+      "fire propagation",
+      "dielectric strength"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9537 (Part 1):1980",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Conduits for Electrical Installations",
+    "aliases": [
+      "pvc conduit",
+      "rigid conduit",
+      "concealed wiring",
+      "fr conduit",
+      "electrical piping"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9537 (Part 3):1983",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "LED Modules for General Lighting",
+    "aliases": [
+      "led module",
+      "led chip board",
+      "lighting safety",
+      "crs mandatory",
+      "meity",
+      "photobiological safety"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16103 (Part 1):2012",
+    "enforcement_date": "2015-05-11"
+  },
+  {
+    "product_name": "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted)",
+    "aliases": [
+      "co2 fire extinguisher",
+      "carbon dioxide",
+      "electrical fire",
+      "clean gas extinguisher",
+      "class b fire"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2878:2004",
+    "enforcement_date": "2020-03-01"
+  },
+  {
+    "product_name": "Portable Fire Extinguishers, Dry Powder (Cartridge and Stored Pressure Types)",
+    "aliases": [
+      "dry powder extinguisher",
+      "dcp",
+      "sodium bicarbonate",
+      "potassium bicarbonate",
+      "stored pressure"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2171:1999",
+    "enforcement_date": "2020-03-01"
+  },
+  {
+    "product_name": "Personal Protective Equipment",
+    "aliases": [
+      "protective footwear",
+      "protective shoes",
+      "100 joules toe cap",
+      "work shoes",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15298 (Part 3):2019",
+    "enforcement_date": "2022-01-01"
+  },
+  {
+    "product_name": "Personal Protective Equipment",
+    "aliases": [
+      "occupational footwear",
+      "slip resistant shoes",
+      "hospital footwear",
+      "cleanroom shoes",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15298 (Part 4):2017",
+    "enforcement_date": "2022-01-01"
+  },
+  {
+    "product_name": "Steel Tubes, Tubulars and Other Wrought Steel Fittings",
+    "aliases": [
+      "pipe fittings",
+      "mild steel sockets",
+      "threaded elbows",
+      "pipe tees",
+      "plumbing fittings"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1239 (Part 2):2011",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "High Density Polyethylene (HDPE) Pipes for Sewerage",
+    "aliases": [
+      "hdpe sewerage pipe",
+      "effluent pipe",
+      "gravity sewer",
+      "butt fusion",
+      "pe 80",
+      "pe 100"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14333:1996",
+    "enforcement_date": "2023-06-01"
+  },
+  {
+    "product_name": "Plain End UPVC Pipes for Underground Sewerage",
+    "aliases": [
+      "upvc underground pipe",
+      "sewer pipe",
+      "ring seal socket",
+      "stiffness class",
+      "sdr 41",
+      "sdr 34"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15328:2003",
+    "enforcement_date": "2023-06-01"
+  },
+  {
+    "product_name": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables",
+    "aliases": [
+      "ehv cable",
+      "66 kv cable",
+      "132 kv cable",
+      "220 kv cable",
+      "corrugated aluminium sheath",
+      "transmission cable"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 7098 (Part 3):1993",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Aluminium Conductors for Overhead Transmission Purposes",
+    "aliases": [
+      "aac conductor",
+      "all aluminium conductor",
+      "overhead distribution",
+      "electrical conductivity",
+      "low tension line"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 398 (Part 1):1996",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Aluminium Conductors for Overhead Transmission Purposes",
+    "aliases": [
+      "aaac conductor",
+      "aluminium alloy conductor",
+      "high corrosion resistance",
+      "coastal transmission line",
+      "panther aaac"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 398 (Part 4):1994",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Residual Current Operated Circuit-Breakers with Integral Overcurrent Protection (RCBOs)",
+    "aliases": [
+      "rcbo",
+      "earth leakage circuit breaker",
+      "combined mcb and rccb",
+      "short circuit",
+      "30ma protection"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12640 (Part 2):2016",
+    "enforcement_date": "2020-09-01"
+  },
+  {
+    "product_name": "Tubular Fluorescent Lamps for General Lighting Service",
+    "aliases": [
+      "fluorescent tube",
+      "tube light",
+      "t8 lamp",
+      "t5 lamp",
+      "lumen output",
+      "color rendering"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2418 (Part 1):1977",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "Electric Ceiling Type Fans",
+    "aliases": [
+      "ceiling fan",
+      "bldc fan",
+      "energy efficiency",
+      "air delivery",
+      "service value",
+      "bee star rating"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15330:2003",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Anhydrous Ammonia",
+    "aliases": [
+      "anhydrous ammonia",
+      "ammonia gas",
+      "refrigerant r717",
+      "fertilizer feedstock",
+      "purity",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15464:2004",
+    "enforcement_date": "2021-06-01"
+  },
+  {
+    "product_name": "Safety Glass",
+    "aliases": [
+      "toughened glass",
+      "tempered glass",
+      "laminated safety glass",
+      "facade glazing",
+      "fragmentation test",
+      "impact resistance",
+      "qco mandatory"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2553 (Part 1):1990",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Medical Textiles",
+    "aliases": [
+      "surgical gown",
+      "surgical drape",
+      "medical textiles",
+      "barrier protection",
+      "liquid penetration",
+      "blood resistance",
+      "cleanroom"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 17354:2020",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "White Portland Cement",
+    "aliases": [
+      "cement",
+      "white cement",
+      "whiteness",
+      "architectural concrete",
+      "terrazzo"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8042:2015",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement",
+    "aliases": [
+      "mild steel bar",
+      "ms bar",
+      "plain rebar",
+      "tensile steel",
+      "concrete reinforcement",
+      "grade 1"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 432 (Part 1):1982",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Hard-Drawn Steel Wire Fabric for Concrete Reinforcement",
+    "aliases": [
+      "wire mesh",
+      "welded wire fabric",
+      "brc mesh",
+      "reinforcement fabric",
+      "concrete slab mesh"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1566:1982",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Galvanized Steel Sheets (Plain and Corrugated)",
+    "aliases": [
+      "galvanized sheet",
+      "gi sheet",
+      "gc sheet",
+      "corrugated roofing",
+      "zinc coating",
+      "tin shed"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 277:2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Cold Reduced Carbon Steel Sheet and Strip",
+    "aliases": [
+      "cr sheet",
+      "cold rolled steel",
+      "deep drawing sheet",
+      "cr steel strip",
+      "sheet metal"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 513 (Part 1):2016",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Hot Rolled Carbon Steel Sheet and Strip",
+    "aliases": [
+      "hr sheet",
+      "hot rolled sheet",
+      "carbon steel strip",
+      "mild steel sheet",
+      "hr coils"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1079:2017",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Pressed Ceramic Tiles",
+    "aliases": [
+      "ceramic tile",
+      "vitrified tile",
+      "glazed tile",
+      "porcelain tile",
+      "wall tile",
+      "floor tile"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15622:2017",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Plywood for General Purposes",
+    "aliases": [
+      "plywood",
+      "mr grade",
+      "bwr grade",
+      "timber plywood",
+      "commercial plywood",
+      "carpentry"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 303:1989",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Marine Plywood",
+    "aliases": [
+      "marine plywood",
+      "bwp plywood",
+      "waterproof plywood",
+      "boiling water proof",
+      "marine grade"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 710:2010",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Wooden Flush Door Shutters (Solid Core Type)",
+    "aliases": [
+      "flush door",
+      "solid core door",
+      "wooden door shutter",
+      "plywood door",
+      "door leaf"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2202 (Part 1):1999",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Safety Glass",
+    "aliases": [
+      "toughened glass",
+      "tempered glass",
+      "laminated glass",
+      "safety glass",
+      "facade glass",
+      "architectural glass"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2553 (Part 1):2018",
+    "enforcement_date": "2023-04-01"
+  },
+  {
+    "product_name": "Water Meters (Domestic Type)",
+    "aliases": [
+      "water meter",
+      "domestic water meter",
+      "flow meter",
+      "water billing meter",
+      "class b meter"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 779:1994",
+    "enforcement_date": "2023-07-01"
+  },
+  {
+    "product_name": "Vitreous Sanitary Appliances",
+    "aliases": [
+      "wash basin",
+      "sanitaryware",
+      "vitreous china",
+      "bathroom basin",
+      "ceramic sink"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2556 (Part 2):2004",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Vitreous Sanitary Appliances",
+    "aliases": [
+      "wc pan",
+      "squatting pan",
+      "orissa pan",
+      "toilet pan",
+      "sanitary ware"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2556 (Part 3):2004",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Line Operated Three-Phase Induction Motors (IE Code)",
+    "aliases": [
+      "induction motor",
+      "electric motor",
+      "ie2 motor",
+      "ie3 motor",
+      "three phase motor",
+      "energy efficient motor"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12615:2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "AC Static Watthour Meters, Class 1 and 2",
+    "aliases": [
+      "energy meter",
+      "electric meter",
+      "watthour meter",
+      "static meter",
+      "class 1 meter",
+      "kwh meter"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13779:1999",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "A.C. Static Direct Connected Watthour Smart Meter, Class 1 and 2",
+    "aliases": [
+      "smart meter",
+      "ami",
+      "smart watthour meter",
+      "two way meter",
+      "prepaid smart meter",
+      "remote disconnect"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16444 (Part 1):2015",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes",
+    "aliases": [
+      "battery safety",
+      "rechargeable battery",
+      "nickel battery",
+      "ni-mh cell",
+      "portable battery"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16046 (Part 1):2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Crystalline Silicon Terrestrial Photovoltaic (PV) Modules",
+    "aliases": [
+      "solar panel",
+      "pv module",
+      "solar photovoltaic",
+      "crystalline silicon",
+      "solar cell",
+      "solar power plant"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14286:2019",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Photovoltaic (PV) Module Safety Qualification",
+    "aliases": [
+      "solar safety",
+      "pv module safety",
+      "solar fire rating",
+      "junction box solar",
+      "class ii solar"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS/IEC 61730 (Part 1):2016",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Safety of Power Converters for Use in Photovoltaic Power Systems",
+    "aliases": [
+      "solar inverter",
+      "grid tie inverter",
+      "pv inverter",
+      "solar power converter",
+      "islanding protection"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16221 (Part 2):2015",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Video Surveillance Systems for Security Applications",
+    "aliases": [
+      "cctv camera",
+      "ip camera",
+      "security camera",
+      "video surveillance",
+      "surveillance system",
+      "night vision camera"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16910:2020",
+    "enforcement_date": "2024-04-09"
+  },
+  {
+    "product_name": "Electric Monoset Pumps for Clear, Cold Water for Agricultural and Domestic Use",
+    "aliases": [
+      "monoset pump",
+      "centrifugal pump",
+      "agricultural pump",
+      "water pump",
+      "irrigation pump",
+      "electric water pump"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9079:2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Submersible Pumpsets for Clear, Cold Water",
+    "aliases": [
+      "submersible pump",
+      "borewell pump",
+      "tubewell pumpset",
+      "submersible motor",
+      "deep well pump"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8034:2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Safety of Household and Similar Electrical Appliances",
+    "aliases": [
+      "electric iron",
+      "steam iron",
+      "dry iron",
+      "clothes iron",
+      "iron safety"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 302 (Part 2/Sec 3):2007",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Safety of Household and Similar Electrical Appliances",
+    "aliases": [
+      "water heater",
+      "geyser",
+      "electric geyser",
+      "storage water heater",
+      "water heating tank"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 302 (Part 2/Sec 21):2011",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Room Air Conditioners",
+    "aliases": [
+      "air conditioner",
+      "window ac",
+      "cooling capacity",
+      "iseer",
+      "room air conditioner",
+      "hvac"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1391 (Part 1):2017",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Room Air Conditioners",
+    "aliases": [
+      "split ac",
+      "inverter ac",
+      "split air conditioner",
+      "inverter air conditioner",
+      "hvac cooling"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1391 (Part 2):2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Industrial Safety Belts and Harnesses",
+    "aliases": [
+      "safety harness",
+      "safety belt",
+      "full body harness",
+      "fall arrester",
+      "working at height",
+      "lanyard"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3521 (Part 1):1999",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Sterile Hypodermic Needles for Single Use",
+    "aliases": [
+      "hypodermic needle",
+      "sterile needle",
+      "injection needle",
+      "disposable needle",
+      "medical needle"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 10654:2020",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Surgical Rubber Gloves",
+    "aliases": [
+      "surgical gloves",
+      "latex gloves",
+      "rubber gloves medical",
+      "operation gloves",
+      "sterile gloves"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 4148:1989",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Medical Examination Gloves Made of Rubber Latex",
+    "aliases": [
+      "examination gloves",
+      "exam gloves",
+      "latex examination gloves",
+      "clinical gloves",
+      "doctor gloves"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15377:2003",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Clinical Thermometers",
+    "aliases": [
+      "digital thermometer",
+      "clinical thermometer",
+      "body temperature thermometer",
+      "fever thermometer",
+      "electronic thermometer"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16568:2016",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Iodized Salt, Vacuum Evaporated Iodized Salt and Refined Iodized Salt",
+    "aliases": [
+      "iodized salt",
+      "edible salt",
+      "table salt",
+      "iodine salt",
+      "cooking salt",
+      "refined salt"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 7224:2006",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "Agricultural Tractors",
+    "aliases": [
+      "tractor test",
+      "agricultural tractor",
+      "pto test",
+      "hydraulic lift tractor",
+      "farm tractor",
+      "drawbar power"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12207:2019",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "car tyre",
+      "radial tyre",
+      "automobile tyre",
+      "passenger car tyre",
+      "tubeless tyre",
+      "pneumatic tyre"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15636:2012",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "truck tyre",
+      "bus tyre",
+      "commercial vehicle tyre",
+      "radial truck tyre",
+      "heavy vehicle tyre"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15633:2005",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "seat belt",
+      "safety belt",
+      "car seat belt",
+      "three point belt",
+      "retractor seat belt",
+      "seatbelt buckle"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15139:2002",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "car horn",
+      "electric horn",
+      "automobile horn",
+      "two wheeler horn",
+      "vehicle warning horn"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1884:1993",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Geosynthetics",
+    "aliases": [
+      "geotextile",
+      "road geotextile",
+      "highway geotextile",
+      "subgrade stabilization",
+      "geosynthetics",
+      "drainage fabric"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16654:2017",
+    "enforcement_date": "2023-04-01"
+  },
+  {
+    "product_name": "Textiles",
+    "aliases": [
+      "flame retardant fabric",
+      "fire proof fabric",
+      "fr textile",
+      "fire resistant cloth",
+      "firefighter fabric"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15748:2022",
+    "enforcement_date": "2023-04-01"
+  },
+  {
+    "product_name": "Textiles",
+    "aliases": [
+      "jute bag",
+      "gunny bag",
+      "bora",
+      "grain packaging bag",
+      "b-twill jute bag"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1265:2021",
+    "enforcement_date": "2022-01-01"
+  },
+  {
+    "product_name": "Textiles",
+    "aliases": [
+      "pp woven sack",
+      "plastic sack",
+      "hdpe woven bag",
+      "grain bag",
+      "polypropylene sack"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14968:2015",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Hydrochloric Acid",
+    "aliases": [
+      "hydrochloric acid",
+      "hcl",
+      "muriatic acid",
+      "industrial acid",
+      "pickling acid"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 265:1993",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Paving Bitumen",
+    "aliases": [
+      "bitumen",
+      "paving bitumen",
+      "vg 30",
+      "vg 40",
+      "asphalt",
+      "tar road",
+      "highway bitumen"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 73:2013",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Wrought Aluminium and Aluminium Alloy Bars, Rods and Sections for General Engineering Purposes",
+    "aliases": [
+      "aluminium section",
+      "extruded aluminium",
+      "alloy 6063",
+      "aluminium bar",
+      "architectural aluminium"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 733:1983",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Wrought Aluminium and Aluminium Alloy Sheet and Strip for General Engineering Purposes",
+    "aliases": [
+      "aluminium sheet",
+      "aluminium coil",
+      "alloy 19000",
+      "alloy 31000",
+      "bus body sheet"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 737:2008",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Brass Tubes for General Purposes",
+    "aliases": [
+      "brass tube",
+      "brass pipe",
+      "copper zinc tube",
+      "heat exchanger tube",
+      "instrumentation tube"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 407:1981",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Technical Supply Conditions for Threaded Steel Fasteners",
+    "aliases": [
+      "bolt 8.8",
+      "high tensile bolt",
+      "grade 8.8 bolt",
+      "structural bolt",
+      "steel screw",
+      "fastener property class"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1367 (Part 3):2017",
+    "enforcement_date": "2024-01-21"
+  },
+  {
+    "product_name": "Grey Iron Castings",
+    "aliases": [
+      "cast iron",
+      "grey iron casting",
+      "fg 200",
+      "fg 260",
+      "manhole frame",
+      "pump casing casting"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 210:2009",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+    "aliases": [
+      "aerial",
+      "bunched",
+      "cables",
+      "for",
+      "working",
+      "voltages",
+      "and",
+      "including",
+      "1100",
+      "power"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14255:1995",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Elastomer Insulated Cables",
+    "aliases": [
+      "elastomer",
+      "insulated",
+      "cables",
+      "for",
+      "working",
+      "voltages",
+      "and",
+      "including",
+      "1100",
+      "cables"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9968 (Part 1):1988",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Low-Voltage Switchgear and Controlgear",
+    "aliases": [
+      "low",
+      "voltage",
+      "switchgear",
+      "and",
+      "controlgear",
+      "circuit",
+      "breakers",
+      "mccb",
+      "acb",
+      "switchgear"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13947 (Part 2):1993",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Low Voltage Fuses for Substantially Skilled Persons (HRC Fuses)",
+    "aliases": [
+      "low",
+      "voltage",
+      "fuses",
+      "for",
+      "substantially",
+      "skilled",
+      "persons",
+      "hrc",
+      "fuses",
+      "switchgear"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13703 (Part 2):1993",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "AC Static Transformer Operated Watthour and VAR-Hour Meters, Class 0.2S and 0.5S",
+    "aliases": [
+      "static",
+      "transformer",
+      "operated",
+      "watthour",
+      "and",
+      "var",
+      "hour",
+      "meters",
+      "class",
+      "and"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14697:1999",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Alternating Current Direct Connected Static Prepayment Meters for Active Energy",
+    "aliases": [
+      "alternating",
+      "current",
+      "direct",
+      "connected",
+      "static",
+      "prepayment",
+      "meters",
+      "for",
+      "active",
+      "energy"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15884:2010",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Stationary Lead-Acid Cells and Batteries with Tubular Positive Plates",
+    "aliases": [
+      "stationary",
+      "lead",
+      "acid",
+      "cells",
+      "and",
+      "batteries",
+      "with",
+      "tubular",
+      "positive",
+      "plates"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1651:2013",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Stationary Lead-Acid Batteries with Valve Regulated Type (VRLA)",
+    "aliases": [
+      "stationary",
+      "lead",
+      "acid",
+      "batteries",
+      "with",
+      "valve",
+      "regulated",
+      "type",
+      "vrla",
+      "batteries"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13369:1992",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Stationary Valve Regulated Lead Acid Batteries",
+    "aliases": [
+      "stationary",
+      "valve",
+      "regulated",
+      "lead",
+      "acid",
+      "batteries",
+      "specification",
+      "batteries",
+      "high",
+      "capacity"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15549:2005",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Electronic Controlgear for LED Modules",
+    "aliases": [
+      "electronic",
+      "controlgear",
+      "for",
+      "led",
+      "modules",
+      "performance",
+      "requirements",
+      "lighting",
+      "electronic",
+      "drivers"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16104:2012",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Three-Phase Induction Motors",
+    "aliases": [
+      "three",
+      "phase",
+      "induction",
+      "motors",
+      "specification",
+      "rotating",
+      "machines",
+      "general",
+      "purpose",
+      "three"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 325:1996",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Single-Phase AC Induction Motors for General Purpose",
+    "aliases": [
+      "single",
+      "phase",
+      "induction",
+      "motors",
+      "for",
+      "general",
+      "purpose",
+      "specification",
+      "rotating",
+      "machines"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 996:2009",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Mobile Phones",
+    "aliases": [
+      "mobile",
+      "phones",
+      "indian",
+      "language",
+      "support",
+      "requirements",
+      "telecommunications",
+      "mandatory",
+      "requirements",
+      "for"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16333 (Part 3):2022",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Coin/Button Cell Batteries",
+    "aliases": [
+      "coin",
+      "button",
+      "cell",
+      "batteries",
+      "safety",
+      "requirements",
+      "batteries",
+      "safety",
+      "requirements",
+      "and"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16047:2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Test Procedure of Islanding Prevention Measures for Utility-Interconnected Photovoltaic Inverters",
+    "aliases": [
+      "test",
+      "procedure",
+      "islanding",
+      "prevention",
+      "measures",
+      "for",
+      "utility",
+      "interconnected",
+      "photovoltaic",
+      "inverters"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16169:2014",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Biometric Devices for Aadhaar and Access Control Applications",
+    "aliases": [
+      "biometric",
+      "devices",
+      "for",
+      "aadhaar",
+      "and",
+      "access",
+      "control",
+      "applications",
+      "security",
+      "systems"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16345:2019",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Explosive Atmospheres",
+    "aliases": [
+      "explosive",
+      "atmospheres",
+      "equipment",
+      "general",
+      "requirements",
+      "industrial",
+      "electronics",
+      "general",
+      "construction",
+      "and"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS/IEC 60079 (Part 0):2017",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B",
+    "aliases": [
+      "hexagon",
+      "head",
+      "bolts",
+      "screws",
+      "and",
+      "nuts",
+      "product",
+      "grades",
+      "and",
+      "hexagon"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1364 (Part 2):2018",
+    "enforcement_date": "2024-01-21"
+  },
+  {
+    "product_name": "Horizontal Centrifugal Pumps for Clear, Cold Water",
+    "aliases": [
+      "horizontal",
+      "centrifugal",
+      "pumps",
+      "for",
+      "clear",
+      "cold",
+      "water",
+      "agricultural",
+      "and",
+      "domestic"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 6595 (Part 1):1993",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Domestic Refrigerators with Integral Frozen Food Compartment",
+    "aliases": [
+      "domestic",
+      "refrigerators",
+      "with",
+      "integral",
+      "frozen",
+      "food",
+      "compartment",
+      "specification",
+      "domestic",
+      "appliances"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1476 (Part 1):2000",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Electric Immersion Water Heaters",
+    "aliases": [
+      "electric",
+      "immersion",
+      "water",
+      "heaters",
+      "specification",
+      "domestic",
+      "appliances",
+      "portable",
+      "heating",
+      "immersion"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 368:2014",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Flushing Cisterns for Water Closets and Urinals (Other than Plastic Cisterns)",
+    "aliases": [
+      "flushing",
+      "cisterns",
+      "for",
+      "water",
+      "closets",
+      "and",
+      "urinals",
+      "other",
+      "than",
+      "plastic"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 774:2004",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Ceramic Tiles",
+    "aliases": [
+      "ceramic",
+      "tiles",
+      "methods",
+      "test",
+      "sampling",
+      "and",
+      "basis",
+      "for",
+      "acceptance",
+      "flooring"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13630 (Part 1):2019",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Blockboards",
+    "aliases": [
+      "blockboards",
+      "specification",
+      "wood",
+      "timber",
+      "products",
+      "solid",
+      "core",
+      "blockboards",
+      "manufactured",
+      "from"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1659:2004",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Veneered Decorative Plywood",
+    "aliases": [
+      "veneered",
+      "decorative",
+      "plywood",
+      "specification",
+      "wood",
+      "timber",
+      "products",
+      "decorative",
+      "plywood",
+      "with"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1328:1996",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Medium Density Fibreboards (MDF) for General Purpose",
+    "aliases": [
+      "medium",
+      "density",
+      "fibreboards",
+      "mdf",
+      "for",
+      "general",
+      "purpose",
+      "specification",
+      "wood",
+      "timber"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12406:2003",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Prelaminated Medium Density Fibreboard",
+    "aliases": [
+      "prelaminated",
+      "medium",
+      "density",
+      "fibreboard",
+      "specification",
+      "wood",
+      "timber",
+      "products",
+      "melamine",
+      "faced"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14587:1998",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Bleaching Powder, Stable",
+    "aliases": [
+      "bleaching",
+      "powder",
+      "stable",
+      "specification",
+      "water",
+      "treatment",
+      "specifies",
+      "stable",
+      "chlorinated",
+      "lime"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1065:1989",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Compressed Oxygen Gas",
+    "aliases": [
+      "compressed",
+      "oxygen",
+      "gas",
+      "specification",
+      "industrial",
+      "gases",
+      "medical",
+      "and",
+      "industrial",
+      "compressed"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 309:2005",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Milk Powder",
+    "aliases": [
+      "milk",
+      "powder",
+      "specification",
+      "dairy",
+      "products",
+      "physical",
+      "chemical",
+      "and",
+      "microbiological",
+      "requirements"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1165:2002",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "Infant Milk Substitutes",
+    "aliases": [
+      "infant",
+      "milk",
+      "substitutes",
+      "specification",
+      "infant",
+      "nutrition",
+      "formulation",
+      "requirements",
+      "for",
+      "spray"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12220:1987",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "brakes",
+      "and",
+      "braking",
+      "systems",
+      "terminology",
+      "and",
+      "definitions",
+      "vehicle"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 11852 (Part 1):2001",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "brakes",
+      "and",
+      "braking",
+      "systems",
+      "requirements",
+      "for",
+      "passenger",
+      "cars"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 11852 (Part 3):2001",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "wheel",
+      "rims",
+      "dimensions",
+      "and",
+      "test",
+      "methods",
+      "tyres",
+      "wheels"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9438:2018",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Automotive Vehicles",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "rear",
+      "view",
+      "mirrors",
+      "specification",
+      "vehicle",
+      "safety",
+      "field",
+      "view"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14494:1998",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Eye-Protectors",
+    "aliases": [
+      "eye",
+      "protectors",
+      "specification",
+      "personal",
+      "protective",
+      "equipment",
+      "optical",
+      "and",
+      "mechanical",
+      "impact"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 5983:1980",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Safety Rubber Boots",
+    "aliases": [
+      "safety",
+      "rubber",
+      "boots",
+      "specification",
+      "personal",
+      "protective",
+      "equipment",
+      "moulded",
+      "waterproof",
+      "rubber"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14352:1996",
+    "enforcement_date": "2023-07-01"
+  },
+  {
+    "product_name": "Industrial Safety Gloves",
+    "aliases": [
+      "industrial",
+      "safety",
+      "gloves",
+      "leather",
+      "and",
+      "cotton",
+      "gloves",
+      "personal",
+      "protective",
+      "equipment"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 6994 (Part 1):1973",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Infusion Sets for Single Use",
+    "aliases": [
+      "infusion",
+      "sets",
+      "for",
+      "single",
+      "use",
+      "specification",
+      "surgical",
+      "consumables",
+      "requirements",
+      "for"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14920:2001",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Safety of Toys",
+    "aliases": [
+      "safety",
+      "toys",
+      "migration",
+      "certain",
+      "elements",
+      "toxic",
+      "heavy",
+      "metals",
+      "toy",
+      "safety"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9873 (Part 3):2020",
+    "enforcement_date": "2021-01-01"
+  },
+  {
+    "product_name": "Steel Tubes, Tubulars and Other Wrought Steel Fittings",
+    "aliases": [
+      "steel",
+      "tubes",
+      "tubulars",
+      "and",
+      "other",
+      "wrought",
+      "steel",
+      "fittings"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1239 (Part 2):2004",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Ductile Iron Fittings for Pressure Pipes for Water, Gas and Sewage",
+    "aliases": [
+      "ductile",
+      "iron",
+      "fittings",
+      "for",
+      "pressure",
+      "pipes",
+      "for",
+      "water"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 9523:2000",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Supersulphated Cement",
+    "aliases": [
+      "supersulphated",
+      "cement",
+      "specification",
+      "cement",
+      "binders"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 6909:1990",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Hydrophobic Portland Cement",
+    "aliases": [
+      "hydrophobic",
+      "portland",
+      "cement",
+      "specification",
+      "cement",
+      "binders"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8043:1991",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Masonry Cement",
+    "aliases": [
+      "masonry",
+      "cement",
+      "specification",
+      "cement",
+      "binders"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3466:1988",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Low Heat Portland Cement",
+    "aliases": [
+      "low",
+      "heat",
+      "portland",
+      "cement",
+      "specification",
+      "cement",
+      "binders"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12600:1989",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Ceramic Tiles",
+    "aliases": [
+      "ceramic",
+      "tiles",
+      "determination",
+      "water",
+      "absorption",
+      "and",
+      "bulk",
+      "density"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13630 (Part 2):2019",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Ceramic Tiles",
+    "aliases": [
+      "ceramic",
+      "tiles",
+      "determination",
+      "modulus",
+      "rupture",
+      "and",
+      "breaking",
+      "strength"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13630 (Part 6):2019",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Timber Paneled and Glazed Shutters",
+    "aliases": [
+      "timber",
+      "paneled",
+      "and",
+      "glazed",
+      "shutters",
+      "door",
+      "shutters",
+      "doors"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1003 (Part 1):2003",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Timber Paneled and Glazed Shutters",
+    "aliases": [
+      "timber",
+      "paneled",
+      "and",
+      "glazed",
+      "shutters",
+      "window",
+      "and",
+      "ventilator"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1003 (Part 2):2003",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Particle Boards of Wood and Other Lignocellulosic Materials",
+    "aliases": [
+      "particle",
+      "boards",
+      "wood",
+      "and",
+      "other",
+      "lignocellulosic",
+      "materials",
+      "specification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3087:2005",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Prelaminated Particle Boards",
+    "aliases": [
+      "prelaminated",
+      "particle",
+      "boards",
+      "specification",
+      "wood",
+      "timber",
+      "products"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 12823:2015",
+    "enforcement_date": "2024-02-28"
+  },
+  {
+    "product_name": "Flat Transparent Sheet Glass",
+    "aliases": [
+      "flat",
+      "transparent",
+      "sheet",
+      "glass",
+      "specification",
+      "glass",
+      "glazing"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2835:1987",
+    "enforcement_date": "2023-04-01"
+  },
+  {
+    "product_name": "Transparent Float Glass",
+    "aliases": [
+      "transparent",
+      "float",
+      "glass",
+      "specification",
+      "glass",
+      "glazing"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14900:2000",
+    "enforcement_date": "2023-04-01"
+  },
+  {
+    "product_name": "General Requirements for Cold-Rolled Carbon Steel Strip for Springs",
+    "aliases": [
+      "general",
+      "requirements",
+      "for",
+      "cold",
+      "rolled",
+      "carbon",
+      "steel",
+      "strip"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 5435:1987",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Carbon Steel Billets, Blooms, Slabs and Bars for Forgings",
+    "aliases": [
+      "carbon",
+      "steel",
+      "billets",
+      "blooms",
+      "slabs",
+      "and",
+      "bars",
+      "for"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1875:1992",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Carbon Steel Forgings for General Engineering Purposes",
+    "aliases": [
+      "carbon",
+      "steel",
+      "forgings",
+      "for",
+      "general",
+      "engineering",
+      "purposes",
+      "forging"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2004:1991",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Iron Castings with Spheroidal or Nodular Graphite",
+    "aliases": [
+      "iron",
+      "castings",
+      "with",
+      "spheroidal",
+      "nodular",
+      "graphite",
+      "specification",
+      "foundry"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1865:1991",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Malleable Iron Castings",
+    "aliases": [
+      "malleable",
+      "iron",
+      "castings",
+      "specification",
+      "foundry",
+      "products"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14329:1995",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Wrought Aluminium and Aluminium Alloy Extruded Round Tube",
+    "aliases": [
+      "wrought",
+      "aluminium",
+      "and",
+      "aluminium",
+      "alloy",
+      "extruded",
+      "round",
+      "tube"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1285:2002",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Free Cutting Lead-Bearing Brass Bars, Rods and Sections",
+    "aliases": [
+      "free",
+      "cutting",
+      "lead",
+      "bearing",
+      "brass",
+      "bars",
+      "rods",
+      "and"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 319:2007",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Copper",
+    "aliases": [
+      "copper",
+      "specification",
+      "ingots",
+      "bars",
+      "cathodes",
+      "non",
+      "ferrous",
+      "metals"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 191:2007",
+    "enforcement_date": "2023-09-01"
+  },
+  {
+    "product_name": "Heat Resistant PVC Insulated Cables for Working Voltages up to 1100 V",
+    "aliases": [
+      "heat",
+      "resistant",
+      "pvc",
+      "insulated",
+      "cables",
+      "for",
+      "working",
+      "voltages"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 694 (Part 2):2020",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Low Carbon Galvanized Steel Wires, Formed Wires and Tapes for Armouring of Cables",
+    "aliases": [
+      "low",
+      "carbon",
+      "galvanized",
+      "steel",
+      "wires",
+      "formed",
+      "wires",
+      "and"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3975:1999",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Conductors for Insulated Electric Cables and Flexible Cords",
+    "aliases": [
+      "conductors",
+      "for",
+      "insulated",
+      "electric",
+      "cables",
+      "and",
+      "flexible",
+      "cords"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8130:2013",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "New Insulating Oils",
+    "aliases": [
+      "new",
+      "insulating",
+      "oils",
+      "specification",
+      "mineral",
+      "insulating",
+      "oil",
+      "for"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 335:2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Low Voltage Switchgear and Controlgear",
+    "aliases": [
+      "low",
+      "voltage",
+      "switchgear",
+      "and",
+      "controlgear",
+      "contactors",
+      "and",
+      "motor"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16503:2017",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Lamp Controlgear",
+    "aliases": [
+      "lamp",
+      "controlgear",
+      "general",
+      "and",
+      "safety",
+      "requirements",
+      "lighting"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15885 (Part 1):2011",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Lamp Controlgear",
+    "aliases": [
+      "lamp",
+      "controlgear",
+      "particular",
+      "requirements",
+      "for",
+      "supplied",
+      "electronic",
+      "controlgear"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15885 (Part 2/Sec 13):2012",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Self-Ballasted LED Lamps for General Lighting Services",
+    "aliases": [
+      "self",
+      "ballasted",
+      "led",
+      "lamps",
+      "for",
+      "general",
+      "lighting",
+      "services"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16102 (Part 2):2012",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "LED Modules for General Lighting",
+    "aliases": [
+      "led",
+      "modules",
+      "for",
+      "general",
+      "lighting",
+      "performance",
+      "requirements",
+      "lighting"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16103 (Part 2):2012",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Photobiological Safety of Lamps and Lamp Systems (Blue Light Hazard)",
+    "aliases": [
+      "photobiological",
+      "safety",
+      "lamps",
+      "and",
+      "lamp",
+      "systems",
+      "blue",
+      "light"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16108:2012",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Miniature Fuses",
+    "aliases": [
+      "miniature",
+      "fuses",
+      "cartridge",
+      "fuse",
+      "links",
+      "circuit",
+      "protection"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16504:2017",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Digital Cellular Telecommunications System",
+    "aliases": [
+      "digital",
+      "cellular",
+      "telecommunications",
+      "system",
+      "mobile",
+      "station",
+      "equipment",
+      "telecommunications"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 14144:1994",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Telecom Power Supplies",
+    "aliases": [
+      "telecom",
+      "power",
+      "supplies",
+      "switch",
+      "mode",
+      "power",
+      "supply",
+      "smps"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15144:2002",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Agrotextiles",
+    "aliases": [
+      "agrotextiles",
+      "shade",
+      "nets",
+      "for",
+      "agriculture",
+      "and",
+      "horticulture",
+      "specification"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16391:2015",
+    "enforcement_date": "2023-04-01"
+  },
+  {
+    "product_name": "Textiles",
+    "aliases": [
+      "textiles",
+      "high",
+      "density",
+      "polyethylene",
+      "hdpe",
+      "polypropylene",
+      "woven",
+      "sacks"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 16186:2014",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Polyethylene for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
+    "aliases": [
+      "polyethylene",
+      "for",
+      "its",
+      "safe",
+      "use",
+      "contact",
+      "with",
+      "foodstuffs"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 10146:1982",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Printing Ink for Food Packaging",
+    "aliases": [
+      "printing",
+      "ink",
+      "for",
+      "food",
+      "packaging",
+      "code",
+      "practice",
+      "food"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15495:2020",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Petroleum Hydrocarbon Solvents",
+    "aliases": [
+      "petroleum",
+      "hydrocarbon",
+      "solvents",
+      "specification",
+      "industrial",
+      "solvents"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1745:1978",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Caustic Soda, Pure and Technical",
+    "aliases": [
+      "caustic",
+      "soda",
+      "pure",
+      "and",
+      "technical",
+      "specification",
+      "industrial",
+      "alkalis"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 1011:2002",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Di-Ammonium Phosphate (DAP)",
+    "aliases": [
+      "ammonium",
+      "phosphate",
+      "dap",
+      "specification",
+      "fertilizers"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 276:2000",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Single Superphosphate (SSP)",
+    "aliases": [
+      "single",
+      "superphosphate",
+      "ssp",
+      "specification",
+      "fertilizers"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 5145:1969",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Agricultural Tractors",
+    "aliases": [
+      "agricultural",
+      "tractors",
+      "rear",
+      "mounted",
+      "power",
+      "take",
+      "off",
+      "pto"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 4931:1995",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Regenerative Pumps for Clear, Cold Water",
+    "aliases": [
+      "regenerative",
+      "pumps",
+      "for",
+      "clear",
+      "cold",
+      "water",
+      "specification",
+      "pumps"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8472:1998",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Centrifugal Electric Water Heaters / Instant Geysers",
+    "aliases": [
+      "centrifugal",
+      "electric",
+      "water",
+      "heaters",
+      "instant",
+      "geysers",
+      "specification",
+      "domestic"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 8978:1992",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Electric Dry Irons",
+    "aliases": [
+      "electric",
+      "dry",
+      "irons",
+      "specification",
+      "domestic",
+      "appliances"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 366:1991",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Specification for Performance of Small Capacity Diesel Engines for Agricultural Purposes",
+    "aliases": [
+      "specification",
+      "for",
+      "performance",
+      "small",
+      "capacity",
+      "diesel",
+      "engines",
+      "for"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 7347:1974",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Safety Glass for Road Vehicles",
+    "aliases": [
+      "safety",
+      "glass",
+      "for",
+      "road",
+      "vehicles",
+      "methods",
+      "testing",
+      "automotive"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 15140:2003",
+    "enforcement_date": "2021-04-01"
+  },
+  {
+    "product_name": "Clinical Thermometers",
+    "aliases": [
+      "clinical",
+      "thermometers",
+      "solid",
+      "stem",
+      "type",
+      "diagnostic",
+      "devices"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 3055:1994",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Sterile Hypodermic Syringes for Single Use",
+    "aliases": [
+      "sterile",
+      "hypodermic",
+      "syringes",
+      "for",
+      "single",
+      "use",
+      "specification",
+      "surgical"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 13422:2020",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Rubber Sealing Rings for Gas Mains, Water Mains and Sewers",
+    "aliases": [
+      "rubber",
+      "sealing",
+      "rings",
+      "for",
+      "gas",
+      "mains",
+      "water",
+      "mains"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 5382:2018",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Selection, Installation and Maintenance of Automatic Fire Detection and Alarm System",
+    "aliases": [
+      "selection",
+      "installation",
+      "and",
+      "maintenance",
+      "automatic",
+      "fire",
+      "detection",
+      "and"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 2189:2014",
+    "enforcement_date": "2023-01-01"
+  },
+  {
+    "product_name": "Refillable Seamless Steel Gas Cylinders",
+    "aliases": [
+      "gas cylinder",
+      "seamless cylinder",
+      "cng cylinder",
+      "oxygen cylinder",
+      "steel cylinder",
+      "peso approved"
+    ],
+    "is_qco_mandatory": true,
+    "applicable_is_number": "IS 7285 (Part 1):2018",
+    "enforcement_date": "2023-01-01"
+  }
+]

@@ -1,0 +1,213 @@
+{
+  "helmet": [
+    "safety helmet",
+    "protective headgear",
+    "motorcycle helmet",
+    "two wheeler helmet",
+    "industrial helmet",
+    "hard hat"
+  ],
+  "wire": [
+    "electrical cable",
+    "insulated wire",
+    "copper conductor",
+    "building wire",
+    "wiring cable",
+    "single core cable"
+  ],
+  "pvc cable": [
+    "insulated wire",
+    "pvc insulated cable",
+    "power cable",
+    "copper wiring",
+    "lt cable",
+    "flexible cable"
+  ],
+  "tmt": [
+    "steel reinforcement bar",
+    "high strength deformed bar",
+    "rebar",
+    "fe 500",
+    "fe 500d",
+    "fe 550",
+    "thermo mechanically treated bar"
+  ],
+  "cement": [
+    "ordinary portland cement",
+    "opc",
+    "portland pozzolana cement",
+    "ppc",
+    "opc 43",
+    "opc 53",
+    "hydraulic cement",
+    "clinker"
+  ],
+  "pipe": [
+    "water pipe",
+    "upvc pipe",
+    "cpvc pipe",
+    "hdpe pipe",
+    "gi pipe",
+    "potable water supply pipe",
+    "conduit",
+    "drainage pipe"
+  ],
+  "cooker": [
+    "domestic pressure cooker",
+    "pressure cooker",
+    "autoclave cooking",
+    "stainless steel cooker",
+    "aluminium cooker"
+  ],
+  "paint": [
+    "emulsion paint",
+    "exterior emulsion",
+    "interior paint",
+    "synthetic enamel",
+    "water thinned paint",
+    "primer paint"
+  ],
+  "led": [
+    "led luminaire",
+    "led street light",
+    "led bulb",
+    "outdoor luminaire",
+    "led lamp",
+    "led lighting fixture"
+  ],
+  "solar": [
+    "photovoltaic module",
+    "solar panel",
+    "pv module",
+    "crystalline silicon module",
+    "solar inverter",
+    "solar lighting"
+  ],
+  "extinguisher": [
+    "fire extinguisher",
+    "portable fire extinguisher",
+    "abc dry powder",
+    "co2 extinguisher",
+    "water type extinguisher"
+  ],
+  "transformer": [
+    "distribution transformer",
+    "power transformer",
+    "outdoor transformer",
+    "oil immersed transformer",
+    "step down transformer"
+  ],
+  "switchgear": [
+    "circuit breaker",
+    "mcb",
+    "mccb",
+    "rccb",
+    "low voltage switchgear",
+    "distribution board",
+    "isolator"
+  ],
+  "motor": [
+    "induction motor",
+    "three phase motor",
+    "energy efficient motor",
+    "ie2 motor",
+    "ie3 motor",
+    "electric motor"
+  ],
+  "meter": [
+    "energy meter",
+    "static watthour meter",
+    "smart meter",
+    "water meter",
+    "prepayment meter"
+  ],
+  "battery": [
+    "lead acid battery",
+    "vrla battery",
+    "tubular battery",
+    "lithium ion cell",
+    "secondary storage battery"
+  ],
+  "gloves": [
+    "surgical gloves",
+    "examination gloves",
+    "rubber gloves",
+    "industrial safety gloves"
+  ],
+  "mask": [
+    "respiratory mask",
+    "n95 mask",
+    "medical face mask",
+    "particulate filtering mask",
+    "surgical mask"
+  ],
+  "shoes": [
+    "safety footwear",
+    "safety shoes",
+    "steel toe boot",
+    "industrial shoes"
+  ],
+  "valve": [
+    "sluice valve",
+    "gate valve",
+    "butterfly valve",
+    "check valve",
+    "reflux valve",
+    "ball valve"
+  ],
+  "सीमेंट": [
+    "cement",
+    "opc",
+    "ppc",
+    "ordinary portland cement"
+  ],
+  "हेलमेट": [
+    "helmet",
+    "safety helmet",
+    "protective headgear"
+  ],
+  "स्टील": [
+    "steel",
+    "tmt",
+    "rebar",
+    "reinforcement bar"
+  ],
+  "सरिया": [
+    "tmt",
+    "rebar",
+    "steel bar",
+    "reinforcement"
+  ],
+  "तार": [
+    "wire",
+    "cable",
+    "conductor",
+    "insulated wire"
+  ],
+  "केबल": [
+    "cable",
+    "wire",
+    "pvc cable",
+    "electrical cable"
+  ],
+  "पाइप": [
+    "pipe",
+    "pvc pipe",
+    "hdpe pipe",
+    "plumbing pipe"
+  ],
+  "कुकर": [
+    "cooker",
+    "pressure cooker"
+  ],
+  "सोलर": [
+    "solar",
+    "photovoltaic",
+    "pv module"
+  ],
+  "पेंट": [
+    "paint",
+    "emulsion",
+    "enamel"
+  ]
+}

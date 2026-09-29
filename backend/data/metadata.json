@@ -1,0 +1,13 @@
+{
+  "dataset_name": "MANAK-AI BIS Standards Knowledge Base",
+  "version": "2.5.0",
+  "total_standards": 528,
+  "total_departments": 14,
+  "total_qco_products": 260,
+  "total_sectors": 20,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "last_generated_date": "2026-09-28T23:37:28.329783",
+  "checksum": "f8c78e97d036c272bc2a724fd50f4485a289176aa216fc2075d4aca7d980314f",
+  "provenance": "Bureau of Indian Standards Official Gazette & Technical Division Specifications"
+}

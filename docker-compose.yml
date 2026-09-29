@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: manak_db
+    environment:
+      POSTGRES_USER: manak
+      POSTGRES_PASSWORD: manak
+      POSTGRES_DB: manak_ai
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U manak -d manak_ai"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    container_name: manak_backend
+    environment:
+      DATABASE_URL: postgresql://manak:manak@db:5432/manak_ai
+      ABSTAIN_THRESHOLD: "40"
+      EMBEDDING_MODEL: "all-MiniLM-L6-v2"
+      CORS_ORIGINS: "*"
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend/data:/backend/data
+
+  frontend:
+    image: node:20-alpine
+    container_name: manak_frontend
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_TARGET=http://backend:8000
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:

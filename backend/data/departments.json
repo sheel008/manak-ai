@@ -1,0 +1,340 @@
+[
+  {
+    "id": 1,
+    "name": "Civil Engineering",
+    "code": "CED",
+    "officer_name": "Rajesh Kumar",
+    "designation": "Head & Scientist-F (Civil Engineering)",
+    "aliases": [
+      "CED",
+      "Civil",
+      "Construction",
+      "Structural",
+      "Buildings",
+      "Piping",
+      "Public Health"
+    ],
+    "sectors": [
+      "Construction & Infrastructure",
+      "Housing",
+      "Water Supply & Sewerage",
+      "Roads & Highways",
+      "Dams & Ports"
+    ],
+    "scope": "Formulation of Indian Standards covering building materials, structural design, foundation engineering, construction management, water supply, sewage, and disaster mitigation."
+  },
+  {
+    "id": 2,
+    "name": "Electrotechnical",
+    "code": "ETD",
+    "officer_name": "Amit Sharma",
+    "designation": "Head & Scientist-F (Electrotechnical)",
+    "aliases": [
+      "ETD",
+      "Electrical",
+      "Power",
+      "Cables",
+      "Transformers",
+      "Motors",
+      "Energy",
+      "Lighting"
+    ],
+    "sectors": [
+      "Power Generation & Transmission",
+      "Electrical Installations",
+      "Illumination Engineering",
+      "Industrial Drives",
+      "Renewable Energy"
+    ],
+    "scope": "Standards for power generation, transmission, distribution, wiring accessories, electrical safety, rotating machines, power transformers, switchgear, and energy storage."
+  },
+  {
+    "id": 3,
+    "name": "Electronics & Information Technology",
+    "code": "LITD",
+    "officer_name": "Priya Singh",
+    "designation": "Head & Scientist-F (Electronics & IT)",
+    "aliases": [
+      "LITD",
+      "Electronics",
+      "IT",
+      "Computers",
+      "Telecom",
+      "Solar PV",
+      "Software",
+      "Cybersecurity",
+      "CCTV"
+    ],
+    "sectors": [
+      "Consumer Electronics",
+      "Information Technology",
+      "Telecommunications",
+      "Solar Photovoltaic",
+      "Security Systems"
+    ],
+    "scope": "Standards for IT hardware, solar PV modules, audio-video equipment, telecommunications, biometric devices, power electronics, and artificial intelligence."
+  },
+  {
+    "id": 4,
+    "name": "Mechanical Engineering",
+    "code": "MED",
+    "officer_name": "Anil Gupta",
+    "designation": "Head & Scientist-F (Mechanical Engineering)",
+    "aliases": [
+      "MED",
+      "Mechanical",
+      "Pumps",
+      "Boilers",
+      "Valves",
+      "Compressors",
+      "Machinery",
+      "Appliances"
+    ],
+    "sectors": [
+      "Industrial Machinery",
+      "Fluid Power & Pumps",
+      "Refrigeration & Air Conditioning",
+      "Domestic Appliances",
+      "Pressure Vessels"
+    ],
+    "scope": "Standards for pumps, compressors, boilers, pressure vessels, domestic appliances, refrigeration, piping accessories, and fluid mechanics."
+  },
+  {
+    "id": 5,
+    "name": "Chemicals",
+    "code": "CHD",
+    "officer_name": "Sunita Verma",
+    "designation": "Head & Scientist-F (Chemicals)",
+    "aliases": [
+      "CHD",
+      "Chemical",
+      "Paints",
+      "Paints & Coatings",
+      "Polymers",
+      "Acids",
+      "Water Treatment",
+      "Explosives"
+    ],
+    "sectors": [
+      "Industrial Chemicals",
+      "Paints & Varnishes",
+      "Water Purification",
+      "Petrochemicals",
+      "Rubber & Plastics"
+    ],
+    "scope": "Standards for industrial raw materials, paints, varnishes, synthetic polymers, water treatment chemicals, industrial gases, and adhesives."
+  },
+  {
+    "id": 6,
+    "name": "Food & Agriculture",
+    "code": "FAD",
+    "officer_name": "Dr. Ramesh Patel",
+    "designation": "Head & Scientist-F (Food & Agriculture)",
+    "aliases": [
+      "FAD",
+      "Food",
+      "Agriculture",
+      "Dairy",
+      "Beverages",
+      "Tractors",
+      "Irrigation"
+    ],
+    "sectors": [
+      "Food Processing & Safety",
+      "Dairy Products",
+      "Agricultural Machinery",
+      "Irrigation Equipment",
+      "Beverages & Water"
+    ],
+    "scope": "Standards for food safety, processed food products, agricultural machinery, irrigation systems, dairy products, and packaged drinking water."
+  },
+  {
+    "id": 7,
+    "name": "Medical Equipment & Hospital Planning",
+    "code": "MHD",
+    "officer_name": "Dr. Neha Kapoor",
+    "designation": "Head & Scientist-F (Medical Equipment)",
+    "aliases": [
+      "MHD",
+      "Medical",
+      "Healthcare",
+      "Hospital",
+      "Surgical",
+      "PPE",
+      "Syringes"
+    ],
+    "sectors": [
+      "Medical Devices",
+      "Hospital Infrastructure",
+      "Surgical Consumables",
+      "Diagnostic Equipment",
+      "Clinical Instruments"
+    ],
+    "scope": "Standards for medical electrical equipment, surgical instruments, single-use consumables, hospital planning, and clinical diagnostics."
+  },
+  {
+    "id": 8,
+    "name": "Transport Engineering",
+    "code": "TED",
+    "officer_name": "Vikram Malhotra",
+    "designation": "Head & Scientist-F (Transport Engineering)",
+    "aliases": [
+      "TED",
+      "Automotive",
+      "Vehicles",
+      "Tyres",
+      "Helmets",
+      "Railways",
+      "Aviation"
+    ],
+    "sectors": [
+      "Automotive Industry",
+      "Railway Equipment",
+      "Marine Engineering",
+      "Electric Vehicles",
+      "Road Safety"
+    ],
+    "scope": "Standards for road vehicles, automotive components, two-wheelers, protective helmets, automotive tyres, and railway rolling stock."
+  },
+  {
+    "id": 9,
+    "name": "Textiles",
+    "code": "TXD",
+    "officer_name": "Kavita Reddy",
+    "designation": "Head & Scientist-F (Textiles)",
+    "aliases": [
+      "TXD",
+      "Textile",
+      "Fabrics",
+      "Yarn",
+      "Geotextiles",
+      "Apparel",
+      "Jute"
+    ],
+    "sectors": [
+      "Technical Textiles",
+      "Geotextiles",
+      "Protective Clothing",
+      "Packaging Textiles",
+      "Apparel & Home Textiles"
+    ],
+    "scope": "Standards for natural and man-made fibres, protective fabrics, geotextiles, agrotextiles, and packaging materials."
+  },
+  {
+    "id": 10,
+    "name": "Metallurgical Engineering",
+    "code": "MTD",
+    "officer_name": "Sanjay Deshmukh",
+    "designation": "Head & Scientist-F (Metallurgical Engineering)",
+    "aliases": [
+      "MTD",
+      "Metallurgy",
+      "Steel",
+      "Metals",
+      "Foundry",
+      "Alloys",
+      "Castings"
+    ],
+    "sectors": [
+      "Iron & Steel Production",
+      "Non-Ferrous Metals",
+      "Foundry & Castings",
+      "Welding Consumables",
+      "Corrosion Protection"
+    ],
+    "scope": "Standards for raw iron, steel bars, structural sections, non-ferrous alloys, foundry items, and metallurgical testing methods."
+  },
+  {
+    "id": 11,
+    "name": "Petroleum, Coal & Related Products",
+    "code": "PCD",
+    "officer_name": "Deepak Joshi",
+    "designation": "Head & Scientist-F (Petroleum & Coal)",
+    "aliases": [
+      "PCD",
+      "Petroleum",
+      "Fuels",
+      "Lubricants",
+      "Coal",
+      "Bitumen",
+      "Natural Gas"
+    ],
+    "sectors": [
+      "Oil Refining & Petrochemicals",
+      "Lubricants & Greases",
+      "Road Bitumen",
+      "Coal & Coke",
+      "Gas Distribution"
+    ],
+    "scope": "Standards for automotive fuels, industrial lubricants, bitumen for paving, coal classification, and petroleum products testing."
+  },
+  {
+    "id": 12,
+    "name": "Production & General Engineering",
+    "code": "PGD",
+    "officer_name": "Arun Saxena",
+    "designation": "Head & Scientist-F (Production Engineering)",
+    "aliases": [
+      "PGD",
+      "Fasteners",
+      "Tools",
+      "Bearings",
+      "Gears",
+      "Metrology",
+      "Drawing"
+    ],
+    "sectors": [
+      "Mechanical Fasteners",
+      "Cutting Tools & Hand Tools",
+      "Bearings & Power Transmission",
+      "Engineering Metrology",
+      "Packaging"
+    ],
+    "scope": "Standards for bolts, nuts, hand tools, rolling bearings, gears, metrology, limits and fits, and packaging containers."
+  },
+  {
+    "id": 13,
+    "name": "Water Resources / Environment",
+    "code": "WRD",
+    "officer_name": "Meenakshi Sundaram",
+    "designation": "Head & Scientist-F (Water Resources)",
+    "aliases": [
+      "WRD",
+      "Water Resources",
+      "Environment",
+      "Irrigation Dams",
+      "Pollution Control",
+      "EIA"
+    ],
+    "sectors": [
+      "Water Resources Management",
+      "Hydraulic Structures",
+      "Environmental Engineering",
+      "Irrigation Canals",
+      "Groundwater"
+    ],
+    "scope": "Standards for barrage and dam construction, flood management, groundwater recharge, environmental impact assessment, and pollution control."
+  },
+  {
+    "id": 14,
+    "name": "Management & Systems",
+    "code": "MSD",
+    "officer_name": "Harish Iyer",
+    "designation": "Head & Scientist-F (Management & Systems)",
+    "aliases": [
+      "MSD",
+      "Quality Management",
+      "ISO 9001",
+      "ISO 14001",
+      "Audit",
+      "Conformity"
+    ],
+    "sectors": [
+      "Quality Management Systems",
+      "Environmental Management",
+      "Occupational Health & Safety",
+      "Food Safety Systems"
+    ],
+    "scope": "Indian Standards adopting international systems like ISO 9001, ISO 14001, ISO 45001, and conformity assessment methodologies."
+  }
+]

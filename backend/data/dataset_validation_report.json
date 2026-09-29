@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-09-28T23:46:36.772981",
+  "status": "PASSED",
+  "standards_count": 528,
+  "departments_count": 14,
+  "qco_count": 260,
+  "synonyms_count": 30,
+  "embeddings_count": 528,
+  "checks": {
+    "duplicate_standards": [],
+    "missing_fields": [],
+    "invalid_departments": [],
+    "missing_qco_references": [],
+    "broken_synonyms": [],
+    "embedding_mismatches": []
+  },
+  "summary": {
+    "total_standards_evaluated": 528,
+    "total_issues_found": 0,
+    "is_dataset_healthy": true
+  }
+}

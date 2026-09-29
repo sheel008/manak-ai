@@ -1,0 +1,12 @@
+{
+  "validation_status": "PASSED",
+  "timestamp": "2026-09-28T23:39:19.487647",
+  "total_standards": 528,
+  "total_embeddings": 528,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "dimension": 384,
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": []
+}

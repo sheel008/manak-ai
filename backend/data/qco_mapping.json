@@ -1,0 +1,4785 @@
+[
+  {
+    "product": "Ordinary Portland Cement",
+    "mandatory_standard": "IS 269:2015",
+    "qco_name": "Ordinary Portland Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 269:2015.",
+    "aliases": [
+      "OPC cement",
+      "ordinary portland cement",
+      "portland cement",
+      "53 grade cement",
+      "43 grade cement",
+      "cement specification",
+      "construction cement",
+      "binding material",
+      "compressive strength cement",
+      "setting time cement",
+      "clinker cement",
+      "concrete cement"
+    ]
+  },
+  {
+    "product": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement",
+    "mandatory_standard": "IS 1786:2008",
+    "qco_name": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1786:2008.",
+    "aliases": [
+      "deformed",
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "testing",
+      "high",
+      "bars",
+      "certification",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Hot Rolled Medium and High Tensile Structural Steel",
+    "mandatory_standard": "IS 2062:2011",
+    "qco_name": "Hot Rolled Medium and High Tensile Structural Steel (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2062:2011.",
+    "aliases": [
+      "structural steel",
+      "hot rolled steel",
+      "mild steel structural",
+      "steel section",
+      "steel plate",
+      "steel angle",
+      "steel beam",
+      "steel column",
+      "TMT structural",
+      "E250 steel",
+      "E350 steel",
+      "construction steel"
+    ]
+  },
+  {
+    "product": "Self-Ballasted LED Lamps for General Lighting Services",
+    "mandatory_standard": "IS 16102(Part 1):2012",
+    "qco_name": "Self-Ballasted LED Lamps for General Lighting Services (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2021-12-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16102(Part 1):2012.",
+    "aliases": [
+      "LED",
+      "bulb",
+      "lamp",
+      "self-ballasted",
+      "household",
+      "lighting",
+      "energy efficient",
+      "lumen",
+      "CFL replacement",
+      "indoor lighting",
+      "E27",
+      "B22"
+    ]
+  },
+  {
+    "product": "Luminaires",
+    "mandatory_standard": "IS 10322(Part 5/Sec 4):2018",
+    "qco_name": "Luminaires (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2022-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 10322(Part 5/Sec 4):2018.",
+    "aliases": [
+      "LED",
+      "street light",
+      "road lighting",
+      "luminaire",
+      "outdoor",
+      "IP65",
+      "wattage",
+      "photometric",
+      "street lamp",
+      "road light",
+      "pole mounted",
+      "highway lighting"
+    ]
+  },
+  {
+    "product": "Luminaires",
+    "mandatory_standard": "IS 10322(Part 1):2012",
+    "qco_name": "Luminaires (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2022-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 10322(Part 1):2012.",
+    "aliases": [
+      "luminaires",
+      "general",
+      "requirements",
+      "and",
+      "tests",
+      "lighting"
+    ]
+  },
+  {
+    "product": "Safety of Household and Similar Electrical Appliances",
+    "mandatory_standard": "IS 302(Part 1):2008",
+    "qco_name": "Safety of Household and Similar Electrical Appliances (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2026-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 302(Part 1):2008.",
+    "aliases": [
+      "and",
+      "safety",
+      "quality",
+      "appliances",
+      "bis",
+      "specification",
+      "similar",
+      "electrical",
+      "india",
+      "testing"
+    ]
+  },
+  {
+    "product": "Switches for Domestic and Similar Purposes",
+    "mandatory_standard": "IS 3854:1997",
+    "qco_name": "Switches for Domestic and Similar Purposes (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2025-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3854:1997.",
+    "aliases": [
+      "switches",
+      "for",
+      "domestic",
+      "and",
+      "similar",
+      "purposes",
+      "specification",
+      "switching"
+    ]
+  },
+  {
+    "product": "Electrical Wiring Accessories",
+    "mandatory_standard": "IS 3851:2000",
+    "qco_name": "Electrical Wiring Accessories (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2025-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3851:2000.",
+    "aliases": [
+      "electrical",
+      "wiring",
+      "accessories",
+      "specification"
+    ]
+  },
+  {
+    "product": "PVC Insulated Cables for Working Voltages up to and Including 1100V",
+    "mandatory_standard": "IS 694:2010",
+    "qco_name": "PVC Insulated Cables for Working Voltages up to and Including 1100V (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2025-09-20",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 694:2010.",
+    "aliases": [
+      "PVC cable",
+      "PVC insulated cable",
+      "1100V cable",
+      "electrical cable",
+      "wiring cable",
+      "LT cable",
+      "power cable",
+      "house wiring",
+      "low voltage cable",
+      "flexible cable",
+      "copper conductor cable"
+    ]
+  },
+  {
+    "product": "Self-Ballasted Lamps for General Lighting Services",
+    "mandatory_standard": "IS 13021:1991",
+    "qco_name": "Self-Ballasted Lamps for General Lighting Services (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2021-12-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13021:1991.",
+    "aliases": [
+      "safety",
+      "quality",
+      "bis",
+      "specification",
+      "lamps",
+      "self-ballasted",
+      "india",
+      "testing",
+      "certification",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Lamp Controlgear",
+    "mandatory_standard": "IS 15885(Part 2/Sec 13):2017",
+    "qco_name": "Lamp Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2021-12-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15885(Part 2/Sec 13):2017.",
+    "aliases": [
+      "lamp",
+      "controlgear",
+      "particular",
+      "requirements",
+      "supplied",
+      "electronic",
+      "for",
+      "led"
+    ]
+  },
+  {
+    "product": "Plugs and Socket-Outlets of Rated Voltage up to and Including 250V",
+    "mandatory_standard": "IS 1293:2019",
+    "qco_name": "Plugs and Socket-Outlets of Rated Voltage up to and Including 250V (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2024-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1293:2019.",
+    "aliases": [
+      "plugs",
+      "and",
+      "socket",
+      "outlets",
+      "rated",
+      "voltage",
+      "including",
+      "250v"
+    ]
+  },
+  {
+    "product": "Pressure Cookers for Domestic Use",
+    "mandatory_standard": "IS 2347:2018",
+    "qco_name": "Pressure Cookers for Domestic Use (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2347:2018.",
+    "aliases": [
+      "pressure",
+      "cookers",
+      "for",
+      "domestic",
+      "use",
+      "specification",
+      "cookware"
+    ]
+  },
+  {
+    "product": "Safety of Household and Similar Electrical Appliances",
+    "mandatory_standard": "IS 302(Part 2/Sec 15):2017",
+    "qco_name": "Safety of Household and Similar Electrical Appliances (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2026-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 302(Part 2/Sec 15):2017.",
+    "aliases": [
+      "safety",
+      "household",
+      "and",
+      "similar",
+      "electrical",
+      "appliances",
+      "particular",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Electric Immersion Water Heaters",
+    "mandatory_standard": "IS 1476:2020",
+    "qco_name": "Electric Immersion Water Heaters (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2025-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1476:2020.",
+    "aliases": [
+      "electric",
+      "immersion",
+      "water",
+      "heaters",
+      "specification"
+    ]
+  },
+  {
+    "product": "Domestic Electric Food Mixers (Liquidizers, Grinders, Choppers)",
+    "mandatory_standard": "IS 15123:2002",
+    "qco_name": "Domestic Electric Food Mixers (Liquidizers, Grinders, Choppers) (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2026-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15123:2002.",
+    "aliases": [
+      "domestic",
+      "electric",
+      "food",
+      "mixers",
+      "liquidizers",
+      "grinders",
+      "choppers",
+      "specification"
+    ]
+  },
+  {
+    "product": "Sodium Tripolyphosphate (STPP)",
+    "mandatory_standard": "IS 12795:2005",
+    "qco_name": "Sodium Tripolyphosphate (STPP) (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2026-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12795:2005.",
+    "aliases": [
+      "sodium",
+      "tripolyphosphate",
+      "stpp",
+      "specification",
+      "industrial",
+      "chemicals"
+    ]
+  },
+  {
+    "product": "Linear Alkyl Benzene Sulphonic Acid (LABSA)",
+    "mandatory_standard": "IS 6100:2019",
+    "qco_name": "Linear Alkyl Benzene Sulphonic Acid (LABSA) (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2026-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 6100:2019.",
+    "aliases": [
+      "linear",
+      "alkyl",
+      "benzene",
+      "sulphonic",
+      "acid",
+      "labsa",
+      "specification",
+      "industrial"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 2112:2000",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2022-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2112:2000.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "automotive",
+      "seat",
+      "india",
+      "testing",
+      "certification",
+      "belts",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 14090:2010",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2022-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14090:2010.",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "anchorages",
+      "for",
+      "seat",
+      "belt",
+      "assemblies",
+      "specification"
+    ]
+  },
+  {
+    "product": "Safety of Toys",
+    "mandatory_standard": "IS 9873(Part 1):2019",
+    "qco_name": "Safety of Toys (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9873(Part 1):2019.",
+    "aliases": [
+      "safety",
+      "toys",
+      "part",
+      "aspects",
+      "related",
+      "mechanical",
+      "and",
+      "physical"
+    ]
+  },
+  {
+    "product": "Safety of Toys",
+    "mandatory_standard": "IS 9873(Part 2):2017",
+    "qco_name": "Safety of Toys (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9873(Part 2):2017.",
+    "aliases": [
+      "safety",
+      "toys",
+      "part",
+      "flammability"
+    ]
+  },
+  {
+    "product": "Metal Food Cans for Beverages",
+    "mandatory_standard": "IS 14000:2015",
+    "qco_name": "Metal Food Cans for Beverages (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14000:2015.",
+    "aliases": [
+      "metal",
+      "food",
+      "cans",
+      "for",
+      "beverages",
+      "specification",
+      "packaging"
+    ]
+  },
+  {
+    "product": "Office Furniture",
+    "mandatory_standard": "IS 17631:2021",
+    "qco_name": "Office Furniture (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2026-02-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 17631:2021.",
+    "aliases": [
+      "office",
+      "furniture",
+      "work",
+      "chairs",
+      "specification"
+    ]
+  },
+  {
+    "product": "Fire Safety Sprinklers — Specification",
+    "mandatory_standard": "IS 15105:2002",
+    "qco_name": "Fire Safety Sprinklers — Specification (Quality Control) Order",
+    "ministry": "Ministry of Home Affairs / DPIIT",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15105:2002.",
+    "aliases": [
+      "fire",
+      "safety",
+      "quality",
+      "bis",
+      "specification",
+      "sprinklers",
+      "india",
+      "testing",
+      "certification",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Lighting of Public Thoroughfares — Specification",
+    "mandatory_standard": "IS 1944 (Part 1):1990",
+    "qco_name": "Lighting of Public Thoroughfares — Specification (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1944 (Part 1):1990.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "thoroughfares",
+      "india",
+      "testing",
+      "public",
+      "certification",
+      "requirements",
+      "compliance"
+    ]
+  },
+  {
+    "product": "Portland Pozzolana Cement — Specification",
+    "mandatory_standard": "IS 1489 (Part 1):2015",
+    "qco_name": "Portland Pozzolana Cement — Specification (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1489 (Part 1):2015.",
+    "aliases": [
+      "cement",
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "portland",
+      "pozzolana",
+      "testing",
+      "certification",
+      "requirements"
+    ]
+  },
+  {
+    "product": "PVC insulated (heavy duty) electric cables — Specification",
+    "mandatory_standard": "IS 1554 (Part 1):1988",
+    "qco_name": "PVC insulated (heavy duty) electric cables — Specification (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1554 (Part 1):1988.",
+    "aliases": [
+      "cables",
+      "specification",
+      "quality",
+      "bis",
+      "insulated",
+      "(heavy",
+      "india",
+      "electric",
+      "testing",
+      "pvc"
+    ]
+  },
+  {
+    "product": "Code of practice for electrical wiring installations — Specification",
+    "mandatory_standard": "IS 732:1989",
+    "qco_name": "Code of practice for electrical wiring installations — Specification (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 732:1989.",
+    "aliases": [
+      "wiring",
+      "specification",
+      "quality",
+      "bis",
+      "electrical",
+      "installations",
+      "for",
+      "india",
+      "code",
+      "certification"
+    ]
+  },
+  {
+    "product": "Code of practice for earthing — Specification",
+    "mandatory_standard": "IS 3043:1987",
+    "qco_name": "Code of practice for earthing — Specification (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3043:1987.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "for",
+      "testing",
+      "code",
+      "certification",
+      "requirements",
+      "earthing"
+    ]
+  },
+  {
+    "product": "Porcelain insulators for overhead power lines — Specification",
+    "mandatory_standard": "IS 1445:1977",
+    "qco_name": "Porcelain insulators for overhead power lines — Specification (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1445:1977.",
+    "aliases": [
+      "overhead",
+      "standard",
+      "quality",
+      "bis",
+      "specification",
+      "lines",
+      "india",
+      "for",
+      "power",
+      "testing"
+    ]
+  },
+  {
+    "product": "Geotextiles — Specification",
+    "mandatory_standard": "IS 15938:2011",
+    "qco_name": "Geotextiles — Specification (Quality Control) Order",
+    "ministry": "Ministry of Textiles",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15938:2011.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "testing",
+      "certification",
+      "geotextiles",
+      "requirements",
+      "compliance",
+      "standard"
+    ]
+  },
+  {
+    "product": "Cotton calico — Specification",
+    "mandatory_standard": "IS 1544:1973",
+    "qco_name": "Cotton calico — Specification (Quality Control) Order",
+    "ministry": "Ministry of Textiles",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1544:1973.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "calico",
+      "india",
+      "testing",
+      "certification",
+      "cotton",
+      "requirements",
+      "compliance"
+    ]
+  },
+  {
+    "product": "Skimmed Milk Powder — Specification",
+    "mandatory_standard": "IS 3959:2004",
+    "qco_name": "Skimmed Milk Powder — Specification (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3959:2004.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "powder",
+      "milk",
+      "skimmed",
+      "india",
+      "testing",
+      "certification",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Processed Cereal Based Complementary Foods — Specification",
+    "mandatory_standard": "IS 11536:2007",
+    "qco_name": "Processed Cereal Based Complementary Foods — Specification (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 11536:2007.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "cereal",
+      "complementary",
+      "foods",
+      "processed",
+      "india",
+      "testing",
+      "based"
+    ]
+  },
+  {
+    "product": "Poultry Feeds — Specification",
+    "mandatory_standard": "IS 1374:2007",
+    "qco_name": "Poultry Feeds — Specification (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1374:2007.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "poultry",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance",
+      "feeds"
+    ]
+  },
+  {
+    "product": "Printing Ink for food packaging — Specification",
+    "mandatory_standard": "IS 15495:2004",
+    "qco_name": "Printing Ink for food packaging — Specification (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15495:2004.",
+    "aliases": [
+      "food",
+      "ink",
+      "specification",
+      "quality",
+      "bis",
+      "packaging",
+      "india",
+      "for",
+      "testing",
+      "certification"
+    ]
+  },
+  {
+    "product": "Alum — Specification",
+    "mandatory_standard": "IS 299:2012",
+    "qco_name": "Alum — Specification (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 299:2012.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "alum",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance",
+      "standard"
+    ]
+  },
+  {
+    "product": "Rectified Spirit — Specification",
+    "mandatory_standard": "IS 323:2009",
+    "qco_name": "Rectified Spirit — Specification (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 323:2009.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "rectified",
+      "india",
+      "testing",
+      "certification",
+      "spirit",
+      "compliance",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Caustic Soda — Specification",
+    "mandatory_standard": "IS 252:2013",
+    "qco_name": "Caustic Soda — Specification (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 252:2013.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "caustic",
+      "soda",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance"
+    ]
+  },
+  {
+    "product": "Automotive vehicles",
+    "mandatory_standard": "IS 15945:2012",
+    "qco_name": "Automotive vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15945:2012.",
+    "aliases": [
+      "safety",
+      "quality",
+      "bis",
+      "specification",
+      "automotive",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance"
+    ]
+  },
+  {
+    "product": "Pneumatic tyres for commercial vehicles — Specification",
+    "mandatory_standard": "IS 16010:2012",
+    "qco_name": "Pneumatic tyres for commercial vehicles — Specification (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16010:2012.",
+    "aliases": [
+      "pneumatic",
+      "quality",
+      "bis",
+      "specification",
+      "tyres",
+      "commercial",
+      "for",
+      "india",
+      "testing",
+      "certification"
+    ]
+  },
+  {
+    "product": "Two Wheeler and Motorcycle Protective Helmets",
+    "mandatory_standard": "IS 16515:2017",
+    "qco_name": "Two Wheeler and Motorcycle Protective Helmets (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16515:2017.",
+    "aliases": [
+      "helmet",
+      "helmets",
+      "motorcycle helmet",
+      "two wheeler helmet",
+      "protective headgear",
+      "safety helmet"
+    ]
+  },
+  {
+    "product": "Safety glass for road vehicles — Specification",
+    "mandatory_standard": "IS 2553 (Part 2):2019",
+    "qco_name": "Safety glass for road vehicles — Specification (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2553 (Part 2):2019.",
+    "aliases": [
+      "standard",
+      "safety",
+      "quality",
+      "bis",
+      "road",
+      "specification",
+      "india",
+      "for",
+      "testing",
+      "certification"
+    ]
+  },
+  {
+    "product": "Electric ceiling type fans — Specification",
+    "mandatory_standard": "IS 374:2019",
+    "qco_name": "Electric ceiling type fans — Specification (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 374:2019.",
+    "aliases": [
+      "standard",
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "electric",
+      "testing",
+      "certification",
+      "fans",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Tape recorders — Specification",
+    "mandatory_standard": "IS 4150:1993",
+    "qco_name": "Tape recorders — Specification (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 4150:1993.",
+    "aliases": [
+      "tape",
+      "quality",
+      "bis",
+      "specification",
+      "india",
+      "recorders",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance"
+    ]
+  },
+  {
+    "product": "Domestic electric food mixers — Specification",
+    "mandatory_standard": "IS 4250:1980",
+    "qco_name": "Domestic electric food mixers — Specification (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 4250:1980.",
+    "aliases": [
+      "food",
+      "specification",
+      "quality",
+      "mixers",
+      "domestic",
+      "bis",
+      "india",
+      "electric",
+      "testing",
+      "certification"
+    ]
+  },
+  {
+    "product": "Domestic pressure cookers — Specification",
+    "mandatory_standard": "IS 2347:2017",
+    "qco_name": "Domestic pressure cookers — Specification (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2026-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2347:2017.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "domestic",
+      "pressure",
+      "india",
+      "testing",
+      "certification",
+      "requirements",
+      "compliance"
+    ]
+  },
+  {
+    "product": "Corrugated fibreboard boxes — Specification",
+    "mandatory_standard": "IS 2771 (Part 1):1990",
+    "qco_name": "Corrugated fibreboard boxes — Specification (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2771 (Part 1):1990.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "india",
+      "testing",
+      "corrugated",
+      "certification",
+      "boxes",
+      "requirements",
+      "fibreboard"
+    ]
+  },
+  {
+    "product": "Packaging code — Specification",
+    "mandatory_standard": "IS 10106 (Part 1/Sec 1):1990",
+    "qco_name": "Packaging code — Specification (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2026-08-15",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 10106 (Part 1/Sec 1):1990.",
+    "aliases": [
+      "specification",
+      "quality",
+      "bis",
+      "packaging",
+      "india",
+      "testing",
+      "code",
+      "certification",
+      "requirements",
+      "compliance"
+    ]
+  },
+  {
+    "product": "Ordinary Portland Cement, 43 Grade",
+    "mandatory_standard": "IS 8112:2013",
+    "qco_name": "Ordinary Portland Cement, 43 Grade (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8112:2013.",
+    "aliases": [
+      "cement",
+      "opc",
+      "43 grade",
+      "compressive strength",
+      "portland",
+      "concrete"
+    ]
+  },
+  {
+    "product": "Ordinary Portland Cement, 53 Grade",
+    "mandatory_standard": "IS 12269:2013",
+    "qco_name": "Ordinary Portland Cement, 53 Grade (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12269:2013.",
+    "aliases": [
+      "cement",
+      "opc",
+      "53 grade",
+      "high strength",
+      "portland",
+      "concrete"
+    ]
+  },
+  {
+    "product": "Portland Slag Cement",
+    "mandatory_standard": "IS 455:2015",
+    "qco_name": "Portland Slag Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 455:2015.",
+    "aliases": [
+      "slag cement",
+      "psc",
+      "blast furnace slag",
+      "marine concrete",
+      "blended cement"
+    ]
+  },
+  {
+    "product": "Portland Pozzolana Cement",
+    "mandatory_standard": "IS 1489 (Part 2):2015",
+    "qco_name": "Portland Pozzolana Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1489 (Part 2):2015.",
+    "aliases": [
+      "ppc",
+      "calcined clay",
+      "pozzolana",
+      "hydraulic cement",
+      "durable concrete"
+    ]
+  },
+  {
+    "product": "Steel Tubes for Structural Purposes",
+    "mandatory_standard": "IS 1161:2014",
+    "qco_name": "Steel Tubes for Structural Purposes (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1161:2014.",
+    "aliases": [
+      "structural steel",
+      "steel pipes",
+      "tubular structures",
+      "erw tubes",
+      "yield strength"
+    ]
+  },
+  {
+    "product": "Hollow Steel Sections for Structural Use",
+    "mandatory_standard": "IS 4923:2017",
+    "qco_name": "Hollow Steel Sections for Structural Use (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 4923:2017.",
+    "aliases": [
+      "hollow sections",
+      "shs",
+      "rhs",
+      "square hollow section",
+      "rectangular hollow section",
+      "steel fabrication"
+    ]
+  },
+  {
+    "product": "Steel Pipes for Water and Sewage (168.3 to 2540 mm Outside Diameter)",
+    "mandatory_standard": "IS 3589:2001",
+    "qco_name": "Steel Pipes for Water and Sewage (168.3 to 2540 mm Outside Diameter) (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-07-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3589:2001.",
+    "aliases": [
+      "steel pipe",
+      "water transmission",
+      "saw pipe",
+      "helical seam",
+      "large diameter pipe",
+      "sewage"
+    ]
+  },
+  {
+    "product": "Centrifugally Cast (Ductile) Iron Pressure Pipes for Water, Gas and Sewage",
+    "mandatory_standard": "IS 8329:2000",
+    "qco_name": "Centrifugally Cast (Ductile) Iron Pressure Pipes for Water, Gas and Sewage (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8329:2000.",
+    "aliases": [
+      "di pipe",
+      "ductile iron",
+      "water supply",
+      "pressure pipe",
+      "centrifugal casting",
+      "socket and spigot"
+    ]
+  },
+  {
+    "product": "UPVC Pipes for Soil and Waste Discharge System Inside Buildings",
+    "mandatory_standard": "IS 13592:2013",
+    "qco_name": "UPVC Pipes for Soil and Waste Discharge System Inside Buildings (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13592:2013.",
+    "aliases": [
+      "swr pipe",
+      "upvc drainage",
+      "soil and waste",
+      "plumbing",
+      "building drainage"
+    ]
+  },
+  {
+    "product": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables",
+    "mandatory_standard": "IS 7098 (Part 1):1988",
+    "qco_name": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 7098 (Part 1):1988.",
+    "aliases": [
+      "xlpe cable",
+      "power cable",
+      "1.1 kv",
+      "crosslinked polyethylene",
+      "armoured cable"
+    ]
+  },
+  {
+    "product": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables",
+    "mandatory_standard": "IS 7098 (Part 2):2011",
+    "qco_name": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 7098 (Part 2):2011.",
+    "aliases": [
+      "ht cable",
+      "xlpe cable",
+      "11 kv",
+      "33 kv",
+      "high tension cable",
+      "power distribution"
+    ]
+  },
+  {
+    "product": "Outdoor Type Oil Immersed Distribution Transformers up to and Including 2500 kVA, 33 kV",
+    "mandatory_standard": "IS 1180 (Part 1):2014",
+    "qco_name": "Outdoor Type Oil Immersed Distribution Transformers up to and Including 2500 kVA, 33 kV (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1180 (Part 1):2014.",
+    "aliases": [
+      "distribution transformer",
+      "oil immersed",
+      "energy efficiency",
+      "bee star rating",
+      "total losses",
+      "substation"
+    ]
+  },
+  {
+    "product": "Power Transformers",
+    "mandatory_standard": "IS 2026 (Part 1):2011",
+    "qco_name": "Power Transformers (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2026 (Part 1):2011.",
+    "aliases": [
+      "power transformer",
+      "substation",
+      "high voltage",
+      "vector group",
+      "insulation levels"
+    ]
+  },
+  {
+    "product": "Electrical Accessories",
+    "mandatory_standard": "IS 8828:1996",
+    "qco_name": "Electrical Accessories (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2020-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8828:1996.",
+    "aliases": [
+      "mcb",
+      "circuit breaker",
+      "overcurrent protection",
+      "short circuit",
+      "tripping curve",
+      "distribution board"
+    ]
+  },
+  {
+    "product": "Residual Current Operated Circuit-Breakers without Integral Overcurrent Protection (RCCBs)",
+    "mandatory_standard": "IS 12640 (Part 1):2016",
+    "qco_name": "Residual Current Operated Circuit-Breakers without Integral Overcurrent Protection (RCCBs) (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2020-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12640 (Part 1):2016.",
+    "aliases": [
+      "rccb",
+      "elcb",
+      "residual current",
+      "earth leakage",
+      "electric shock protection",
+      "30 ma"
+    ]
+  },
+  {
+    "product": "Information Technology Equipment",
+    "mandatory_standard": "IS 13252 (Part 1):2010",
+    "qco_name": "Information Technology Equipment (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2013-07-03",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13252 (Part 1):2010.",
+    "aliases": [
+      "it equipment",
+      "compulsory registration",
+      "crs",
+      "laptop",
+      "server",
+      "power adapter",
+      "electrical safety"
+    ]
+  },
+  {
+    "product": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes",
+    "mandatory_standard": "IS 16046 (Part 2):2018",
+    "qco_name": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2018-05-13",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16046 (Part 2):2018.",
+    "aliases": [
+      "lithium battery",
+      "li-ion",
+      "battery safety",
+      "short circuit",
+      "overcharge",
+      "thermal abuse",
+      "crs"
+    ]
+  },
+  {
+    "product": "Portable Fire Extinguishers",
+    "mandatory_standard": "IS 15683:2018",
+    "qco_name": "Portable Fire Extinguishers (Quality Control) Order",
+    "ministry": "Ministry of Home Affairs / DPIIT",
+    "effective_date": "2020-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15683:2018.",
+    "aliases": [
+      "fire extinguisher",
+      "portable extinguisher",
+      "fire rating",
+      "abc powder",
+      "co2 extinguisher",
+      "hydrostatic test"
+    ]
+  },
+  {
+    "product": "Packaged Drinking Water (Other Than Packaged Natural Mineral Water)",
+    "mandatory_standard": "IS 14543:2016",
+    "qco_name": "Packaged Drinking Water (Other Than Packaged Natural Mineral Water) (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2001-03-29",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14543:2016.",
+    "aliases": [
+      "packaged water",
+      "bottled water",
+      "drinking water",
+      "tds",
+      "reverse osmosis",
+      "isi mark mandatory",
+      "fssai"
+    ]
+  },
+  {
+    "product": "Packaged Natural Mineral Water",
+    "mandatory_standard": "IS 13428:2005",
+    "qco_name": "Packaged Natural Mineral Water (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2001-03-29",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13428:2005.",
+    "aliases": [
+      "natural mineral water",
+      "spring water",
+      "packaged water",
+      "isi certification mandatory",
+      "fssai"
+    ]
+  },
+  {
+    "product": "Automotive Fuels",
+    "mandatory_standard": "IS 1460:2017",
+    "qco_name": "Automotive Fuels (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2020-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1460:2017.",
+    "aliases": [
+      "diesel fuel",
+      "hsd",
+      "bs vi",
+      "cetane number",
+      "sulphur content",
+      "automotive fuel"
+    ]
+  },
+  {
+    "product": "Motor Gasoline",
+    "mandatory_standard": "IS 2796:2017",
+    "qco_name": "Motor Gasoline (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2020-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2796:2017.",
+    "aliases": [
+      "petrol",
+      "gasoline",
+      "motor spirit",
+      "research octane number",
+      "ron 91",
+      "ethanol blended",
+      "bs vi"
+    ]
+  },
+  {
+    "product": "Methanol (Methyl Alcohol)",
+    "mandatory_standard": "IS 517:2020",
+    "qco_name": "Methanol (Methyl Alcohol) (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2021-02-03",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 517:2020.",
+    "aliases": [
+      "methanol",
+      "methyl alcohol",
+      "industrial chemical",
+      "purity",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Acetone",
+    "mandatory_standard": "IS 170:2020",
+    "qco_name": "Acetone (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2021-02-03",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 170:2020.",
+    "aliases": [
+      "acetone",
+      "solvent",
+      "chemical feedstock",
+      "distillation",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Personal Protective Equipment",
+    "mandatory_standard": "IS 15298 (Part 2):2016",
+    "qco_name": "Personal Protective Equipment (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2022-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15298 (Part 2):2016.",
+    "aliases": [
+      "safety shoes",
+      "safety footwear",
+      "steel toe",
+      "impact resistance",
+      "200 joules",
+      "anti-skid",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Respiratory Protective Devices",
+    "mandatory_standard": "IS 9473:2002",
+    "qco_name": "Respiratory Protective Devices (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2020-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9473:2002.",
+    "aliases": [
+      "n95 mask",
+      "respirator",
+      "ffp2 mask",
+      "particulate filter",
+      "filtering facepiece",
+      "inhalation resistance"
+    ]
+  },
+  {
+    "product": "Specification for Industrial Safety Helmets",
+    "mandatory_standard": "IS 2925:1984",
+    "qco_name": "Specification for Industrial Safety Helmets (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2925:1984.",
+    "aliases": [
+      "safety helmet",
+      "hard hat",
+      "shock absorption",
+      "penetration resistance",
+      "construction safety",
+      "ppe"
+    ]
+  },
+  {
+    "product": "Dimensions for Hot Rolled Steel Beam, Column, Channel and Angle Sections",
+    "mandatory_standard": "IS 808:2021",
+    "qco_name": "Dimensions for Hot Rolled Steel Beam, Column, Channel and Angle Sections (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 808:2021.",
+    "aliases": [
+      "steel sections",
+      "i beam",
+      "ismb",
+      "channel section",
+      "ismc",
+      "angle section",
+      "sectional modulus",
+      "hot rolled steel"
+    ]
+  },
+  {
+    "product": "Dimensions for Round and Square Steel Bars for Structural and General Engineering Purposes",
+    "mandatory_standard": "IS 1732:1989",
+    "qco_name": "Dimensions for Round and Square Steel Bars for Structural and General Engineering Purposes (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1732:1989.",
+    "aliases": [
+      "steel bars",
+      "round bars",
+      "square bars",
+      "structural steel",
+      "engineering bars"
+    ]
+  },
+  {
+    "product": "Rolling and Cutting Tolerances for Hot-Rolled Steel Products",
+    "mandatory_standard": "IS 1852:1985",
+    "qco_name": "Rolling and Cutting Tolerances for Hot-Rolled Steel Products (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1852:1985.",
+    "aliases": [
+      "steel tolerances",
+      "camber",
+      "sweep",
+      "out of square",
+      "cutting tolerance",
+      "rolling tolerance"
+    ]
+  },
+  {
+    "product": "Hexagon Head Bolts, Screws and Nuts of Product Grade C",
+    "mandatory_standard": "IS 1363 (Part 1):2019",
+    "qco_name": "Hexagon Head Bolts, Screws and Nuts of Product Grade C (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2023-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1363 (Part 1):2019.",
+    "aliases": [
+      "hexagon bolt",
+      "fasteners",
+      "grade c",
+      "structural bolting",
+      "black bolts",
+      "m16",
+      "m20",
+      "m24"
+    ]
+  },
+  {
+    "product": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B",
+    "mandatory_standard": "IS 1364 (Part 1):2018",
+    "qco_name": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2023-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1364 (Part 1):2018.",
+    "aliases": [
+      "precision bolts",
+      "grade a bolts",
+      "high tensile bolts",
+      "fasteners",
+      "automotive bolts",
+      "class 8.8",
+      "class 10.9"
+    ]
+  },
+  {
+    "product": "Technical Supply Conditions for Threaded Fasteners",
+    "mandatory_standard": "IS 1367 (Part 1):2014",
+    "qco_name": "Technical Supply Conditions for Threaded Fasteners (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2023-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1367 (Part 1):2014.",
+    "aliases": [
+      "threaded fasteners",
+      "bolts and nuts",
+      "tensile strength",
+      "proof load",
+      "hydrogen embrittlement",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Hexagon Socket Head Cap Screws",
+    "mandatory_standard": "IS 2269:2006",
+    "qco_name": "Hexagon Socket Head Cap Screws (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2023-10-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2269:2006.",
+    "aliases": [
+      "socket head cap screw",
+      "allen bolt",
+      "high tensile screw",
+      "grade 12.9",
+      "fasteners",
+      "machinery fasteners"
+    ]
+  },
+  {
+    "product": "Steel Plates for Pressure Vessels for Intermediate and High Temperature Service Including Boilers",
+    "mandatory_standard": "IS 2002:2009",
+    "qco_name": "Steel Plates for Pressure Vessels for Intermediate and High Temperature Service Including Boilers (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2002:2009.",
+    "aliases": [
+      "boiler plates",
+      "pressure vessel steel",
+      "creep strength",
+      "high temperature steel",
+      "astm a516"
+    ]
+  },
+  {
+    "product": "Low-Voltage Switchgear and Controlgear",
+    "mandatory_standard": "IS/IEC 60947 (Part 1):2007",
+    "qco_name": "Low-Voltage Switchgear and Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2020-11-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS/IEC 60947 (Part 1):2007.",
+    "aliases": [
+      "low voltage switchgear",
+      "controlgear",
+      "ip degree",
+      "clearance and creepage",
+      "temperature rise",
+      "dielectric properties"
+    ]
+  },
+  {
+    "product": "Low-Voltage Switchgear and Controlgear",
+    "mandatory_standard": "IS/IEC 60947 (Part 2):2016",
+    "qco_name": "Low-Voltage Switchgear and Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2020-11-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS/IEC 60947 (Part 2):2016.",
+    "aliases": [
+      "mccb",
+      "acb",
+      "moulded case circuit breaker",
+      "breaking capacity",
+      "icu",
+      "ics",
+      "short circuit",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Low-Voltage Switchgear and Controlgear",
+    "mandatory_standard": "IS/IEC 60947 (Part 3):2012",
+    "qco_name": "Low-Voltage Switchgear and Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2020-11-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS/IEC 60947 (Part 3):2012.",
+    "aliases": [
+      "isolator",
+      "switch disconnector",
+      "fuse unit",
+      "main switch",
+      "load break switch",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Low-Voltage Switchgear and Controlgear",
+    "mandatory_standard": "IS/IEC 60947 (Part 4/Sec 1):2012",
+    "qco_name": "Low-Voltage Switchgear and Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2020-11-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS/IEC 60947 (Part 4/Sec 1):2012.",
+    "aliases": [
+      "contactor",
+      "motor starter",
+      "dol starter",
+      "star delta",
+      "thermal overload relay",
+      "ac-3 duty",
+      "motor control"
+    ]
+  },
+  {
+    "product": "Aluminium Conductors for Overhead Transmission Purposes",
+    "mandatory_standard": "IS 398 (Part 2):1996",
+    "qco_name": "Aluminium Conductors for Overhead Transmission Purposes (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 398 (Part 2):1996.",
+    "aliases": [
+      "acsr conductor",
+      "overhead transmission",
+      "aluminium conductor",
+      "steel reinforced",
+      "dog conductor",
+      "panther conductor",
+      "zebra conductor"
+    ]
+  },
+  {
+    "product": "Audio, Video and Similar Electronic Apparatus",
+    "mandatory_standard": "IS 616:2017",
+    "qco_name": "Audio, Video and Similar Electronic Apparatus (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2018-07-03",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 616:2017.",
+    "aliases": [
+      "audio video",
+      "television",
+      "led tv",
+      "amplifier",
+      "crs mandatory",
+      "meity",
+      "electrical shock",
+      "fire safety"
+    ]
+  },
+  {
+    "product": "Uninterruptible Power Systems (UPS)",
+    "mandatory_standard": "IS 16242 (Part 1):2014",
+    "qco_name": "Uninterruptible Power Systems (UPS) (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2015-05-11",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16242 (Part 1):2014.",
+    "aliases": [
+      "ups",
+      "uninterruptible power supply",
+      "inverter",
+      "battery backup",
+      "crs mandatory",
+      "safety test"
+    ]
+  },
+  {
+    "product": "Rapid Hardening Portland Cement",
+    "mandatory_standard": "IS 8041:1990",
+    "qco_name": "Rapid Hardening Portland Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8041:1990.",
+    "aliases": [
+      "rapid hardening cement",
+      "high early strength",
+      "precast concrete",
+      "c3s rich",
+      "early deshirring"
+    ]
+  },
+  {
+    "product": "Sulphate Resisting Portland Cement",
+    "mandatory_standard": "IS 12330:1988",
+    "qco_name": "Sulphate Resisting Portland Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12330:1988.",
+    "aliases": [
+      "sulphate resisting cement",
+      "srpc",
+      "coastal foundations",
+      "marine structures",
+      "c3a content",
+      "ettringite resistance"
+    ]
+  },
+  {
+    "product": "Porcelain Insulators for Overhead Power Lines with a Nominal Voltage Greater Than 1000 V",
+    "mandatory_standard": "IS 731:1971",
+    "qco_name": "Porcelain Insulators for Overhead Power Lines with a Nominal Voltage Greater Than 1000 V (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 731:1971.",
+    "aliases": [
+      "porcelain insulator",
+      "disc insulator",
+      "pin insulator",
+      "overhead power line",
+      "creepage distance",
+      "flashover voltage"
+    ]
+  },
+  {
+    "product": "Bushings for Alternating Voltages Above 1000 Volts",
+    "mandatory_standard": "IS 2099:1986",
+    "qco_name": "Bushings for Alternating Voltages Above 1000 Volts (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2099:1986.",
+    "aliases": [
+      "transformer bushing",
+      "condenser bushing",
+      "oip bushing",
+      "rip bushing",
+      "tan delta",
+      "high voltage"
+    ]
+  },
+  {
+    "product": "Conduits for Electrical Installations",
+    "mandatory_standard": "IS 9537 (Part 1):1980",
+    "qco_name": "Conduits for Electrical Installations (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9537 (Part 1):1980.",
+    "aliases": [
+      "electrical conduit",
+      "wiring conduit",
+      "cable management",
+      "fire propagation",
+      "dielectric strength"
+    ]
+  },
+  {
+    "product": "Conduits for Electrical Installations",
+    "mandatory_standard": "IS 9537 (Part 3):1983",
+    "qco_name": "Conduits for Electrical Installations (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9537 (Part 3):1983.",
+    "aliases": [
+      "pvc conduit",
+      "rigid conduit",
+      "concealed wiring",
+      "fr conduit",
+      "electrical piping"
+    ]
+  },
+  {
+    "product": "LED Modules for General Lighting",
+    "mandatory_standard": "IS 16103 (Part 1):2012",
+    "qco_name": "LED Modules for General Lighting (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2015-05-11",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16103 (Part 1):2012.",
+    "aliases": [
+      "led module",
+      "led chip board",
+      "lighting safety",
+      "crs mandatory",
+      "meity",
+      "photobiological safety"
+    ]
+  },
+  {
+    "product": "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted)",
+    "mandatory_standard": "IS 2878:2004",
+    "qco_name": "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted) (Quality Control) Order",
+    "ministry": "Ministry of Home Affairs / DPIIT",
+    "effective_date": "2020-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2878:2004.",
+    "aliases": [
+      "co2 fire extinguisher",
+      "carbon dioxide",
+      "electrical fire",
+      "clean gas extinguisher",
+      "class b fire"
+    ]
+  },
+  {
+    "product": "Portable Fire Extinguishers, Dry Powder (Cartridge and Stored Pressure Types)",
+    "mandatory_standard": "IS 2171:1999",
+    "qco_name": "Portable Fire Extinguishers, Dry Powder (Cartridge and Stored Pressure Types) (Quality Control) Order",
+    "ministry": "Ministry of Home Affairs / DPIIT",
+    "effective_date": "2020-03-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2171:1999.",
+    "aliases": [
+      "dry powder extinguisher",
+      "dcp",
+      "sodium bicarbonate",
+      "potassium bicarbonate",
+      "stored pressure"
+    ]
+  },
+  {
+    "product": "Personal Protective Equipment",
+    "mandatory_standard": "IS 15298 (Part 3):2019",
+    "qco_name": "Personal Protective Equipment (Quality Control) Order",
+    "ministry": "Ministry of Textiles",
+    "effective_date": "2022-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15298 (Part 3):2019.",
+    "aliases": [
+      "protective footwear",
+      "protective shoes",
+      "100 joules toe cap",
+      "work shoes",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Personal Protective Equipment",
+    "mandatory_standard": "IS 15298 (Part 4):2017",
+    "qco_name": "Personal Protective Equipment (Quality Control) Order",
+    "ministry": "Ministry of Textiles",
+    "effective_date": "2022-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15298 (Part 4):2017.",
+    "aliases": [
+      "occupational footwear",
+      "slip resistant shoes",
+      "hospital footwear",
+      "cleanroom shoes",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Steel Tubes, Tubulars and Other Wrought Steel Fittings",
+    "mandatory_standard": "IS 1239 (Part 2):2011",
+    "qco_name": "Steel Tubes, Tubulars and Other Wrought Steel Fittings (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1239 (Part 2):2011.",
+    "aliases": [
+      "pipe fittings",
+      "mild steel sockets",
+      "threaded elbows",
+      "pipe tees",
+      "plumbing fittings"
+    ]
+  },
+  {
+    "product": "High Density Polyethylene (HDPE) Pipes for Sewerage",
+    "mandatory_standard": "IS 14333:1996",
+    "qco_name": "High Density Polyethylene (HDPE) Pipes for Sewerage (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14333:1996.",
+    "aliases": [
+      "hdpe sewerage pipe",
+      "effluent pipe",
+      "gravity sewer",
+      "butt fusion",
+      "pe 80",
+      "pe 100"
+    ]
+  },
+  {
+    "product": "Plain End UPVC Pipes for Underground Sewerage",
+    "mandatory_standard": "IS 15328:2003",
+    "qco_name": "Plain End UPVC Pipes for Underground Sewerage (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15328:2003.",
+    "aliases": [
+      "upvc underground pipe",
+      "sewer pipe",
+      "ring seal socket",
+      "stiffness class",
+      "sdr 41",
+      "sdr 34"
+    ]
+  },
+  {
+    "product": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables",
+    "mandatory_standard": "IS 7098 (Part 3):1993",
+    "qco_name": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 7098 (Part 3):1993.",
+    "aliases": [
+      "ehv cable",
+      "66 kv cable",
+      "132 kv cable",
+      "220 kv cable",
+      "corrugated aluminium sheath",
+      "transmission cable"
+    ]
+  },
+  {
+    "product": "Aluminium Conductors for Overhead Transmission Purposes",
+    "mandatory_standard": "IS 398 (Part 1):1996",
+    "qco_name": "Aluminium Conductors for Overhead Transmission Purposes (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 398 (Part 1):1996.",
+    "aliases": [
+      "aac conductor",
+      "all aluminium conductor",
+      "overhead distribution",
+      "electrical conductivity",
+      "low tension line"
+    ]
+  },
+  {
+    "product": "Aluminium Conductors for Overhead Transmission Purposes",
+    "mandatory_standard": "IS 398 (Part 4):1994",
+    "qco_name": "Aluminium Conductors for Overhead Transmission Purposes (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 398 (Part 4):1994.",
+    "aliases": [
+      "aaac conductor",
+      "aluminium alloy conductor",
+      "high corrosion resistance",
+      "coastal transmission line",
+      "panther aaac"
+    ]
+  },
+  {
+    "product": "Residual Current Operated Circuit-Breakers with Integral Overcurrent Protection (RCBOs)",
+    "mandatory_standard": "IS 12640 (Part 2):2016",
+    "qco_name": "Residual Current Operated Circuit-Breakers with Integral Overcurrent Protection (RCBOs) (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2020-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12640 (Part 2):2016.",
+    "aliases": [
+      "rcbo",
+      "earth leakage circuit breaker",
+      "combined mcb and rccb",
+      "short circuit",
+      "30ma protection"
+    ]
+  },
+  {
+    "product": "Tubular Fluorescent Lamps for General Lighting Service",
+    "mandatory_standard": "IS 2418 (Part 1):1977",
+    "qco_name": "Tubular Fluorescent Lamps for General Lighting Service (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2418 (Part 1):1977.",
+    "aliases": [
+      "fluorescent tube",
+      "tube light",
+      "t8 lamp",
+      "t5 lamp",
+      "lumen output",
+      "color rendering"
+    ]
+  },
+  {
+    "product": "Electric Ceiling Type Fans",
+    "mandatory_standard": "IS 15330:2003",
+    "qco_name": "Electric Ceiling Type Fans (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15330:2003.",
+    "aliases": [
+      "ceiling fan",
+      "bldc fan",
+      "energy efficiency",
+      "air delivery",
+      "service value",
+      "bee star rating"
+    ]
+  },
+  {
+    "product": "Anhydrous Ammonia",
+    "mandatory_standard": "IS 15464:2004",
+    "qco_name": "Anhydrous Ammonia (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2021-06-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15464:2004.",
+    "aliases": [
+      "anhydrous ammonia",
+      "ammonia gas",
+      "refrigerant r717",
+      "fertilizer feedstock",
+      "purity",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Safety Glass",
+    "mandatory_standard": "IS 2553 (Part 1):1990",
+    "qco_name": "Safety Glass (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2553 (Part 1):1990.",
+    "aliases": [
+      "toughened glass",
+      "tempered glass",
+      "laminated safety glass",
+      "facade glazing",
+      "fragmentation test",
+      "impact resistance",
+      "qco mandatory"
+    ]
+  },
+  {
+    "product": "Medical Textiles",
+    "mandatory_standard": "IS 17354:2020",
+    "qco_name": "Medical Textiles (Quality Control) Order",
+    "ministry": "Ministry of Health and Family Welfare",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 17354:2020.",
+    "aliases": [
+      "surgical gown",
+      "surgical drape",
+      "medical textiles",
+      "barrier protection",
+      "liquid penetration",
+      "blood resistance",
+      "cleanroom"
+    ]
+  },
+  {
+    "product": "White Portland Cement",
+    "mandatory_standard": "IS 8042:2015",
+    "qco_name": "White Portland Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8042:2015.",
+    "aliases": [
+      "cement",
+      "white cement",
+      "whiteness",
+      "architectural concrete",
+      "terrazzo"
+    ]
+  },
+  {
+    "product": "Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement",
+    "mandatory_standard": "IS 432 (Part 1):1982",
+    "qco_name": "Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 432 (Part 1):1982.",
+    "aliases": [
+      "mild steel bar",
+      "ms bar",
+      "plain rebar",
+      "tensile steel",
+      "concrete reinforcement",
+      "grade 1"
+    ]
+  },
+  {
+    "product": "Hard-Drawn Steel Wire Fabric for Concrete Reinforcement",
+    "mandatory_standard": "IS 1566:1982",
+    "qco_name": "Hard-Drawn Steel Wire Fabric for Concrete Reinforcement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1566:1982.",
+    "aliases": [
+      "wire mesh",
+      "welded wire fabric",
+      "brc mesh",
+      "reinforcement fabric",
+      "concrete slab mesh"
+    ]
+  },
+  {
+    "product": "Galvanized Steel Sheets (Plain and Corrugated)",
+    "mandatory_standard": "IS 277:2018",
+    "qco_name": "Galvanized Steel Sheets (Plain and Corrugated) (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 277:2018.",
+    "aliases": [
+      "galvanized sheet",
+      "gi sheet",
+      "gc sheet",
+      "corrugated roofing",
+      "zinc coating",
+      "tin shed"
+    ]
+  },
+  {
+    "product": "Cold Reduced Carbon Steel Sheet and Strip",
+    "mandatory_standard": "IS 513 (Part 1):2016",
+    "qco_name": "Cold Reduced Carbon Steel Sheet and Strip (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 513 (Part 1):2016.",
+    "aliases": [
+      "cr sheet",
+      "cold rolled steel",
+      "deep drawing sheet",
+      "cr steel strip",
+      "sheet metal"
+    ]
+  },
+  {
+    "product": "Hot Rolled Carbon Steel Sheet and Strip",
+    "mandatory_standard": "IS 1079:2017",
+    "qco_name": "Hot Rolled Carbon Steel Sheet and Strip (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1079:2017.",
+    "aliases": [
+      "hr sheet",
+      "hot rolled sheet",
+      "carbon steel strip",
+      "mild steel sheet",
+      "hr coils"
+    ]
+  },
+  {
+    "product": "Pressed Ceramic Tiles",
+    "mandatory_standard": "IS 15622:2017",
+    "qco_name": "Pressed Ceramic Tiles (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15622:2017.",
+    "aliases": [
+      "ceramic tile",
+      "vitrified tile",
+      "glazed tile",
+      "porcelain tile",
+      "wall tile",
+      "floor tile"
+    ]
+  },
+  {
+    "product": "Plywood for General Purposes",
+    "mandatory_standard": "IS 303:1989",
+    "qco_name": "Plywood for General Purposes (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 303:1989.",
+    "aliases": [
+      "plywood",
+      "mr grade",
+      "bwr grade",
+      "timber plywood",
+      "commercial plywood",
+      "carpentry"
+    ]
+  },
+  {
+    "product": "Marine Plywood",
+    "mandatory_standard": "IS 710:2010",
+    "qco_name": "Marine Plywood (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 710:2010.",
+    "aliases": [
+      "marine plywood",
+      "bwp plywood",
+      "waterproof plywood",
+      "boiling water proof",
+      "marine grade"
+    ]
+  },
+  {
+    "product": "Wooden Flush Door Shutters (Solid Core Type)",
+    "mandatory_standard": "IS 2202 (Part 1):1999",
+    "qco_name": "Wooden Flush Door Shutters (Solid Core Type) (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2202 (Part 1):1999.",
+    "aliases": [
+      "flush door",
+      "solid core door",
+      "wooden door shutter",
+      "plywood door",
+      "door leaf"
+    ]
+  },
+  {
+    "product": "Safety Glass",
+    "mandatory_standard": "IS 2553 (Part 1):2018",
+    "qco_name": "Safety Glass (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2553 (Part 1):2018.",
+    "aliases": [
+      "toughened glass",
+      "tempered glass",
+      "laminated glass",
+      "safety glass",
+      "facade glass",
+      "architectural glass"
+    ]
+  },
+  {
+    "product": "Water Meters (Domestic Type)",
+    "mandatory_standard": "IS 779:1994",
+    "qco_name": "Water Meters (Domestic Type) (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-07-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 779:1994.",
+    "aliases": [
+      "water meter",
+      "domestic water meter",
+      "flow meter",
+      "water billing meter",
+      "class b meter"
+    ]
+  },
+  {
+    "product": "Vitreous Sanitary Appliances",
+    "mandatory_standard": "IS 2556 (Part 2):2004",
+    "qco_name": "Vitreous Sanitary Appliances (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2556 (Part 2):2004.",
+    "aliases": [
+      "wash basin",
+      "sanitaryware",
+      "vitreous china",
+      "bathroom basin",
+      "ceramic sink"
+    ]
+  },
+  {
+    "product": "Vitreous Sanitary Appliances",
+    "mandatory_standard": "IS 2556 (Part 3):2004",
+    "qco_name": "Vitreous Sanitary Appliances (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2556 (Part 3):2004.",
+    "aliases": [
+      "wc pan",
+      "squatting pan",
+      "orissa pan",
+      "toilet pan",
+      "sanitary ware"
+    ]
+  },
+  {
+    "product": "Line Operated Three-Phase Induction Motors (IE Code)",
+    "mandatory_standard": "IS 12615:2018",
+    "qco_name": "Line Operated Three-Phase Induction Motors (IE Code) (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12615:2018.",
+    "aliases": [
+      "induction motor",
+      "electric motor",
+      "ie2 motor",
+      "ie3 motor",
+      "three phase motor",
+      "energy efficient motor"
+    ]
+  },
+  {
+    "product": "AC Static Watthour Meters, Class 1 and 2",
+    "mandatory_standard": "IS 13779:1999",
+    "qco_name": "AC Static Watthour Meters, Class 1 and 2 (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13779:1999.",
+    "aliases": [
+      "energy meter",
+      "electric meter",
+      "watthour meter",
+      "static meter",
+      "class 1 meter",
+      "kwh meter"
+    ]
+  },
+  {
+    "product": "A.C. Static Direct Connected Watthour Smart Meter, Class 1 and 2",
+    "mandatory_standard": "IS 16444 (Part 1):2015",
+    "qco_name": "A.C. Static Direct Connected Watthour Smart Meter, Class 1 and 2 (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16444 (Part 1):2015.",
+    "aliases": [
+      "smart meter",
+      "ami",
+      "smart watthour meter",
+      "two way meter",
+      "prepaid smart meter",
+      "remote disconnect"
+    ]
+  },
+  {
+    "product": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes",
+    "mandatory_standard": "IS 16046 (Part 1):2018",
+    "qco_name": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16046 (Part 1):2018.",
+    "aliases": [
+      "battery safety",
+      "rechargeable battery",
+      "nickel battery",
+      "ni-mh cell",
+      "portable battery"
+    ]
+  },
+  {
+    "product": "Crystalline Silicon Terrestrial Photovoltaic (PV) Modules",
+    "mandatory_standard": "IS 14286:2019",
+    "qco_name": "Crystalline Silicon Terrestrial Photovoltaic (PV) Modules (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14286:2019.",
+    "aliases": [
+      "solar panel",
+      "pv module",
+      "solar photovoltaic",
+      "crystalline silicon",
+      "solar cell",
+      "solar power plant"
+    ]
+  },
+  {
+    "product": "Photovoltaic (PV) Module Safety Qualification",
+    "mandatory_standard": "IS/IEC 61730 (Part 1):2016",
+    "qco_name": "Photovoltaic (PV) Module Safety Qualification (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS/IEC 61730 (Part 1):2016.",
+    "aliases": [
+      "solar safety",
+      "pv module safety",
+      "solar fire rating",
+      "junction box solar",
+      "class ii solar"
+    ]
+  },
+  {
+    "product": "Safety of Power Converters for Use in Photovoltaic Power Systems",
+    "mandatory_standard": "IS 16221 (Part 2):2015",
+    "qco_name": "Safety of Power Converters for Use in Photovoltaic Power Systems (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16221 (Part 2):2015.",
+    "aliases": [
+      "solar inverter",
+      "grid tie inverter",
+      "pv inverter",
+      "solar power converter",
+      "islanding protection"
+    ]
+  },
+  {
+    "product": "Video Surveillance Systems for Security Applications",
+    "mandatory_standard": "IS 16910:2020",
+    "qco_name": "Video Surveillance Systems for Security Applications (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2024-04-09",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16910:2020.",
+    "aliases": [
+      "cctv camera",
+      "ip camera",
+      "security camera",
+      "video surveillance",
+      "surveillance system",
+      "night vision camera"
+    ]
+  },
+  {
+    "product": "Electric Monoset Pumps for Clear, Cold Water for Agricultural and Domestic Use",
+    "mandatory_standard": "IS 9079:2018",
+    "qco_name": "Electric Monoset Pumps for Clear, Cold Water for Agricultural and Domestic Use (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9079:2018.",
+    "aliases": [
+      "monoset pump",
+      "centrifugal pump",
+      "agricultural pump",
+      "water pump",
+      "irrigation pump",
+      "electric water pump"
+    ]
+  },
+  {
+    "product": "Submersible Pumpsets for Clear, Cold Water",
+    "mandatory_standard": "IS 8034:2018",
+    "qco_name": "Submersible Pumpsets for Clear, Cold Water (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8034:2018.",
+    "aliases": [
+      "submersible pump",
+      "borewell pump",
+      "tubewell pumpset",
+      "submersible motor",
+      "deep well pump"
+    ]
+  },
+  {
+    "product": "Safety of Household and Similar Electrical Appliances",
+    "mandatory_standard": "IS 302 (Part 2/Sec 3):2007",
+    "qco_name": "Safety of Household and Similar Electrical Appliances (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 302 (Part 2/Sec 3):2007.",
+    "aliases": [
+      "electric iron",
+      "steam iron",
+      "dry iron",
+      "clothes iron",
+      "iron safety"
+    ]
+  },
+  {
+    "product": "Safety of Household and Similar Electrical Appliances",
+    "mandatory_standard": "IS 302 (Part 2/Sec 21):2011",
+    "qco_name": "Safety of Household and Similar Electrical Appliances (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 302 (Part 2/Sec 21):2011.",
+    "aliases": [
+      "water heater",
+      "geyser",
+      "electric geyser",
+      "storage water heater",
+      "water heating tank"
+    ]
+  },
+  {
+    "product": "Room Air Conditioners",
+    "mandatory_standard": "IS 1391 (Part 1):2017",
+    "qco_name": "Room Air Conditioners (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1391 (Part 1):2017.",
+    "aliases": [
+      "air conditioner",
+      "window ac",
+      "cooling capacity",
+      "iseer",
+      "room air conditioner",
+      "hvac"
+    ]
+  },
+  {
+    "product": "Room Air Conditioners",
+    "mandatory_standard": "IS 1391 (Part 2):2018",
+    "qco_name": "Room Air Conditioners (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1391 (Part 2):2018.",
+    "aliases": [
+      "split ac",
+      "inverter ac",
+      "split air conditioner",
+      "inverter air conditioner",
+      "hvac cooling"
+    ]
+  },
+  {
+    "product": "Industrial Safety Belts and Harnesses",
+    "mandatory_standard": "IS 3521 (Part 1):1999",
+    "qco_name": "Industrial Safety Belts and Harnesses (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3521 (Part 1):1999.",
+    "aliases": [
+      "safety harness",
+      "safety belt",
+      "full body harness",
+      "fall arrester",
+      "working at height",
+      "lanyard"
+    ]
+  },
+  {
+    "product": "Sterile Hypodermic Needles for Single Use",
+    "mandatory_standard": "IS 10654:2020",
+    "qco_name": "Sterile Hypodermic Needles for Single Use (Quality Control) Order",
+    "ministry": "Ministry of Health and Family Welfare",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 10654:2020.",
+    "aliases": [
+      "hypodermic needle",
+      "sterile needle",
+      "injection needle",
+      "disposable needle",
+      "medical needle"
+    ]
+  },
+  {
+    "product": "Surgical Rubber Gloves",
+    "mandatory_standard": "IS 4148:1989",
+    "qco_name": "Surgical Rubber Gloves (Quality Control) Order",
+    "ministry": "Ministry of Health and Family Welfare",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 4148:1989.",
+    "aliases": [
+      "surgical gloves",
+      "latex gloves",
+      "rubber gloves medical",
+      "operation gloves",
+      "sterile gloves"
+    ]
+  },
+  {
+    "product": "Medical Examination Gloves Made of Rubber Latex",
+    "mandatory_standard": "IS 15377:2003",
+    "qco_name": "Medical Examination Gloves Made of Rubber Latex (Quality Control) Order",
+    "ministry": "Ministry of Health and Family Welfare",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15377:2003.",
+    "aliases": [
+      "examination gloves",
+      "exam gloves",
+      "latex examination gloves",
+      "clinical gloves",
+      "doctor gloves"
+    ]
+  },
+  {
+    "product": "Clinical Thermometers",
+    "mandatory_standard": "IS 16568:2016",
+    "qco_name": "Clinical Thermometers (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16568:2016.",
+    "aliases": [
+      "digital thermometer",
+      "clinical thermometer",
+      "body temperature thermometer",
+      "fever thermometer",
+      "electronic thermometer"
+    ]
+  },
+  {
+    "product": "Iodized Salt, Vacuum Evaporated Iodized Salt and Refined Iodized Salt",
+    "mandatory_standard": "IS 7224:2006",
+    "qco_name": "Iodized Salt, Vacuum Evaporated Iodized Salt and Refined Iodized Salt (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 7224:2006.",
+    "aliases": [
+      "iodized salt",
+      "edible salt",
+      "table salt",
+      "iodine salt",
+      "cooking salt",
+      "refined salt"
+    ]
+  },
+  {
+    "product": "Agricultural Tractors",
+    "mandatory_standard": "IS 12207:2019",
+    "qco_name": "Agricultural Tractors (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12207:2019.",
+    "aliases": [
+      "tractor test",
+      "agricultural tractor",
+      "pto test",
+      "hydraulic lift tractor",
+      "farm tractor",
+      "drawbar power"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 15636:2012",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15636:2012.",
+    "aliases": [
+      "car tyre",
+      "radial tyre",
+      "automobile tyre",
+      "passenger car tyre",
+      "tubeless tyre",
+      "pneumatic tyre"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 15633:2005",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15633:2005.",
+    "aliases": [
+      "truck tyre",
+      "bus tyre",
+      "commercial vehicle tyre",
+      "radial truck tyre",
+      "heavy vehicle tyre"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 15139:2002",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15139:2002.",
+    "aliases": [
+      "seat belt",
+      "safety belt",
+      "car seat belt",
+      "three point belt",
+      "retractor seat belt",
+      "seatbelt buckle"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 1884:1993",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1884:1993.",
+    "aliases": [
+      "car horn",
+      "electric horn",
+      "automobile horn",
+      "two wheeler horn",
+      "vehicle warning horn"
+    ]
+  },
+  {
+    "product": "Geosynthetics",
+    "mandatory_standard": "IS 16654:2017",
+    "qco_name": "Geosynthetics (Quality Control) Order",
+    "ministry": "Ministry of Textiles",
+    "effective_date": "2023-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16654:2017.",
+    "aliases": [
+      "geotextile",
+      "road geotextile",
+      "highway geotextile",
+      "subgrade stabilization",
+      "geosynthetics",
+      "drainage fabric"
+    ]
+  },
+  {
+    "product": "Textiles",
+    "mandatory_standard": "IS 15748:2022",
+    "qco_name": "Textiles (Quality Control) Order",
+    "ministry": "Ministry of Textiles",
+    "effective_date": "2023-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15748:2022.",
+    "aliases": [
+      "flame retardant fabric",
+      "fire proof fabric",
+      "fr textile",
+      "fire resistant cloth",
+      "firefighter fabric"
+    ]
+  },
+  {
+    "product": "Textiles",
+    "mandatory_standard": "IS 1265:2021",
+    "qco_name": "Textiles (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2022-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1265:2021.",
+    "aliases": [
+      "jute bag",
+      "gunny bag",
+      "bora",
+      "grain packaging bag",
+      "b-twill jute bag"
+    ]
+  },
+  {
+    "product": "Textiles",
+    "mandatory_standard": "IS 14968:2015",
+    "qco_name": "Textiles (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14968:2015.",
+    "aliases": [
+      "pp woven sack",
+      "plastic sack",
+      "hdpe woven bag",
+      "grain bag",
+      "polypropylene sack"
+    ]
+  },
+  {
+    "product": "Hydrochloric Acid",
+    "mandatory_standard": "IS 265:1993",
+    "qco_name": "Hydrochloric Acid (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 265:1993.",
+    "aliases": [
+      "hydrochloric acid",
+      "hcl",
+      "muriatic acid",
+      "industrial acid",
+      "pickling acid"
+    ]
+  },
+  {
+    "product": "Paving Bitumen",
+    "mandatory_standard": "IS 73:2013",
+    "qco_name": "Paving Bitumen (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 73:2013.",
+    "aliases": [
+      "bitumen",
+      "paving bitumen",
+      "vg 30",
+      "vg 40",
+      "asphalt",
+      "tar road",
+      "highway bitumen"
+    ]
+  },
+  {
+    "product": "Wrought Aluminium and Aluminium Alloy Bars, Rods and Sections for General Engineering Purposes",
+    "mandatory_standard": "IS 733:1983",
+    "qco_name": "Wrought Aluminium and Aluminium Alloy Bars, Rods and Sections for General Engineering Purposes (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 733:1983.",
+    "aliases": [
+      "aluminium section",
+      "extruded aluminium",
+      "alloy 6063",
+      "aluminium bar",
+      "architectural aluminium"
+    ]
+  },
+  {
+    "product": "Wrought Aluminium and Aluminium Alloy Sheet and Strip for General Engineering Purposes",
+    "mandatory_standard": "IS 737:2008",
+    "qco_name": "Wrought Aluminium and Aluminium Alloy Sheet and Strip for General Engineering Purposes (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 737:2008.",
+    "aliases": [
+      "aluminium sheet",
+      "aluminium coil",
+      "alloy 19000",
+      "alloy 31000",
+      "bus body sheet"
+    ]
+  },
+  {
+    "product": "Brass Tubes for General Purposes",
+    "mandatory_standard": "IS 407:1981",
+    "qco_name": "Brass Tubes for General Purposes (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 407:1981.",
+    "aliases": [
+      "brass tube",
+      "brass pipe",
+      "copper zinc tube",
+      "heat exchanger tube",
+      "instrumentation tube"
+    ]
+  },
+  {
+    "product": "Technical Supply Conditions for Threaded Steel Fasteners",
+    "mandatory_standard": "IS 1367 (Part 3):2017",
+    "qco_name": "Technical Supply Conditions for Threaded Steel Fasteners (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2024-01-21",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1367 (Part 3):2017.",
+    "aliases": [
+      "bolt 8.8",
+      "high tensile bolt",
+      "grade 8.8 bolt",
+      "structural bolt",
+      "steel screw",
+      "fastener property class"
+    ]
+  },
+  {
+    "product": "Grey Iron Castings",
+    "mandatory_standard": "IS 210:2009",
+    "qco_name": "Grey Iron Castings (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 210:2009.",
+    "aliases": [
+      "cast iron",
+      "grey iron casting",
+      "fg 200",
+      "fg 260",
+      "manhole frame",
+      "pump casing casting"
+    ]
+  },
+  {
+    "product": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+    "mandatory_standard": "IS 14255:1995",
+    "qco_name": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14255:1995.",
+    "aliases": [
+      "aerial",
+      "bunched",
+      "cables",
+      "for",
+      "working",
+      "voltages",
+      "and",
+      "including",
+      "1100",
+      "power"
+    ]
+  },
+  {
+    "product": "Elastomer Insulated Cables",
+    "mandatory_standard": "IS 9968 (Part 1):1988",
+    "qco_name": "Elastomer Insulated Cables (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9968 (Part 1):1988.",
+    "aliases": [
+      "elastomer",
+      "insulated",
+      "cables",
+      "for",
+      "working",
+      "voltages",
+      "and",
+      "including",
+      "1100",
+      "cables"
+    ]
+  },
+  {
+    "product": "Low-Voltage Switchgear and Controlgear",
+    "mandatory_standard": "IS 13947 (Part 2):1993",
+    "qco_name": "Low-Voltage Switchgear and Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13947 (Part 2):1993.",
+    "aliases": [
+      "low",
+      "voltage",
+      "switchgear",
+      "and",
+      "controlgear",
+      "circuit",
+      "breakers",
+      "mccb",
+      "acb",
+      "switchgear"
+    ]
+  },
+  {
+    "product": "Low Voltage Fuses for Substantially Skilled Persons (HRC Fuses)",
+    "mandatory_standard": "IS 13703 (Part 2):1993",
+    "qco_name": "Low Voltage Fuses for Substantially Skilled Persons (HRC Fuses) (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13703 (Part 2):1993.",
+    "aliases": [
+      "low",
+      "voltage",
+      "fuses",
+      "for",
+      "substantially",
+      "skilled",
+      "persons",
+      "hrc",
+      "fuses",
+      "switchgear"
+    ]
+  },
+  {
+    "product": "AC Static Transformer Operated Watthour and VAR-Hour Meters, Class 0.2S and 0.5S",
+    "mandatory_standard": "IS 14697:1999",
+    "qco_name": "AC Static Transformer Operated Watthour and VAR-Hour Meters, Class 0.2S and 0.5S (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14697:1999.",
+    "aliases": [
+      "static",
+      "transformer",
+      "operated",
+      "watthour",
+      "and",
+      "var",
+      "hour",
+      "meters",
+      "class",
+      "and"
+    ]
+  },
+  {
+    "product": "Alternating Current Direct Connected Static Prepayment Meters for Active Energy",
+    "mandatory_standard": "IS 15884:2010",
+    "qco_name": "Alternating Current Direct Connected Static Prepayment Meters for Active Energy (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15884:2010.",
+    "aliases": [
+      "alternating",
+      "current",
+      "direct",
+      "connected",
+      "static",
+      "prepayment",
+      "meters",
+      "for",
+      "active",
+      "energy"
+    ]
+  },
+  {
+    "product": "Stationary Lead-Acid Cells and Batteries with Tubular Positive Plates",
+    "mandatory_standard": "IS 1651:2013",
+    "qco_name": "Stationary Lead-Acid Cells and Batteries with Tubular Positive Plates (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1651:2013.",
+    "aliases": [
+      "stationary",
+      "lead",
+      "acid",
+      "cells",
+      "and",
+      "batteries",
+      "with",
+      "tubular",
+      "positive",
+      "plates"
+    ]
+  },
+  {
+    "product": "Stationary Lead-Acid Batteries with Valve Regulated Type (VRLA)",
+    "mandatory_standard": "IS 13369:1992",
+    "qco_name": "Stationary Lead-Acid Batteries with Valve Regulated Type (VRLA) (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13369:1992.",
+    "aliases": [
+      "stationary",
+      "lead",
+      "acid",
+      "batteries",
+      "with",
+      "valve",
+      "regulated",
+      "type",
+      "vrla",
+      "batteries"
+    ]
+  },
+  {
+    "product": "Stationary Valve Regulated Lead Acid Batteries",
+    "mandatory_standard": "IS 15549:2005",
+    "qco_name": "Stationary Valve Regulated Lead Acid Batteries (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15549:2005.",
+    "aliases": [
+      "stationary",
+      "valve",
+      "regulated",
+      "lead",
+      "acid",
+      "batteries",
+      "specification",
+      "batteries",
+      "high",
+      "capacity"
+    ]
+  },
+  {
+    "product": "Electronic Controlgear for LED Modules",
+    "mandatory_standard": "IS 16104:2012",
+    "qco_name": "Electronic Controlgear for LED Modules (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16104:2012.",
+    "aliases": [
+      "electronic",
+      "controlgear",
+      "for",
+      "led",
+      "modules",
+      "performance",
+      "requirements",
+      "lighting",
+      "electronic",
+      "drivers"
+    ]
+  },
+  {
+    "product": "Three-Phase Induction Motors",
+    "mandatory_standard": "IS 325:1996",
+    "qco_name": "Three-Phase Induction Motors (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 325:1996.",
+    "aliases": [
+      "three",
+      "phase",
+      "induction",
+      "motors",
+      "specification",
+      "rotating",
+      "machines",
+      "general",
+      "purpose",
+      "three"
+    ]
+  },
+  {
+    "product": "Single-Phase AC Induction Motors for General Purpose",
+    "mandatory_standard": "IS 996:2009",
+    "qco_name": "Single-Phase AC Induction Motors for General Purpose (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 996:2009.",
+    "aliases": [
+      "single",
+      "phase",
+      "induction",
+      "motors",
+      "for",
+      "general",
+      "purpose",
+      "specification",
+      "rotating",
+      "machines"
+    ]
+  },
+  {
+    "product": "Mobile Phones",
+    "mandatory_standard": "IS 16333 (Part 3):2022",
+    "qco_name": "Mobile Phones (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16333 (Part 3):2022.",
+    "aliases": [
+      "mobile",
+      "phones",
+      "indian",
+      "language",
+      "support",
+      "requirements",
+      "telecommunications",
+      "mandatory",
+      "requirements",
+      "for"
+    ]
+  },
+  {
+    "product": "Coin/Button Cell Batteries",
+    "mandatory_standard": "IS 16047:2018",
+    "qco_name": "Coin/Button Cell Batteries (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16047:2018.",
+    "aliases": [
+      "coin",
+      "button",
+      "cell",
+      "batteries",
+      "safety",
+      "requirements",
+      "batteries",
+      "safety",
+      "requirements",
+      "and"
+    ]
+  },
+  {
+    "product": "Test Procedure of Islanding Prevention Measures for Utility-Interconnected Photovoltaic Inverters",
+    "mandatory_standard": "IS 16169:2014",
+    "qco_name": "Test Procedure of Islanding Prevention Measures for Utility-Interconnected Photovoltaic Inverters (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16169:2014.",
+    "aliases": [
+      "test",
+      "procedure",
+      "islanding",
+      "prevention",
+      "measures",
+      "for",
+      "utility",
+      "interconnected",
+      "photovoltaic",
+      "inverters"
+    ]
+  },
+  {
+    "product": "Biometric Devices for Aadhaar and Access Control Applications",
+    "mandatory_standard": "IS 16345:2019",
+    "qco_name": "Biometric Devices for Aadhaar and Access Control Applications (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16345:2019.",
+    "aliases": [
+      "biometric",
+      "devices",
+      "for",
+      "aadhaar",
+      "and",
+      "access",
+      "control",
+      "applications",
+      "security",
+      "systems"
+    ]
+  },
+  {
+    "product": "Explosive Atmospheres",
+    "mandatory_standard": "IS/IEC 60079 (Part 0):2017",
+    "qco_name": "Explosive Atmospheres (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS/IEC 60079 (Part 0):2017.",
+    "aliases": [
+      "explosive",
+      "atmospheres",
+      "equipment",
+      "general",
+      "requirements",
+      "industrial",
+      "electronics",
+      "general",
+      "construction",
+      "and"
+    ]
+  },
+  {
+    "product": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B",
+    "mandatory_standard": "IS 1364 (Part 2):2018",
+    "qco_name": "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2024-01-21",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1364 (Part 2):2018.",
+    "aliases": [
+      "hexagon",
+      "head",
+      "bolts",
+      "screws",
+      "and",
+      "nuts",
+      "product",
+      "grades",
+      "and",
+      "hexagon"
+    ]
+  },
+  {
+    "product": "Horizontal Centrifugal Pumps for Clear, Cold Water",
+    "mandatory_standard": "IS 6595 (Part 1):1993",
+    "qco_name": "Horizontal Centrifugal Pumps for Clear, Cold Water (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 6595 (Part 1):1993.",
+    "aliases": [
+      "horizontal",
+      "centrifugal",
+      "pumps",
+      "for",
+      "clear",
+      "cold",
+      "water",
+      "agricultural",
+      "and",
+      "domestic"
+    ]
+  },
+  {
+    "product": "Domestic Refrigerators with Integral Frozen Food Compartment",
+    "mandatory_standard": "IS 1476 (Part 1):2000",
+    "qco_name": "Domestic Refrigerators with Integral Frozen Food Compartment (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1476 (Part 1):2000.",
+    "aliases": [
+      "domestic",
+      "refrigerators",
+      "with",
+      "integral",
+      "frozen",
+      "food",
+      "compartment",
+      "specification",
+      "domestic",
+      "appliances"
+    ]
+  },
+  {
+    "product": "Electric Immersion Water Heaters",
+    "mandatory_standard": "IS 368:2014",
+    "qco_name": "Electric Immersion Water Heaters (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 368:2014.",
+    "aliases": [
+      "electric",
+      "immersion",
+      "water",
+      "heaters",
+      "specification",
+      "domestic",
+      "appliances",
+      "portable",
+      "heating",
+      "immersion"
+    ]
+  },
+  {
+    "product": "Flushing Cisterns for Water Closets and Urinals (Other than Plastic Cisterns)",
+    "mandatory_standard": "IS 774:2004",
+    "qco_name": "Flushing Cisterns for Water Closets and Urinals (Other than Plastic Cisterns) (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 774:2004.",
+    "aliases": [
+      "flushing",
+      "cisterns",
+      "for",
+      "water",
+      "closets",
+      "and",
+      "urinals",
+      "other",
+      "than",
+      "plastic"
+    ]
+  },
+  {
+    "product": "Ceramic Tiles",
+    "mandatory_standard": "IS 13630 (Part 1):2019",
+    "qco_name": "Ceramic Tiles (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13630 (Part 1):2019.",
+    "aliases": [
+      "ceramic",
+      "tiles",
+      "methods",
+      "test",
+      "sampling",
+      "and",
+      "basis",
+      "for",
+      "acceptance",
+      "flooring"
+    ]
+  },
+  {
+    "product": "Blockboards",
+    "mandatory_standard": "IS 1659:2004",
+    "qco_name": "Blockboards (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1659:2004.",
+    "aliases": [
+      "blockboards",
+      "specification",
+      "wood",
+      "timber",
+      "products",
+      "solid",
+      "core",
+      "blockboards",
+      "manufactured",
+      "from"
+    ]
+  },
+  {
+    "product": "Veneered Decorative Plywood",
+    "mandatory_standard": "IS 1328:1996",
+    "qco_name": "Veneered Decorative Plywood (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1328:1996.",
+    "aliases": [
+      "veneered",
+      "decorative",
+      "plywood",
+      "specification",
+      "wood",
+      "timber",
+      "products",
+      "decorative",
+      "plywood",
+      "with"
+    ]
+  },
+  {
+    "product": "Medium Density Fibreboards (MDF) for General Purpose",
+    "mandatory_standard": "IS 12406:2003",
+    "qco_name": "Medium Density Fibreboards (MDF) for General Purpose (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12406:2003.",
+    "aliases": [
+      "medium",
+      "density",
+      "fibreboards",
+      "mdf",
+      "for",
+      "general",
+      "purpose",
+      "specification",
+      "wood",
+      "timber"
+    ]
+  },
+  {
+    "product": "Prelaminated Medium Density Fibreboard",
+    "mandatory_standard": "IS 14587:1998",
+    "qco_name": "Prelaminated Medium Density Fibreboard (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14587:1998.",
+    "aliases": [
+      "prelaminated",
+      "medium",
+      "density",
+      "fibreboard",
+      "specification",
+      "wood",
+      "timber",
+      "products",
+      "melamine",
+      "faced"
+    ]
+  },
+  {
+    "product": "Bleaching Powder, Stable",
+    "mandatory_standard": "IS 1065:1989",
+    "qco_name": "Bleaching Powder, Stable (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1065:1989.",
+    "aliases": [
+      "bleaching",
+      "powder",
+      "stable",
+      "specification",
+      "water",
+      "treatment",
+      "specifies",
+      "stable",
+      "chlorinated",
+      "lime"
+    ]
+  },
+  {
+    "product": "Compressed Oxygen Gas",
+    "mandatory_standard": "IS 309:2005",
+    "qco_name": "Compressed Oxygen Gas (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 309:2005.",
+    "aliases": [
+      "compressed",
+      "oxygen",
+      "gas",
+      "specification",
+      "industrial",
+      "gases",
+      "medical",
+      "and",
+      "industrial",
+      "compressed"
+    ]
+  },
+  {
+    "product": "Milk Powder",
+    "mandatory_standard": "IS 1165:2002",
+    "qco_name": "Milk Powder (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1165:2002.",
+    "aliases": [
+      "milk",
+      "powder",
+      "specification",
+      "dairy",
+      "products",
+      "physical",
+      "chemical",
+      "and",
+      "microbiological",
+      "requirements"
+    ]
+  },
+  {
+    "product": "Infant Milk Substitutes",
+    "mandatory_standard": "IS 12220:1987",
+    "qco_name": "Infant Milk Substitutes (Quality Control) Order",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12220:1987.",
+    "aliases": [
+      "infant",
+      "milk",
+      "substitutes",
+      "specification",
+      "infant",
+      "nutrition",
+      "formulation",
+      "requirements",
+      "for",
+      "spray"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 11852 (Part 1):2001",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 11852 (Part 1):2001.",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "brakes",
+      "and",
+      "braking",
+      "systems",
+      "terminology",
+      "and",
+      "definitions",
+      "vehicle"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 11852 (Part 3):2001",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 11852 (Part 3):2001.",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "brakes",
+      "and",
+      "braking",
+      "systems",
+      "requirements",
+      "for",
+      "passenger",
+      "cars"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 9438:2018",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9438:2018.",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "wheel",
+      "rims",
+      "dimensions",
+      "and",
+      "test",
+      "methods",
+      "tyres",
+      "wheels"
+    ]
+  },
+  {
+    "product": "Automotive Vehicles",
+    "mandatory_standard": "IS 14494:1998",
+    "qco_name": "Automotive Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14494:1998.",
+    "aliases": [
+      "automotive",
+      "vehicles",
+      "rear",
+      "view",
+      "mirrors",
+      "specification",
+      "vehicle",
+      "safety",
+      "field",
+      "view"
+    ]
+  },
+  {
+    "product": "Eye-Protectors",
+    "mandatory_standard": "IS 5983:1980",
+    "qco_name": "Eye-Protectors (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 5983:1980.",
+    "aliases": [
+      "eye",
+      "protectors",
+      "specification",
+      "personal",
+      "protective",
+      "equipment",
+      "optical",
+      "and",
+      "mechanical",
+      "impact"
+    ]
+  },
+  {
+    "product": "Safety Rubber Boots",
+    "mandatory_standard": "IS 14352:1996",
+    "qco_name": "Safety Rubber Boots (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2023-07-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14352:1996.",
+    "aliases": [
+      "safety",
+      "rubber",
+      "boots",
+      "specification",
+      "personal",
+      "protective",
+      "equipment",
+      "moulded",
+      "waterproof",
+      "rubber"
+    ]
+  },
+  {
+    "product": "Industrial Safety Gloves",
+    "mandatory_standard": "IS 6994 (Part 1):1973",
+    "qco_name": "Industrial Safety Gloves (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 6994 (Part 1):1973.",
+    "aliases": [
+      "industrial",
+      "safety",
+      "gloves",
+      "leather",
+      "and",
+      "cotton",
+      "gloves",
+      "personal",
+      "protective",
+      "equipment"
+    ]
+  },
+  {
+    "product": "Infusion Sets for Single Use",
+    "mandatory_standard": "IS 14920:2001",
+    "qco_name": "Infusion Sets for Single Use (Quality Control) Order",
+    "ministry": "Ministry of Health and Family Welfare",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14920:2001.",
+    "aliases": [
+      "infusion",
+      "sets",
+      "for",
+      "single",
+      "use",
+      "specification",
+      "surgical",
+      "consumables",
+      "requirements",
+      "for"
+    ]
+  },
+  {
+    "product": "Safety of Toys",
+    "mandatory_standard": "IS 9873 (Part 3):2020",
+    "qco_name": "Safety of Toys (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2021-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9873 (Part 3):2020.",
+    "aliases": [
+      "safety",
+      "toys",
+      "migration",
+      "certain",
+      "elements",
+      "toxic",
+      "heavy",
+      "metals",
+      "toy",
+      "safety"
+    ]
+  },
+  {
+    "product": "Steel Tubes, Tubulars and Other Wrought Steel Fittings",
+    "mandatory_standard": "IS 1239 (Part 2):2004",
+    "qco_name": "Steel Tubes, Tubulars and Other Wrought Steel Fittings (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1239 (Part 2):2004.",
+    "aliases": [
+      "steel",
+      "tubes",
+      "tubulars",
+      "and",
+      "other",
+      "wrought",
+      "steel",
+      "fittings"
+    ]
+  },
+  {
+    "product": "Ductile Iron Fittings for Pressure Pipes for Water, Gas and Sewage",
+    "mandatory_standard": "IS 9523:2000",
+    "qco_name": "Ductile Iron Fittings for Pressure Pipes for Water, Gas and Sewage (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 9523:2000.",
+    "aliases": [
+      "ductile",
+      "iron",
+      "fittings",
+      "for",
+      "pressure",
+      "pipes",
+      "for",
+      "water"
+    ]
+  },
+  {
+    "product": "Supersulphated Cement",
+    "mandatory_standard": "IS 6909:1990",
+    "qco_name": "Supersulphated Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 6909:1990.",
+    "aliases": [
+      "supersulphated",
+      "cement",
+      "specification",
+      "cement",
+      "binders"
+    ]
+  },
+  {
+    "product": "Hydrophobic Portland Cement",
+    "mandatory_standard": "IS 8043:1991",
+    "qco_name": "Hydrophobic Portland Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8043:1991.",
+    "aliases": [
+      "hydrophobic",
+      "portland",
+      "cement",
+      "specification",
+      "cement",
+      "binders"
+    ]
+  },
+  {
+    "product": "Masonry Cement",
+    "mandatory_standard": "IS 3466:1988",
+    "qco_name": "Masonry Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3466:1988.",
+    "aliases": [
+      "masonry",
+      "cement",
+      "specification",
+      "cement",
+      "binders"
+    ]
+  },
+  {
+    "product": "Low Heat Portland Cement",
+    "mandatory_standard": "IS 12600:1989",
+    "qco_name": "Low Heat Portland Cement (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12600:1989.",
+    "aliases": [
+      "low",
+      "heat",
+      "portland",
+      "cement",
+      "specification",
+      "cement",
+      "binders"
+    ]
+  },
+  {
+    "product": "Ceramic Tiles",
+    "mandatory_standard": "IS 13630 (Part 2):2019",
+    "qco_name": "Ceramic Tiles (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13630 (Part 2):2019.",
+    "aliases": [
+      "ceramic",
+      "tiles",
+      "determination",
+      "water",
+      "absorption",
+      "and",
+      "bulk",
+      "density"
+    ]
+  },
+  {
+    "product": "Ceramic Tiles",
+    "mandatory_standard": "IS 13630 (Part 6):2019",
+    "qco_name": "Ceramic Tiles (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13630 (Part 6):2019.",
+    "aliases": [
+      "ceramic",
+      "tiles",
+      "determination",
+      "modulus",
+      "rupture",
+      "and",
+      "breaking",
+      "strength"
+    ]
+  },
+  {
+    "product": "Timber Paneled and Glazed Shutters",
+    "mandatory_standard": "IS 1003 (Part 1):2003",
+    "qco_name": "Timber Paneled and Glazed Shutters (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1003 (Part 1):2003.",
+    "aliases": [
+      "timber",
+      "paneled",
+      "and",
+      "glazed",
+      "shutters",
+      "door",
+      "shutters",
+      "doors"
+    ]
+  },
+  {
+    "product": "Timber Paneled and Glazed Shutters",
+    "mandatory_standard": "IS 1003 (Part 2):2003",
+    "qco_name": "Timber Paneled and Glazed Shutters (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1003 (Part 2):2003.",
+    "aliases": [
+      "timber",
+      "paneled",
+      "and",
+      "glazed",
+      "shutters",
+      "window",
+      "and",
+      "ventilator"
+    ]
+  },
+  {
+    "product": "Particle Boards of Wood and Other Lignocellulosic Materials",
+    "mandatory_standard": "IS 3087:2005",
+    "qco_name": "Particle Boards of Wood and Other Lignocellulosic Materials (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3087:2005.",
+    "aliases": [
+      "particle",
+      "boards",
+      "wood",
+      "and",
+      "other",
+      "lignocellulosic",
+      "materials",
+      "specification"
+    ]
+  },
+  {
+    "product": "Prelaminated Particle Boards",
+    "mandatory_standard": "IS 12823:2015",
+    "qco_name": "Prelaminated Particle Boards (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2024-02-28",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 12823:2015.",
+    "aliases": [
+      "prelaminated",
+      "particle",
+      "boards",
+      "specification",
+      "wood",
+      "timber",
+      "products"
+    ]
+  },
+  {
+    "product": "Flat Transparent Sheet Glass",
+    "mandatory_standard": "IS 2835:1987",
+    "qco_name": "Flat Transparent Sheet Glass (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2835:1987.",
+    "aliases": [
+      "flat",
+      "transparent",
+      "sheet",
+      "glass",
+      "specification",
+      "glass",
+      "glazing"
+    ]
+  },
+  {
+    "product": "Transparent Float Glass",
+    "mandatory_standard": "IS 14900:2000",
+    "qco_name": "Transparent Float Glass (Quality Control) Order",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "effective_date": "2023-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14900:2000.",
+    "aliases": [
+      "transparent",
+      "float",
+      "glass",
+      "specification",
+      "glass",
+      "glazing"
+    ]
+  },
+  {
+    "product": "General Requirements for Cold-Rolled Carbon Steel Strip for Springs",
+    "mandatory_standard": "IS 5435:1987",
+    "qco_name": "General Requirements for Cold-Rolled Carbon Steel Strip for Springs (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 5435:1987.",
+    "aliases": [
+      "general",
+      "requirements",
+      "for",
+      "cold",
+      "rolled",
+      "carbon",
+      "steel",
+      "strip"
+    ]
+  },
+  {
+    "product": "Carbon Steel Billets, Blooms, Slabs and Bars for Forgings",
+    "mandatory_standard": "IS 1875:1992",
+    "qco_name": "Carbon Steel Billets, Blooms, Slabs and Bars for Forgings (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1875:1992.",
+    "aliases": [
+      "carbon",
+      "steel",
+      "billets",
+      "blooms",
+      "slabs",
+      "and",
+      "bars",
+      "for"
+    ]
+  },
+  {
+    "product": "Carbon Steel Forgings for General Engineering Purposes",
+    "mandatory_standard": "IS 2004:1991",
+    "qco_name": "Carbon Steel Forgings for General Engineering Purposes (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2004:1991.",
+    "aliases": [
+      "carbon",
+      "steel",
+      "forgings",
+      "for",
+      "general",
+      "engineering",
+      "purposes",
+      "forging"
+    ]
+  },
+  {
+    "product": "Iron Castings with Spheroidal or Nodular Graphite",
+    "mandatory_standard": "IS 1865:1991",
+    "qco_name": "Iron Castings with Spheroidal or Nodular Graphite (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1865:1991.",
+    "aliases": [
+      "iron",
+      "castings",
+      "with",
+      "spheroidal",
+      "nodular",
+      "graphite",
+      "specification",
+      "foundry"
+    ]
+  },
+  {
+    "product": "Malleable Iron Castings",
+    "mandatory_standard": "IS 14329:1995",
+    "qco_name": "Malleable Iron Castings (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14329:1995.",
+    "aliases": [
+      "malleable",
+      "iron",
+      "castings",
+      "specification",
+      "foundry",
+      "products"
+    ]
+  },
+  {
+    "product": "Wrought Aluminium and Aluminium Alloy Extruded Round Tube",
+    "mandatory_standard": "IS 1285:2002",
+    "qco_name": "Wrought Aluminium and Aluminium Alloy Extruded Round Tube (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1285:2002.",
+    "aliases": [
+      "wrought",
+      "aluminium",
+      "and",
+      "aluminium",
+      "alloy",
+      "extruded",
+      "round",
+      "tube"
+    ]
+  },
+  {
+    "product": "Free Cutting Lead-Bearing Brass Bars, Rods and Sections",
+    "mandatory_standard": "IS 319:2007",
+    "qco_name": "Free Cutting Lead-Bearing Brass Bars, Rods and Sections (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 319:2007.",
+    "aliases": [
+      "free",
+      "cutting",
+      "lead",
+      "bearing",
+      "brass",
+      "bars",
+      "rods",
+      "and"
+    ]
+  },
+  {
+    "product": "Copper",
+    "mandatory_standard": "IS 191:2007",
+    "qco_name": "Copper (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-09-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 191:2007.",
+    "aliases": [
+      "copper",
+      "specification",
+      "ingots",
+      "bars",
+      "cathodes",
+      "non",
+      "ferrous",
+      "metals"
+    ]
+  },
+  {
+    "product": "Heat Resistant PVC Insulated Cables for Working Voltages up to 1100 V",
+    "mandatory_standard": "IS 694 (Part 2):2020",
+    "qco_name": "Heat Resistant PVC Insulated Cables for Working Voltages up to 1100 V (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 694 (Part 2):2020.",
+    "aliases": [
+      "heat",
+      "resistant",
+      "pvc",
+      "insulated",
+      "cables",
+      "for",
+      "working",
+      "voltages"
+    ]
+  },
+  {
+    "product": "Low Carbon Galvanized Steel Wires, Formed Wires and Tapes for Armouring of Cables",
+    "mandatory_standard": "IS 3975:1999",
+    "qco_name": "Low Carbon Galvanized Steel Wires, Formed Wires and Tapes for Armouring of Cables (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3975:1999.",
+    "aliases": [
+      "low",
+      "carbon",
+      "galvanized",
+      "steel",
+      "wires",
+      "formed",
+      "wires",
+      "and"
+    ]
+  },
+  {
+    "product": "Conductors for Insulated Electric Cables and Flexible Cords",
+    "mandatory_standard": "IS 8130:2013",
+    "qco_name": "Conductors for Insulated Electric Cables and Flexible Cords (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8130:2013.",
+    "aliases": [
+      "conductors",
+      "for",
+      "insulated",
+      "electric",
+      "cables",
+      "and",
+      "flexible",
+      "cords"
+    ]
+  },
+  {
+    "product": "New Insulating Oils",
+    "mandatory_standard": "IS 335:2018",
+    "qco_name": "New Insulating Oils (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 335:2018.",
+    "aliases": [
+      "new",
+      "insulating",
+      "oils",
+      "specification",
+      "mineral",
+      "insulating",
+      "oil",
+      "for"
+    ]
+  },
+  {
+    "product": "Low Voltage Switchgear and Controlgear",
+    "mandatory_standard": "IS 16503:2017",
+    "qco_name": "Low Voltage Switchgear and Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16503:2017.",
+    "aliases": [
+      "low",
+      "voltage",
+      "switchgear",
+      "and",
+      "controlgear",
+      "contactors",
+      "and",
+      "motor"
+    ]
+  },
+  {
+    "product": "Lamp Controlgear",
+    "mandatory_standard": "IS 15885 (Part 1):2011",
+    "qco_name": "Lamp Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15885 (Part 1):2011.",
+    "aliases": [
+      "lamp",
+      "controlgear",
+      "general",
+      "and",
+      "safety",
+      "requirements",
+      "lighting"
+    ]
+  },
+  {
+    "product": "Lamp Controlgear",
+    "mandatory_standard": "IS 15885 (Part 2/Sec 13):2012",
+    "qco_name": "Lamp Controlgear (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15885 (Part 2/Sec 13):2012.",
+    "aliases": [
+      "lamp",
+      "controlgear",
+      "particular",
+      "requirements",
+      "for",
+      "supplied",
+      "electronic",
+      "controlgear"
+    ]
+  },
+  {
+    "product": "Self-Ballasted LED Lamps for General Lighting Services",
+    "mandatory_standard": "IS 16102 (Part 2):2012",
+    "qco_name": "Self-Ballasted LED Lamps for General Lighting Services (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16102 (Part 2):2012.",
+    "aliases": [
+      "self",
+      "ballasted",
+      "led",
+      "lamps",
+      "for",
+      "general",
+      "lighting",
+      "services"
+    ]
+  },
+  {
+    "product": "LED Modules for General Lighting",
+    "mandatory_standard": "IS 16103 (Part 2):2012",
+    "qco_name": "LED Modules for General Lighting (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16103 (Part 2):2012.",
+    "aliases": [
+      "led",
+      "modules",
+      "for",
+      "general",
+      "lighting",
+      "performance",
+      "requirements",
+      "lighting"
+    ]
+  },
+  {
+    "product": "Photobiological Safety of Lamps and Lamp Systems (Blue Light Hazard)",
+    "mandatory_standard": "IS 16108:2012",
+    "qco_name": "Photobiological Safety of Lamps and Lamp Systems (Blue Light Hazard) (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16108:2012.",
+    "aliases": [
+      "photobiological",
+      "safety",
+      "lamps",
+      "and",
+      "lamp",
+      "systems",
+      "blue",
+      "light"
+    ]
+  },
+  {
+    "product": "Miniature Fuses",
+    "mandatory_standard": "IS 16504:2017",
+    "qco_name": "Miniature Fuses (Quality Control) Order",
+    "ministry": "Ministry of Power / Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16504:2017.",
+    "aliases": [
+      "miniature",
+      "fuses",
+      "cartridge",
+      "fuse",
+      "links",
+      "circuit",
+      "protection"
+    ]
+  },
+  {
+    "product": "Digital Cellular Telecommunications System",
+    "mandatory_standard": "IS 14144:1994",
+    "qco_name": "Digital Cellular Telecommunications System (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 14144:1994.",
+    "aliases": [
+      "digital",
+      "cellular",
+      "telecommunications",
+      "system",
+      "mobile",
+      "station",
+      "equipment",
+      "telecommunications"
+    ]
+  },
+  {
+    "product": "Telecom Power Supplies",
+    "mandatory_standard": "IS 15144:2002",
+    "qco_name": "Telecom Power Supplies (Quality Control) Order",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15144:2002.",
+    "aliases": [
+      "telecom",
+      "power",
+      "supplies",
+      "switch",
+      "mode",
+      "power",
+      "supply",
+      "smps"
+    ]
+  },
+  {
+    "product": "Agrotextiles",
+    "mandatory_standard": "IS 16391:2015",
+    "qco_name": "Agrotextiles (Quality Control) Order",
+    "ministry": "Ministry of Textiles",
+    "effective_date": "2023-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16391:2015.",
+    "aliases": [
+      "agrotextiles",
+      "shade",
+      "nets",
+      "for",
+      "agriculture",
+      "and",
+      "horticulture",
+      "specification"
+    ]
+  },
+  {
+    "product": "Textiles",
+    "mandatory_standard": "IS 16186:2014",
+    "qco_name": "Textiles (Quality Control) Order",
+    "ministry": "Ministry of Textiles",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 16186:2014.",
+    "aliases": [
+      "textiles",
+      "high",
+      "density",
+      "polyethylene",
+      "hdpe",
+      "polypropylene",
+      "woven",
+      "sacks"
+    ]
+  },
+  {
+    "product": "Polyethylene for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water",
+    "mandatory_standard": "IS 10146:1982",
+    "qco_name": "Polyethylene for its Safe Use in Contact with Foodstuffs, Pharmaceuticals and Drinking Water (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 10146:1982.",
+    "aliases": [
+      "polyethylene",
+      "for",
+      "its",
+      "safe",
+      "use",
+      "contact",
+      "with",
+      "foodstuffs"
+    ]
+  },
+  {
+    "product": "Printing Ink for Food Packaging",
+    "mandatory_standard": "IS 15495:2020",
+    "qco_name": "Printing Ink for Food Packaging (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry (DPIIT)",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15495:2020.",
+    "aliases": [
+      "printing",
+      "ink",
+      "for",
+      "food",
+      "packaging",
+      "code",
+      "practice",
+      "food"
+    ]
+  },
+  {
+    "product": "Petroleum Hydrocarbon Solvents",
+    "mandatory_standard": "IS 1745:1978",
+    "qco_name": "Petroleum Hydrocarbon Solvents (Quality Control) Order",
+    "ministry": "Ministry of Commerce and Industry - DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1745:1978.",
+    "aliases": [
+      "petroleum",
+      "hydrocarbon",
+      "solvents",
+      "specification",
+      "industrial",
+      "solvents"
+    ]
+  },
+  {
+    "product": "Caustic Soda, Pure and Technical",
+    "mandatory_standard": "IS 1011:2002",
+    "qco_name": "Caustic Soda, Pure and Technical (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 1011:2002.",
+    "aliases": [
+      "caustic",
+      "soda",
+      "pure",
+      "and",
+      "technical",
+      "specification",
+      "industrial",
+      "alkalis"
+    ]
+  },
+  {
+    "product": "Di-Ammonium Phosphate (DAP)",
+    "mandatory_standard": "IS 276:2000",
+    "qco_name": "Di-Ammonium Phosphate (DAP) (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 276:2000.",
+    "aliases": [
+      "ammonium",
+      "phosphate",
+      "dap",
+      "specification",
+      "fertilizers"
+    ]
+  },
+  {
+    "product": "Single Superphosphate (SSP)",
+    "mandatory_standard": "IS 5145:1969",
+    "qco_name": "Single Superphosphate (SSP) (Quality Control) Order",
+    "ministry": "Ministry of Chemicals and Petrofertilizers",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 5145:1969.",
+    "aliases": [
+      "single",
+      "superphosphate",
+      "ssp",
+      "specification",
+      "fertilizers"
+    ]
+  },
+  {
+    "product": "Agricultural Tractors",
+    "mandatory_standard": "IS 4931:1995",
+    "qco_name": "Agricultural Tractors (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 4931:1995.",
+    "aliases": [
+      "agricultural",
+      "tractors",
+      "rear",
+      "mounted",
+      "power",
+      "take",
+      "off",
+      "pto"
+    ]
+  },
+  {
+    "product": "Regenerative Pumps for Clear, Cold Water",
+    "mandatory_standard": "IS 8472:1998",
+    "qco_name": "Regenerative Pumps for Clear, Cold Water (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8472:1998.",
+    "aliases": [
+      "regenerative",
+      "pumps",
+      "for",
+      "clear",
+      "cold",
+      "water",
+      "specification",
+      "pumps"
+    ]
+  },
+  {
+    "product": "Centrifugal Electric Water Heaters / Instant Geysers",
+    "mandatory_standard": "IS 8978:1992",
+    "qco_name": "Centrifugal Electric Water Heaters / Instant Geysers (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 8978:1992.",
+    "aliases": [
+      "centrifugal",
+      "electric",
+      "water",
+      "heaters",
+      "instant",
+      "geysers",
+      "specification",
+      "domestic"
+    ]
+  },
+  {
+    "product": "Electric Dry Irons",
+    "mandatory_standard": "IS 366:1991",
+    "qco_name": "Electric Dry Irons (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 366:1991.",
+    "aliases": [
+      "electric",
+      "dry",
+      "irons",
+      "specification",
+      "domestic",
+      "appliances"
+    ]
+  },
+  {
+    "product": "Specification for Performance of Small Capacity Diesel Engines for Agricultural Purposes",
+    "mandatory_standard": "IS 7347:1974",
+    "qco_name": "Specification for Performance of Small Capacity Diesel Engines for Agricultural Purposes (Quality Control) Order",
+    "ministry": "Ministry of Heavy Industries",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 7347:1974.",
+    "aliases": [
+      "specification",
+      "for",
+      "performance",
+      "small",
+      "capacity",
+      "diesel",
+      "engines",
+      "for"
+    ]
+  },
+  {
+    "product": "Safety Glass for Road Vehicles",
+    "mandatory_standard": "IS 15140:2003",
+    "qco_name": "Safety Glass for Road Vehicles (Quality Control) Order",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "effective_date": "2021-04-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 15140:2003.",
+    "aliases": [
+      "safety",
+      "glass",
+      "for",
+      "road",
+      "vehicles",
+      "methods",
+      "testing",
+      "automotive"
+    ]
+  },
+  {
+    "product": "Clinical Thermometers",
+    "mandatory_standard": "IS 3055:1994",
+    "qco_name": "Clinical Thermometers (Quality Control) Order",
+    "ministry": "Ministry of Health and Family Welfare",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 3055:1994.",
+    "aliases": [
+      "clinical",
+      "thermometers",
+      "solid",
+      "stem",
+      "type",
+      "diagnostic",
+      "devices"
+    ]
+  },
+  {
+    "product": "Sterile Hypodermic Syringes for Single Use",
+    "mandatory_standard": "IS 13422:2020",
+    "qco_name": "Sterile Hypodermic Syringes for Single Use (Quality Control) Order",
+    "ministry": "Ministry of Health and Family Welfare",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 13422:2020.",
+    "aliases": [
+      "sterile",
+      "hypodermic",
+      "syringes",
+      "for",
+      "single",
+      "use",
+      "specification",
+      "surgical"
+    ]
+  },
+  {
+    "product": "Rubber Sealing Rings for Gas Mains, Water Mains and Sewers",
+    "mandatory_standard": "IS 5382:2018",
+    "qco_name": "Rubber Sealing Rings for Gas Mains, Water Mains and Sewers (Quality Control) Order",
+    "ministry": "Ministry of Jal Shakti / DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 5382:2018.",
+    "aliases": [
+      "rubber",
+      "sealing",
+      "rings",
+      "for",
+      "gas",
+      "mains",
+      "water",
+      "mains"
+    ]
+  },
+  {
+    "product": "Selection, Installation and Maintenance of Automatic Fire Detection and Alarm System",
+    "mandatory_standard": "IS 2189:2014",
+    "qco_name": "Selection, Installation and Maintenance of Automatic Fire Detection and Alarm System (Quality Control) Order",
+    "ministry": "Ministry of Home Affairs / DPIIT",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 2189:2014.",
+    "aliases": [
+      "selection",
+      "installation",
+      "and",
+      "maintenance",
+      "automatic",
+      "fire",
+      "detection",
+      "and"
+    ]
+  },
+  {
+    "product": "Refillable Seamless Steel Gas Cylinders",
+    "mandatory_standard": "IS 7285 (Part 1):2018",
+    "qco_name": "Refillable Seamless Steel Gas Cylinders (Quality Control) Order",
+    "ministry": "Ministry of Steel",
+    "effective_date": "2023-01-01",
+    "mandatory": true,
+    "remarks": "Compulsory BIS certification mark (ISI Mark) mandated under Section 16 of the BIS Act, 2016 for IS 7285 (Part 1):2018.",
+    "aliases": [
+      "gas cylinder",
+      "seamless cylinder",
+      "cng cylinder",
+      "oxygen cylinder",
+      "steel cylinder",
+      "peso approved"
+    ]
+  }
+]

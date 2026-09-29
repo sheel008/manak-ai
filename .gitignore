@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+dist/
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local/generated files
+generate-docs.mjs
