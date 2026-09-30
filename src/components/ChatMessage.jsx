@@ -172,9 +172,9 @@ export default function ChatMessage({
 
   if (isUser) {
     return (
-      <div className="flex max-w-[85%] ml-auto items-start gap-2.5">
-        <div className="px-4 py-2.5 rounded-lg bg-[#16294D] text-white shadow-2xs">
-          <p className="text-[13px] leading-relaxed whitespace-pre-wrap">{message.content}</p>
+      <div className="flex max-w-[92%] sm:max-w-[85%] ml-auto items-start gap-2">
+        <div className="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg bg-[#16294D] text-white shadow-2xs">
+          <p className="text-[13px] leading-relaxed whitespace-pre-wrap break-words">{message.content}</p>
         </div>
         <div className="flex-shrink-0 w-7 h-7 rounded-md flex items-center justify-center bg-[#16294D] text-white shadow-2xs mt-0.5">
           <User size={14} aria-hidden="true" focusable="false" />
@@ -189,12 +189,12 @@ export default function ChatMessage({
   const isSaved = topRec ? savedStandards.has(topRec.is_number) : false;
 
   return (
-    <div className="flex max-w-[95%] md:max-w-[90%] mr-auto items-start gap-2.5">
+    <div className="flex w-full max-w-full sm:max-w-[95%] md:max-w-[90%] mr-auto items-start gap-2 sm:gap-2.5">
       <div className="flex-shrink-0 w-7 h-7 rounded-md flex items-center justify-center bg-[#2F6F5E] text-white shadow-2xs mt-0.5">
         <Bot size={15} aria-hidden="true" focusable="false" />
       </div>
 
-      <div className="flex-1 bg-white border border-[#DDD9D0] text-[#111111] rounded-lg p-4 md:p-5 shadow-sm">
+      <div className="flex-1 min-w-0 bg-white border border-[#DDD9D0] text-[#111111] rounded-lg p-3 sm:p-4 md:p-5 shadow-sm overflow-hidden">
         {/* Error notice if present */}
         {message.error && (
           <div className="flex items-center gap-2 mb-3 p-2.5 rounded-md bg-[#FAEBE9] border border-[#E8AFAA] text-[#8C2B22] text-xs">

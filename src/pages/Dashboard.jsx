@@ -17,21 +17,21 @@ import api from '../services/api'
 /* ── Enterprise KPI Card ── */
 function MetricCard({ icon: Icon, label, value, subtitle, tag, iconBg, iconColor }) {
   return (
-    <div className="rounded-lg p-5 bg-white border border-[#DDD9D0] shadow-2xs flex flex-col justify-between hover:border-[#16294D] transition-colors duration-150">
-      <div className="flex items-center justify-between mb-3">
-        <div className={`w-9 h-9 rounded-md flex items-center justify-center shrink-0 ${iconBg} ${iconColor}`}>
-          <Icon size={18} />
+    <div className="rounded-lg p-3.5 sm:p-5 bg-white border border-[#DDD9D0] shadow-2xs flex flex-col justify-between hover:border-[#16294D] transition-colors duration-150">
+      <div className="flex items-center justify-between mb-2.5 sm:mb-3">
+        <div className={`w-8 h-8 sm:w-9 sm:h-9 rounded-md flex items-center justify-center shrink-0 ${iconBg} ${iconColor}`}>
+          <Icon size={17} />
         </div>
         {tag && (
-          <span className="text-[10px] font-bold text-[#16294D] bg-[#F4F3EF] border border-[#DDD9D0] rounded px-2 py-0.5">
+          <span className="text-[10px] font-bold text-[#16294D] bg-[#F4F3EF] border border-[#DDD9D0] rounded px-1.5 sm:px-2 py-0.5">
             {tag}
           </span>
         )}
       </div>
       <div>
-        <p className="text-2xl sm:text-[28px] font-bold text-[#111111] leading-none mb-1 font-sans">{value}</p>
+        <p className="text-xl sm:text-2xl lg:text-[28px] font-bold text-[#111111] leading-none mb-1 font-sans">{value}</p>
         <p className="text-xs font-semibold text-[#16294D]">{label}</p>
-        {subtitle && <p className="text-[11px] text-[#8A8580] mt-0.5">{subtitle}</p>}
+        {subtitle && <p className="text-[10px] sm:text-[11px] text-[#8A8580] mt-0.5">{subtitle}</p>}
       </div>
     </div>
   )
@@ -143,8 +143,8 @@ export default function Dashboard() {
   return (
     <Layout title={t('navigation.dashboard')}>
       {/* ── Official BIS Hero Banner ── */}
-      <div className="rounded-lg bg-[#16294D] px-6 py-5 mb-6 text-white border border-[#1E3761] shadow-sm relative overflow-hidden">
-        <div className="flex flex-wrap items-center justify-between gap-4 relative z-10">
+      <div className="rounded-lg bg-[#16294D] px-4 sm:px-6 py-4 sm:py-5 mb-4 sm:mb-6 text-white border border-[#1E3761] shadow-sm relative overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 relative z-10">
           <div>
             <div className="flex items-center gap-2 mb-1.5 flex-wrap">
               <span className="text-[10px] font-bold uppercase tracking-wider bg-[#F0A500] text-[#16294D] px-2 py-0.5 rounded font-mono">
@@ -156,7 +156,7 @@ export default function Dashboard() {
               </span>
             </div>
 
-            <h1 className="text-xl sm:text-2xl font-bold leading-tight tracking-tight">
+            <h1 className="text-lg sm:text-xl md:text-2xl font-bold leading-tight tracking-tight">
               {t('dashboard.welcomeBack')}, {mockUser.name}
             </h1>
             <p className="text-white/75 text-xs sm:text-sm mt-1">
@@ -179,7 +179,7 @@ export default function Dashboard() {
       </div>
 
       {/* ── KPI Metrics Grid ── */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
         <MetricCard
           icon={Database}
           label={t('dashboard.indexedStandards')}
@@ -283,7 +283,7 @@ export default function Dashboard() {
       </div>
 
       {/* ── Main Two Column Grid ── */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-6">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6 mb-4 sm:mb-6">
         {/* Left Column: Recent Audit Searches (3 cols) */}
         <div className="lg:col-span-3">
           <div className="flex items-center justify-between mb-2.5">

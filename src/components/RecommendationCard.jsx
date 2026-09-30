@@ -100,13 +100,13 @@ export default function RecommendationCard({ recommendation, onSave, isSaved = f
       )}
 
       {/* Action Buttons */}
-      <div className="flex items-center justify-between gap-2 pt-2.5 border-t border-[#EDEBE5]">
+      <div className="flex flex-wrap items-center justify-between gap-2 pt-2.5 border-t border-[#EDEBE5]">
         <button
           type="button"
           aria-label={isSaved ? t('chat.savedToLibrary') : t('chat.saveToLibrary')}
           onClick={() => onSave && onSave(is_number)}
           className={clsx(
-            'inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded border transition-colors cursor-pointer',
+            'inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded border transition-colors cursor-pointer shrink-0',
             isSaved
               ? 'bg-[#E4F2EE] text-[#1F5C4D] border-[#A8D5C9]'
               : 'bg-white text-[#4B4845] border-[#DDD9D0] hover:bg-[#F4F3EF] hover:text-[#16294D]'
@@ -123,7 +123,7 @@ export default function RecommendationCard({ recommendation, onSave, isSaved = f
         <Link
           to={`/standard/${encodeURIComponent(is_number)}`}
           aria-label={t('chat.viewSpecification')}
-          className="inline-flex items-center gap-1 text-xs font-semibold text-white bg-[#16294D] hover:bg-[#1E3761] px-3 py-1.5 rounded shadow-2xs transition-colors"
+          className="inline-flex items-center gap-1 text-xs font-semibold text-white bg-[#16294D] hover:bg-[#1E3761] px-3 py-1.5 rounded shadow-2xs transition-colors shrink-0"
         >
           <span>{t('chat.viewSpecification')}</span>
           <ArrowUpRight size={13} aria-hidden="true" focusable="false" />

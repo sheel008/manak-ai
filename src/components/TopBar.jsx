@@ -2,12 +2,12 @@ import { useState, useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Bell, ChevronDown, LayoutDashboard, History, Settings,
-  Globe, Check
+  Globe, Check, Menu
 } from 'lucide-react'
 import { mockUser } from '../data/mockData'
 import { useLang, AVAILABLE_LANGUAGES } from '../context/LangContext'
 
-export default function TopBar({ title, breadcrumb }) {
+export default function TopBar({ title, breadcrumb, onOpenMobileMenu = () => {} }) {
   const { lang, setLang, t } = useLang()
   const [isProfileOpen, setIsProfileOpen] = useState(false)
   const [isLangOpen, setIsLangOpen] = useState(false)
@@ -82,28 +82,41 @@ export default function TopBar({ title, breadcrumb }) {
   const currentLangObj = AVAILABLE_LANGUAGES.find(l => l.code === lang) || AVAILABLE_LANGUAGES[0]
 
   return (
-    <header className="h-[68px] bg-white border-b border-[#E5E7EB] flex items-center justify-between px-6 shrink-0 shadow-xs sticky top-0 z-20">
-      {/* ── Left Section: Institutional Page Title & Workspace Label ── */}
-      <div className="flex-1 min-w-0 pr-4">
-        {breadcrumb ? (
-          <div>{breadcrumb}</div>
-        ) : (
-          <div className="flex flex-col justify-center min-w-0">
-            <h2 className="text-base sm:text-lg font-bold text-[#111111] leading-tight tracking-tight truncate">
-              {getDisplayTitle(title)}
-            </h2>
-            <div className="flex items-center gap-1.5 mt-0.5">
-              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#16294D]/60" aria-hidden="true" />
-              <p className="text-[11px] font-medium text-[#5C5A55] tracking-wide">
-                {t('navigation.workspaceLabel')}
-              </p>
+    <header className="h-[60px] sm:h-[68px] bg-white border-b border-[#E5E7EB] flex items-center justify-between px-3 sm:px-6 shrink-0 shadow-xs sticky top-0 z-20">
+      {/* ── Left Section: Mobile Menu Trigger + Institutional Page Title & Workspace Label ── */}
+      <div className="flex items-center flex-1 min-w-0 pr-2 sm:pr-4">
+        {/* Mobile Hamburger Drawer Trigger */}
+        <button
+          type="button"
+          onClick={onOpenMobileMenu}
+          className="md:hidden p-1.5 -ml-1 text-[#16294D] hover:bg-[#F4F3EF] rounded-lg mr-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#16294D] cursor-pointer shrink-0"
+          aria-label="Open navigation menu"
+        >
+          <Menu size={22} />
+        </button>
+
+        <div className="flex-1 min-w-0">
+          {breadcrumb ? (
+            <div className="truncate">{breadcrumb}</div>
+          ) : (
+            <div className="flex flex-col justify-center min-w-0">
+              <h2 className="text-sm sm:text-base md:text-lg font-bold text-[#111111] leading-tight tracking-tight truncate">
+                {getDisplayTitle(title)}
+              </h2>
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#16294D]/60" aria-hidden="true" />
+                <p className="text-[10px] sm:text-[11px] font-medium text-[#5C5A55] tracking-wide truncate">
+                  {t('navigation.workspaceLabel')}
+                </p>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
 
       {/* ── Right Section: Language Selector, Notifications, Divider & Officer Profile ── */}
-      <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+      <div className="flex items-center gap-1.5 sm:gap-3 md:gap-4 shrink-0">
+
         {/* Government Portal Accessible Language Selector */}
         <div className="relative" ref={langDropdownRef}>
           <button
@@ -128,7 +141,7 @@ export default function TopBar({ title, breadcrumb }) {
               id="language-menu"
               role="menu"
               aria-label="Select portal language"
-              className="absolute right-0 top-full mt-1.5 w-48 bg-white border border-[#DDD9D0] rounded-lg shadow-elevated py-1.5 z-50 animate-dropdown"
+              className="absolute right-0 top-full mt-1.5 w-48 max-w-[calc(100vw-24px)] bg-white border border-[#DDD9D0] rounded-lg shadow-elevated py-1.5 z-50 animate-dropdown"
             >
               <div className="px-3 py-1.5 border-b border-[#EDEBE5] mb-1">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-[#8A8580]">
@@ -189,7 +202,7 @@ export default function TopBar({ title, breadcrumb }) {
             aria-expanded={isProfileOpen}
             aria-haspopup="menu"
             aria-controls="profile-menu"
-            className="flex items-center gap-2.5 sm:gap-3 p-1.5 pr-2 rounded-[10px] hover:bg-[#F4F3EF] transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#16294D] text-left cursor-pointer group"
+            className="flex items-center gap-1.5 sm:gap-2.5 sm:gap-3 p-1 sm:p-1.5 sm:pr-2 rounded-[10px] hover:bg-[#F4F3EF] transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#16294D] text-left cursor-pointer group"
             aria-label={`${t('navigation.officerMenu')}: ${mockUser.name}`}
           >
             <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#16294D] border border-[#DDD9D0] flex items-center justify-center shrink-0">
@@ -218,7 +231,7 @@ export default function TopBar({ title, breadcrumb }) {
               id="profile-menu"
               role="menu"
               aria-label="User account actions"
-              className="absolute right-0 top-full mt-1.5 w-56 bg-white border border-[#DDD9D0] rounded-lg shadow-elevated py-1.5 z-50 animate-dropdown"
+              className="absolute right-0 top-full mt-1.5 w-56 max-w-[calc(100vw-24px)] bg-white border border-[#DDD9D0] rounded-lg shadow-elevated py-1.5 z-50 animate-dropdown"
             >
               {/* Officer details header */}
               <div className="px-3.5 py-2.5 border-b border-[#E5E7EB] bg-[#FAFAF8] rounded-t-md">

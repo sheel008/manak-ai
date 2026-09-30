@@ -19,12 +19,12 @@ function SubScoreBar({ label, score }) {
   const width = Math.max(0, Math.min(100, score || 0))
   const colorClass = width >= 60 ? 'bg-[#2F6F5E]' : width >= 40 ? 'bg-[#B8862B]' : 'bg-[#C8C4BB]'
   return (
-    <div className="flex items-center gap-3 text-xs mb-1.5">
-      <div className="w-28 text-[#5C5A55]">{label}</div>
+    <div className="flex items-center gap-2 sm:gap-3 text-xs mb-1.5">
+      <div className="w-20 sm:w-28 text-[#5C5A55] truncate shrink-0">{label}</div>
       <div className="flex-1 h-1.5 bg-[#E4E1DA] rounded-full overflow-hidden">
         <div className={`h-full ${colorClass}`} style={{ width: `${width}%` }} />
       </div>
-      <div className="w-9 text-right font-medium text-[#1A1A1A]">{Math.round(width)}%</div>
+      <div className="w-8 sm:w-9 text-right font-medium text-[#1A1A1A] shrink-0">{Math.round(width)}%</div>
     </div>
   )
 }
@@ -53,7 +53,7 @@ function ReviewControls({ requestId, isNumber, onReviewed }) {
       onClick={() => submit(value)}
       disabled={sending || (decision && decision !== value)}
       className={clsx(
-        'inline-flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-semibold border transition-colors focus:outline-none cursor-pointer',
+        'inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded text-xs font-semibold border transition-colors focus:outline-none cursor-pointer',
         decision === value
           ? activeCls
           : 'bg-white border-[#E4E1DA] text-[#4B4845] hover:border-[#16294D]'
@@ -64,7 +64,7 @@ function ReviewControls({ requestId, isNumber, onReviewed }) {
   )
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
       {btn('accept', t('results.accept'), <Check size={13} />, 'bg-[#E6F2EF] border-[#2F6F5E] text-[#2F6F5E]')}
       {btn('reject', t('results.reject'), <X size={13} />, 'bg-[#FBE9E7] border-[#A6362C] text-[#A6362C]')}
       {btn('flag', t('results.flag'), <Flag size={13} />, 'bg-[#FDF3E0] border-[#B8862B] text-[#B8862B]')}
@@ -82,15 +82,15 @@ function ResultCard({ result, requestId, onReviewed }) {
     <Card className="overflow-hidden">
       <button
         onClick={() => setExpanded(e => !e)}
-        className="w-full text-left px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#16294D] focus:ring-inset cursor-pointer"
+        className="w-full text-left px-3.5 sm:px-5 py-3 sm:py-4 focus:outline-none focus:ring-2 focus:ring-[#16294D] focus:ring-inset cursor-pointer"
         aria-expanded={expanded}
       >
-        <div className="flex items-start gap-4">
+        <div className="flex items-start justify-between gap-2.5 sm:gap-4">
           <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 flex-wrap mb-1.5">
-              <span className="font-mono-bis text-sm font-semibold text-[#16294D] bg-[#EDEBE5] px-2 py-0.5 rounded">{result.is_number}</span>
+            <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap mb-1.5">
+              <span className="font-mono-bis text-xs sm:text-sm font-semibold text-[#16294D] bg-[#EDEBE5] px-2 py-0.5 rounded">{result.is_number}</span>
               <span className={clsx(
-                'inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold',
+                'inline-flex items-center px-2 py-0.5 rounded text-[11px] sm:text-xs font-semibold',
                 (result.confidence ?? result.relevance_score) >= 60 ? 'text-[#2F6F5E] bg-[#E6F2EF] border border-[#A2D4C5]'
                   : (result.confidence ?? result.relevance_score) >= 40 ? 'text-[#B8862B] bg-[#FDF3E0] border border-[#E8D2A0]'
                   : 'text-[#5C5A55] bg-[#F0EEE9] border border-[#DDD9D0]'
@@ -98,12 +98,12 @@ function ResultCard({ result, requestId, onReviewed }) {
                 {Math.round(result.confidence ?? result.relevance_score ?? 0)}% {t('results.match')}
               </span>
               {result.department && (
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-[#E4EDF9] text-[#16294D] border border-[#A8C2E8]">
+                <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] sm:text-xs font-medium bg-[#E4EDF9] text-[#16294D] border border-[#A8C2E8]">
                   {result.department}
                 </span>
               )}
               {result.category && (
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-[#F0EEE9] text-[#4B4845] border border-[#DDD9D0]">
+                <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] sm:text-xs font-medium bg-[#F0EEE9] text-[#4B4845] border border-[#DDD9D0]">
                   {result.category}
                 </span>
               )}
@@ -112,8 +112,8 @@ function ResultCard({ result, requestId, onReviewed }) {
                 : <Badge variant="neutral">{t('standardDetail.noMandatoryCert')}</Badge>
               }
             </div>
-            <p className="text-base font-medium text-[#1A1A1A] mb-1">{result.title}</p>
-            <p className="text-sm text-[#5C5A55] line-clamp-2">{result.scope}</p>
+            <p className="text-sm sm:text-base font-medium text-[#1A1A1A] mb-1">{result.title}</p>
+            <p className="text-xs sm:text-sm text-[#5C5A55] line-clamp-2">{result.scope}</p>
           </div>
           <div className="shrink-0 text-[#5C5A55] mt-1">
             {expanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
@@ -122,7 +122,7 @@ function ResultCard({ result, requestId, onReviewed }) {
       </button>
 
       {expanded && (
-        <div className="border-t border-[#E4E1DA] px-5 py-4 bg-[#FAFAF8]">
+        <div className="border-t border-[#E4E1DA] px-3.5 sm:px-5 py-3.5 sm:py-4 bg-[#FAFAF8]">
           {/* Why Recommended Section */}
           {result.why_recommended && (
             <div className="mb-4 bg-[#F2F8F6] border border-[#BDE3D5] p-3.5 rounded-md text-xs text-[#1D5443]">

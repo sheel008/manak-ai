@@ -133,12 +133,12 @@ export default function StandardDetail() {
     }>
       <div className="max-w-4xl">
         {/* Header */}
-        <Card className="p-5 mb-6">
-          <div className="flex items-start justify-between gap-4">
+        <Card className="p-4 sm:p-5 mb-4 sm:mb-6">
+          <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
             <div className="flex-1 min-w-0">
-              <p className="font-mono-bis text-sm text-[#2B5C8A] mb-1 font-bold">{std.is_number}</p>
-              <h2 className="text-xl font-bold text-[#1A1A1A] mb-2">{std.title}</h2>
-              <div className="flex flex-wrap items-center gap-2 text-sm text-[#5C5A55]">
+              <p className="font-mono-bis text-xs sm:text-sm text-[#2B5C8A] mb-1 font-bold">{std.is_number}</p>
+              <h2 className="text-lg sm:text-xl font-bold text-[#1A1A1A] mb-2">{std.title}</h2>
+              <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-[#5C5A55]">
                 <span>{t('standardDetail.version')}: <span className="font-medium text-[#1A1A1A]">{std.version || 'Current'}</span></span>
                 <span className="text-[#E4E1DA]">|</span>
                 <span>{t('common.category')}: <span className="font-medium text-[#1A1A1A]">{std.category}</span></span>
@@ -156,7 +156,7 @@ export default function StandardDetail() {
                 )}
               </div>
             </div>
-            <div className="flex gap-2 shrink-0 flex-wrap justify-end">
+            <div className="flex gap-2 shrink-0 flex-wrap sm:justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-[#EDEBE5]">
               <Button variant="secondary" size="sm" onClick={handleGemPush} className="border-[#2F6F5E] text-[#2F6F5E] cursor-pointer">
                 {t('standardDetail.gemPush')}
               </Button>
@@ -173,7 +173,7 @@ export default function StandardDetail() {
           </div>
         </Card>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
           {/* Main content — 2 cols */}
           <div className="lg:col-span-2 space-y-6">
             <Card className="p-5">

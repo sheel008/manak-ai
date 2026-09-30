@@ -249,7 +249,7 @@ export default function SearchPage() {
             {/* Search Input Container */}
             <div ref={searchContainerRef} className="relative mb-3">
               <div className="relative flex items-center bg-white border border-[#DDD9D0] rounded-lg shadow-sm focus-within:border-[#16294D] focus-within:ring-2 focus-within:ring-[#16294D]/15 transition-all">
-                <SearchIcon size={20} className="ml-4 text-[#8A8580] shrink-0 pointer-events-none" />
+                <SearchIcon size={18} className="ml-3 sm:ml-4 text-[#8A8580] shrink-0 pointer-events-none" />
                 
                 <input
                   type="text"
@@ -266,7 +266,7 @@ export default function SearchPage() {
                     }
                   }}
                   placeholder={t('search.placeholder')}
-                  className="w-full h-[52px] pl-3 pr-28 text-[15px] text-[#111111] bg-transparent focus:outline-none placeholder-[#8A8580]"
+                  className="w-full h-[46px] sm:h-[52px] pl-2 sm:pl-3 pr-24 sm:pr-32 text-xs sm:text-[15px] text-[#111111] bg-transparent focus:outline-none placeholder-[#8A8580]"
                   aria-label={t('search.heading')}
                   autoFocus
                 />
@@ -278,28 +278,28 @@ export default function SearchPage() {
                     className="p-1.5 text-[#8A8580] hover:text-[#111111] mr-1 focus:outline-none cursor-pointer"
                     aria-label="Clear search"
                   >
-                    <X size={16} />
+                    <X size={15} />
                   </button>
                 )}
 
-                <div className="flex items-center gap-1.5 pr-2">
-                  <span className="text-[11px] font-bold text-[#4B4845] font-mono bg-[#EDEBE5] px-1.5 py-0.5 rounded uppercase">
+                <div className="flex items-center gap-1 sm:gap-1.5 pr-1.5 sm:pr-2">
+                  <span className="hidden xs:inline-block sm:inline-block text-[10px] sm:text-[11px] font-bold text-[#4B4845] font-mono bg-[#EDEBE5] px-1.5 py-0.5 rounded uppercase">
                     {lang}
                   </span>
                   <button
                     type="button"
                     onClick={() => handleSearch()}
                     disabled={!query.trim() || loading}
-                    className="h-[38px] px-4 text-xs font-semibold bg-[#16294D] hover:bg-[#1E3761] text-white rounded-md transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5 shadow-2xs cursor-pointer"
+                    className="h-[34px] sm:h-[38px] px-2.5 sm:px-4 text-xs font-semibold bg-[#16294D] hover:bg-[#1E3761] text-white rounded-md transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5 shadow-2xs cursor-pointer"
                   >
                     {loading ? (
                       <>
-                        <Loader2 size={14} className="animate-spin" />
-                        <span>{t('search.matching')}</span>
+                        <Loader2 size={13} className="animate-spin" />
+                        <span className="hidden xs:inline sm:inline">{t('search.matching')}</span>
                       </>
                     ) : (
                       <>
-                        <SearchIcon size={14} />
+                        <SearchIcon size={13} />
                         <span>{t('common.search')}</span>
                       </>
                     )}

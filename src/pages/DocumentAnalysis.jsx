@@ -81,22 +81,22 @@ export default function DocumentAnalysis() {
     <Layout title={t('docAnalysis.title')}>
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="mb-6">
-          <div className="flex items-center gap-2 mb-1">
-            <h1 className="text-2xl font-bold text-[#111111] tracking-tight">
+        <div className="mb-4 sm:mb-6">
+          <div className="flex items-center gap-2 mb-1 flex-wrap">
+            <h1 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight">
               {t('docAnalysis.heading')}
             </h1>
-            <span className="text-[11px] font-semibold text-[#16294D] bg-[#E4EDF9] border border-[#A8C2E8] px-2 py-0.5 rounded">
+            <span className="text-[10px] sm:text-[11px] font-semibold text-[#16294D] bg-[#E4EDF9] border border-[#A8C2E8] px-2 py-0.5 rounded">
               {t('docAnalysis.badge')}
             </span>
           </div>
-          <p className="text-sm text-[#4B4845]">
+          <p className="text-xs sm:text-sm text-[#4B4845]">
             {t('docAnalysis.subtitle')}
           </p>
         </div>
 
         {/* Dropzone & File Status Card */}
-        <div className="mb-8">
+        <div className="mb-6 sm:mb-8">
           {!file ? (
             <div
               onDragOver={e => { e.preventDefault(); setDragging(true) }}
@@ -110,14 +110,14 @@ export default function DocumentAnalysis() {
               role="button"
               tabIndex={0}
               onKeyDown={e => e.key === 'Enter' && fileRef.current?.click()}
-              className={`border-2 border-dashed rounded-lg p-10 text-center cursor-pointer transition-colors duration-150 bg-white
+              className={`border-2 border-dashed rounded-lg p-6 sm:p-10 text-center cursor-pointer transition-colors duration-150 bg-white
                 ${dragging ? 'border-[#16294D] bg-[#E4EDF9]' : 'border-[#DDD9D0] hover:border-[#16294D] hover:bg-[#FAFAF8]'}`}
             >
-              <div className="w-14 h-14 rounded-xl bg-[#EDEBE5] flex items-center justify-center mx-auto mb-3.5 text-[#16294D]">
-                <Upload size={24} />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#EDEBE5] flex items-center justify-center mx-auto mb-3 text-[#16294D]">
+                <Upload size={22} />
               </div>
-              <h3 className="text-base font-bold text-[#111111] mb-1">{t('docAnalysis.dragDrop')}</h3>
-              <p className="text-xs text-[#5C5A55] mb-4">
+              <h3 className="text-sm sm:text-base font-bold text-[#111111] mb-1">{t('docAnalysis.dragDrop')}</h3>
+              <p className="text-xs text-[#5C5A55] mb-3 sm:mb-4 px-2">
                 {t('docAnalysis.fileSizeNote')}
               </p>
               <div>

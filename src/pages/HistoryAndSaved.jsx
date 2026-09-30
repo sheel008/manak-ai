@@ -93,19 +93,19 @@ export default function HistoryAndSaved() {
         {/* Header */}
         <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
           <div>
-            <h1 className="text-2xl font-bold text-[#111111] tracking-tight">
+            <h1 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight">
               {t('history.title')}
             </h1>
-            <p className="text-sm text-[#4B4845]">
+            <p className="text-xs sm:text-sm text-[#4B4845]">
               {t('history.subtitle')}
             </p>
           </div>
         </div>
 
         {/* Tabs & Filter Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#DDD9D0] mb-6 pb-2">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 border-b border-[#DDD9D0] mb-4 sm:mb-6 pb-2">
           {/* Tabs */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 overflow-x-auto">
             {[
               { id: 'history', label: t('history.searchHistoryTab'), count: history.length, icon: Clock },
               { id: 'saved', label: t('history.savedStandardsTab'), count: saved.length, icon: Bookmark },
@@ -113,15 +113,15 @@ export default function HistoryAndSaved() {
               <button
                 key={tabItem.id}
                 onClick={() => { setTab(tabItem.id); setFilterText(''); }}
-                className={`flex items-center gap-2 px-4 py-2 text-sm font-semibold border-b-2 -mb-[10px] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#16294D] cursor-pointer
+                className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 -mb-[10px] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#16294D] cursor-pointer whitespace-nowrap
                   ${tab === tabItem.id
                     ? 'border-[#16294D] text-[#16294D] bg-white rounded-t'
                     : 'border-transparent text-[#5C5A55] hover:text-[#111111]'}`}
                 aria-selected={tab === tabItem.id}
               >
-                <tabItem.icon size={15} />
+                <tabItem.icon size={14} className="shrink-0" />
                 <span>{tabItem.label}</span>
-                <span className="text-[11px] font-bold bg-[#EDEBE5] text-[#4B4845] px-1.5 py-0.2 rounded-full">
+                <span className="text-[10px] sm:text-[11px] font-bold bg-[#EDEBE5] text-[#4B4845] px-1.5 py-0.2 rounded-full">
                   {tabItem.count}
                 </span>
               </button>
@@ -129,14 +129,14 @@ export default function HistoryAndSaved() {
           </div>
 
           {/* Quick Filter Input */}
-          <div className="relative">
+          <div className="relative w-full sm:w-auto">
             <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#8A8580]" />
             <input
               type="text"
               value={filterText}
               onChange={e => setFilterText(e.target.value)}
               placeholder={t('history.filterPlaceholder')}
-              className="w-56 sm:w-64 pl-8 pr-3 py-1.5 text-xs border border-[#DDD9D0] rounded-md bg-white focus:outline-none focus:ring-1 focus:ring-[#16294D] focus:border-[#16294D] placeholder-[#8A8580]"
+              className="w-full sm:w-64 pl-8 pr-3 py-1.5 text-xs border border-[#DDD9D0] rounded-md bg-white focus:outline-none focus:ring-1 focus:ring-[#16294D] focus:border-[#16294D] placeholder-[#8A8580]"
             />
           </div>
         </div>

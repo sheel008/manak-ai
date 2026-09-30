@@ -20,10 +20,10 @@ export default function SuggestedQuestions({ questions = [], onSelectQuestion })
             key={idx}
             type="button"
             onClick={() => onSelectQuestion && onSelectQuestion(q)}
-            className="inline-flex items-center gap-1.5 text-xs text-[#16294D] bg-[#F4F3EF] hover:bg-[#E4EDF9] hover:text-[#1A4490] border border-[#DDD9D0] hover:border-[#A8C2E8] px-2.5 py-1.5 rounded-full transition-all text-left shadow-2xs group cursor-pointer"
+            className="inline-flex items-center gap-1.5 text-xs text-[#16294D] bg-[#F4F3EF] hover:bg-[#E4EDF9] hover:text-[#1A4490] border border-[#DDD9D0] hover:border-[#A8C2E8] px-2.5 py-1.5 rounded-full transition-all text-left shadow-2xs group cursor-pointer max-w-full"
           >
-            <span>{q}</span>
-            <ArrowRight size={11} className="text-[#8A8580] group-hover:text-[#1A4490] group-hover:translate-x-0.5 transition-transform" aria-hidden="true" focusable="false" />
+            <span className="break-words">{q}</span>
+            <ArrowRight size={11} className="text-[#8A8580] group-hover:text-[#1A4490] group-hover:translate-x-0.5 transition-transform shrink-0" aria-hidden="true" focusable="false" />
           </button>
         ))}
       </div>

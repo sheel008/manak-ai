@@ -59,25 +59,25 @@ export default function Settings() {
     <Layout title={t('settings.title')}>
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="mb-6">
-          <div className="flex items-center gap-2 mb-1">
-            <h1 className="text-2xl font-bold text-[#111111] tracking-tight">
+        <div className="mb-4 sm:mb-6">
+          <div className="flex items-center gap-2 mb-1 flex-wrap">
+            <h1 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight">
               {t('settings.title')}
             </h1>
-            <span className="text-[11px] font-semibold text-[#16294D] bg-[#E4EDF9] border border-[#A8C2E8] px-2 py-0.5 rounded">
+            <span className="text-[10px] sm:text-[11px] font-semibold text-[#16294D] bg-[#E4EDF9] border border-[#A8C2E8] px-2 py-0.5 rounded">
               {t('settings.badge')}
             </span>
           </div>
-          <p className="text-sm text-[#4B4845]">
+          <p className="text-xs sm:text-sm text-[#4B4845]">
             {t('settings.subtitle')}
           </p>
         </div>
 
         {/* 2-Column Enterprise Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
           {/* Left Column: Officer Identity Card */}
           <div className="lg:col-span-1 space-y-4">
-            <Card className="p-6 border-[#DDD9D0] bg-white shadow-sm text-center">
+            <Card className="p-4 sm:p-6 border-[#DDD9D0] bg-white shadow-sm text-center">
               {/* Officer Avatar Badge */}
               <div className="w-20 h-20 rounded-full bg-[#16294D] text-[#F0A500] flex items-center justify-center text-2xl font-bold mx-auto mb-3 shadow-md border-2 border-[#DDD9D0]">
                 RK

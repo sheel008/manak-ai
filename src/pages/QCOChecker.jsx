@@ -47,24 +47,24 @@ export default function QCOChecker() {
     <Layout title={t('qco.title')}>
       <div className="max-w-2xl mx-auto">
         {/* Header */}
-        <div className="mb-6">
-          <div className="flex items-center gap-2 mb-1">
-            <h1 className="text-2xl font-bold text-[#111111] tracking-tight">
+        <div className="mb-4 sm:mb-6">
+          <div className="flex items-center gap-2 mb-1 flex-wrap">
+            <h1 className="text-xl sm:text-2xl font-bold text-[#111111] tracking-tight">
               {t('qco.heading')}
             </h1>
-            <span className="text-[11px] font-semibold text-[#1F5C4D] bg-[#E4F2EE] border border-[#A8D5C9] px-2 py-0.5 rounded">
+            <span className="text-[10px] sm:text-[11px] font-semibold text-[#1F5C4D] bg-[#E4F2EE] border border-[#A8D5C9] px-2 py-0.5 rounded">
               {t('qco.badge')}
             </span>
           </div>
-          <p className="text-sm text-[#4B4845]">
+          <p className="text-xs sm:text-sm text-[#4B4845]">
             {t('qco.subtitle')}
           </p>
         </div>
 
         {/* Search Input Box */}
-        <div className="mb-6">
+        <div className="mb-4 sm:mb-6">
           <div className="relative flex items-center bg-white border border-[#DDD9D0] rounded-lg shadow-sm focus-within:border-[#16294D] focus-within:ring-2 focus-within:ring-[#16294D]/15 transition-all">
-            <Search size={18} className="ml-4 text-[#8A8580] shrink-0 pointer-events-none" />
+            <Search size={18} className="ml-3 sm:ml-4 text-[#8A8580] shrink-0 pointer-events-none" />
             <input
               type="text"
               value={query}
@@ -76,20 +76,20 @@ export default function QCOChecker() {
                 }
               }}
               placeholder={t('qco.placeholder')}
-              className="w-full h-[52px] pl-3 pr-28 text-sm text-[#111111] bg-transparent focus:outline-none placeholder-[#8A8580]"
+              className="w-full h-[46px] sm:h-[52px] pl-2 sm:pl-3 pr-22 sm:pr-28 text-xs sm:text-sm text-[#111111] bg-transparent focus:outline-none placeholder-[#8A8580]"
               aria-label={t('qco.heading')}
               autoFocus
             />
-            <div className="pr-2">
+            <div className="pr-1.5 sm:pr-2">
               <button
                 type="button"
                 onClick={() => handleCheck()}
                 disabled={!query.trim() || loading}
-                className="h-[38px] px-4 text-xs font-semibold bg-[#16294D] hover:bg-[#1E3761] text-white rounded-md transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5 shadow-2xs cursor-pointer"
+                className="h-[34px] sm:h-[38px] px-3 sm:px-4 text-xs font-semibold bg-[#16294D] hover:bg-[#1E3761] text-white rounded-md transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5 shadow-2xs cursor-pointer"
               >
                 {loading ? (
                   <>
-                    <Loader2 size={14} className="animate-spin" />
+                    <Loader2 size={13} className="animate-spin" />
                     <span>{t('qco.checking')}</span>
                   </>
                 ) : (
@@ -102,12 +102,12 @@ export default function QCOChecker() {
 
         {/* Verified Result Card */}
         {searched && (
-          <div className="mb-6 animate-dropdown">
+          <div className="mb-4 sm:mb-6 animate-dropdown">
             {result && result.found ? (
               <div className="rounded-lg border border-[#DDD9D0] bg-white shadow-sm overflow-hidden">
                 {/* Result Top Banner */}
                 <div
-                  className={`p-4 border-b flex flex-wrap items-center justify-between gap-3 ${
+                  className={`p-3.5 sm:p-4 border-b flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 ${
                     result.is_qco_mandatory
                       ? 'bg-[#E4F2EE] border-[#A8D5C9] text-[#1F5C4D]'
                       : 'bg-[#F4F3EF] border-[#DDD9D0] text-[#4B4845]'

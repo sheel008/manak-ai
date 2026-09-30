@@ -182,17 +182,17 @@ export default function Chat() {
 
   return (
     <Layout title={t('chat.title')}>
-      <div className="max-w-4xl mx-auto flex flex-col h-[calc(100vh-130px)]">
+      <div className="max-w-4xl mx-auto flex flex-col h-[calc(100dvh-95px)] sm:h-[calc(100vh-130px)] min-h-[400px]">
         {/* Header bar */}
-        <div className="mb-3 flex items-center justify-between gap-3">
-          <div>
-            <div className="flex items-center gap-2">
-              <h1 className="text-xl md:text-2xl font-bold text-[#111111]">{t('chat.title')}</h1>
-              <span className="text-[11px] font-bold uppercase tracking-wider bg-[#E4F2EE] text-[#1F5C4D] border border-[#A8D5C9] px-2 py-0.5 rounded">
+        <div className="mb-2 sm:mb-3 flex items-center justify-between gap-2">
+          <div className="min-w-0">
+            <div className="flex items-center gap-2 flex-wrap">
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-[#111111]">{t('chat.title')}</h1>
+              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider bg-[#E4F2EE] text-[#1F5C4D] border border-[#A8D5C9] px-2 py-0.5 rounded">
                 {t('chat.copilotBadge')}
               </span>
             </div>
-            <p className="text-xs text-[#5C5A55]">
+            <p className="text-[11px] sm:text-xs text-[#5C5A55] truncate">
               {t('chat.description')}
             </p>
           </div>
@@ -202,10 +202,11 @@ export default function Chat() {
               variant="secondary"
               size="sm"
               onClick={handleResetSession}
-              className="gap-1.5 text-xs text-[#4B4845] cursor-pointer"
+              className="gap-1.5 text-xs text-[#4B4845] cursor-pointer shrink-0 h-8 px-2.5"
             >
               <RotateCcw size={13} aria-hidden="true" focusable="false" />
-              <span>{t('chat.newSession')}</span>
+              <span className="hidden sm:inline">{t('chat.newSession')}</span>
+              <span className="sm:hidden">Reset</span>
             </Button>
           )}
         </div>
@@ -213,24 +214,24 @@ export default function Chat() {
         {/* Chat Main Card */}
         <Card className="flex-1 flex flex-col overflow-hidden bg-[#FAFAF8] border border-[#DDD9D0] shadow-sm">
           {/* Scrollable messages container */}
-          <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-4">
+          <div className="flex-1 overflow-y-auto p-2.5 sm:p-4 md:p-6 space-y-3 sm:space-y-4">
             {/* Compact Welcome Hero & Quick Suggestion Chips (shown when no messages yet) */}
             {messages.length === 0 && (
-              <div className="py-4 flex flex-col items-center text-center max-w-xl mx-auto">
-                <div className="w-10 h-10 rounded-lg bg-[#16294D] text-[#F0A500] flex items-center justify-center mb-2.5 shadow-2xs">
-                  <Bot size={22} aria-hidden="true" focusable="false" />
+              <div className="py-2 sm:py-4 flex flex-col items-center text-center max-w-xl mx-auto">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#16294D] text-[#F0A500] flex items-center justify-center mb-2 shadow-2xs">
+                  <Bot size={20} aria-hidden="true" focusable="false" />
                 </div>
-                <h2 className="text-base font-bold text-[#111111] mb-1">
+                <h2 className="text-sm sm:text-base font-bold text-[#111111] mb-1">
                   {t('chat.welcomeHeading')}
                 </h2>
-                <p className="text-xs text-[#5C5A55] mb-4 leading-relaxed max-w-md">
+                <p className="text-xs text-[#5C5A55] mb-3 sm:mb-4 leading-relaxed max-w-md px-2">
                   {t('chat.welcomeSub')}
                 </p>
 
                 <div className="w-full text-left">
                   <div className="flex items-center gap-1.5 mb-2 px-1">
                     <Sparkles size={13} className="text-[#F0A500]" aria-hidden="true" focusable="false" />
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#4B4845]">
+                    <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#4B4845]">
                       {t('chat.suggestedInquiries')}
                     </span>
                   </div>
@@ -240,7 +241,7 @@ export default function Chat() {
                         key={idx}
                         type="button"
                         onClick={() => sendMessage(chip)}
-                        className="text-left p-2.5 rounded-md bg-white border border-[#DDD9D0] hover:border-[#16294D] hover:bg-[#F4F3EF] transition-all duration-150 text-xs font-medium text-[#111111] shadow-2xs group flex items-center justify-between cursor-pointer"
+                        className="text-left p-2 sm:p-2.5 rounded-md bg-white border border-[#DDD9D0] hover:border-[#16294D] hover:bg-[#F4F3EF] transition-all duration-150 text-xs font-medium text-[#111111] shadow-2xs group flex items-center justify-between cursor-pointer"
                       >
                         <span className="truncate pr-2">{chip}</span>
                         <Send size={11} className="text-[#8A8580] group-hover:text-[#16294D] group-hover:translate-x-0.5 transition-transform shrink-0" aria-hidden="true" focusable="false" />
@@ -249,7 +250,7 @@ export default function Chat() {
                   </div>
                 </div>
 
-                <div className="mt-5 flex items-center gap-1.5 text-[11px] text-[#5C5A55] bg-[#EDEBE5] px-3 py-1 rounded-md">
+                <div className="mt-4 sm:mt-5 flex items-center gap-1.5 text-[10px] sm:text-[11px] text-[#5C5A55] bg-[#EDEBE5] px-2.5 py-1 rounded-md">
                   <ShieldCheck size={13} className="text-[#2F6F5E]" aria-hidden="true" focusable="false" />
                   <span>{t('chat.zeroHallucination')}</span>
                 </div>
@@ -274,7 +275,7 @@ export default function Chat() {
           </div>
 
           {/* Chat Input Dock */}
-          <div className="p-3 md:p-4 bg-white border-t border-[#DDD9D0]">
+          <div className="p-2 sm:p-3 md:p-4 bg-white border-t border-[#DDD9D0]">
             <form onSubmit={handleFormSubmit} className="relative flex items-center">
               <input
                 type="text"
@@ -282,15 +283,15 @@ export default function Chat() {
                 onChange={(e) => setInput(e.target.value)}
                 placeholder={t('chat.inputPlaceholder')}
                 disabled={loading}
-                className="w-full h-11 pl-4 pr-14 text-xs md:text-sm bg-[#FAFAF8] border border-[#DDD9D0] rounded-lg focus:outline-none focus:border-[#16294D] focus:ring-1 focus:ring-[#16294D] placeholder-[#8A8580] text-[#111111]"
+                className="w-full h-10 sm:h-11 pl-3 sm:pl-4 pr-12 sm:pr-14 text-xs sm:text-sm bg-[#FAFAF8] border border-[#DDD9D0] rounded-lg focus:outline-none focus:border-[#16294D] focus:ring-1 focus:ring-[#16294D] placeholder-[#8A8580] text-[#111111]"
               />
               <button
                 type="submit"
                 disabled={!input.trim() || loading}
-                className="absolute right-1.5 h-8 w-10 bg-[#16294D] hover:bg-[#1E3761] disabled:opacity-40 disabled:hover:bg-[#16294D] text-white rounded-md flex items-center justify-center transition-colors cursor-pointer"
+                className="absolute right-1 sm:right-1.5 h-7 sm:h-8 w-8 sm:w-10 bg-[#16294D] hover:bg-[#1E3761] disabled:opacity-40 disabled:hover:bg-[#16294D] text-white rounded-md flex items-center justify-center transition-colors cursor-pointer"
                 aria-label="Send query"
               >
-                <Send size={14} aria-hidden="true" focusable="false" />
+                <Send size={13} aria-hidden="true" focusable="false" />
               </button>
             </form>
           </div>

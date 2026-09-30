@@ -17,7 +17,7 @@ export default function Toast({ message, type = 'success', onClose }) {
   const { icon: Icon, color, bar } = config[type] || config.info
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 w-80 bg-white rounded-md shadow-modal border border-[#DDD9D0] overflow-hidden">
+    <div className="fixed bottom-4 right-4 left-4 sm:left-auto sm:bottom-6 sm:right-6 z-50 sm:w-80 max-w-[calc(100vw-32px)] bg-white rounded-md shadow-modal border border-[#DDD9D0] overflow-hidden">
       <div className={clsx('h-1 w-full', bar)} />
       <div className="flex items-start gap-3 px-4 py-3">
         <Icon size={17} className={clsx('mt-0.5 shrink-0', color)} />

@@ -20,7 +20,7 @@ export default function CertificationCard({ qco = {} }) {
           : 'bg-[#F4F3EF] border-[#DDD9D0] text-[#4B4845]'
       )}
     >
-      <div className="flex items-center justify-between gap-2 mb-2">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
         <div className="flex items-center gap-2">
           {isMandatory ? (
             <div className="p-1 rounded bg-[#2F6F5E] text-white">
