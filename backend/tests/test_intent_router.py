@@ -112,88 +112,97 @@ def test_handle_chat_routing():
     def _should_not_be_called(*args, **kwargs):
         raise AssertionError("Vector search was called when it should have been skipped!")
 
+    orig_vs = sys.modules.get("app.retrieval.vector_search")
     mock_vector = types.ModuleType("app.retrieval.vector_search")
     mock_vector.vector_search = _should_not_be_called
     sys.modules["app.retrieval.vector_search"] = mock_vector
 
     from app.services.chat_service import handle_chat
 
-    # 1. GREETING TEST: "hi" must NOT trigger vector search
-    res_hi = handle_chat("hi")
-    assert res_hi["intent"] == "GREETING"
-    assert len(res_hi["recommendations"]) == 0
-    assert res_hi["qco"] is None
-    assert "👋 Hello! I'm MANAK-AI" in res_hi["answer"]
-    assert len(res_hi["follow_up"]) == 3
-    print("PASSED: handle_chat('hi') returned greeting without vector search!")
+    try:
+        with patch.dict(os.environ, {"LLM_PROVIDER": "fallback"}):
+            # 1. GREETING TEST: "hi" must NOT trigger vector search
+            res_hi = handle_chat("hi")
+            assert res_hi["intent"] == "GREETING"
+            assert len(res_hi["recommendations"]) == 0
+            assert res_hi["qco"] is None
+            assert "👋 Hello! I'm MANAK-AI" in res_hi["answer"]
+            assert len(res_hi["follow_up"]) == 3
+            print("PASSED: handle_chat('hi') returned greeting without vector search!")
 
-    # 2. GREETING TEST: "hello"
-    res_hello = handle_chat("hello")
-    assert res_hello["intent"] == "GREETING"
-    assert len(res_hello["recommendations"]) == 0
-    assert res_hello["qco"] is None
-    print("PASSED: handle_chat('hello') returned greeting without vector search!")
+            # 2. GREETING TEST: "hello"
+            res_hello = handle_chat("hello")
+            assert res_hello["intent"] == "GREETING"
+            assert len(res_hello["recommendations"]) == 0
+            assert res_hello["qco"] is None
+            print("PASSED: handle_chat('hello') returned greeting without vector search!")
 
-    # 3. GREETING TEST: "hey"
-    res_hey = handle_chat("hey")
-    assert res_hey["intent"] == "GREETING"
-    assert len(res_hey["recommendations"]) == 0
-    print("PASSED: handle_chat('hey') returned greeting without vector search!")
+            # 3. GREETING TEST: "hey"
+            res_hey = handle_chat("hey")
+            assert res_hey["intent"] == "GREETING"
+            assert len(res_hey["recommendations"]) == 0
+            print("PASSED: handle_chat('hey') returned greeting without vector search!")
 
-    # 4. GREETING TEST: "good morning"
-    res_gm = handle_chat("good morning")
-    assert res_gm["intent"] == "GREETING"
-    assert len(res_gm["recommendations"]) == 0
-    print("PASSED: handle_chat('good morning') returned greeting without vector search!")
+            # 4. GREETING TEST: "good morning"
+            res_gm = handle_chat("good morning")
+            assert res_gm["intent"] == "GREETING"
+            assert len(res_gm["recommendations"]) == 0
+            print("PASSED: handle_chat('good morning') returned greeting without vector search!")
 
-    # 5. GREETING TEST: "good evening"
-    res_ge = handle_chat("good evening")
-    assert res_ge["intent"] == "GREETING"
-    assert len(res_ge["recommendations"]) == 0
-    print("PASSED: handle_chat('good evening') returned greeting without vector search!")
+            # 5. GREETING TEST: "good evening"
+            res_ge = handle_chat("good evening")
+            assert res_ge["intent"] == "GREETING"
+            assert len(res_ge["recommendations"]) == 0
+            print("PASSED: handle_chat('good evening') returned greeting without vector search!")
 
-    # 6. OUT-OF-DOMAIN TEST: "write a python program for factorial"
-    res_ood = handle_chat("write a python program for factorial")
-    assert res_ood["intent"] == "UNKNOWN"
-    assert len(res_ood["recommendations"]) == 0
-    assert "specialized in Bureau of Indian Standards" in res_ood["answer"]
-    print("PASSED: handle_chat('write a python program for factorial') returned out-of-domain message without vector search!")
+            # 6. OUT-OF-DOMAIN TEST: "write a python program for factorial"
+            res_ood = handle_chat("write a python program for factorial")
+            assert res_ood["intent"] == "UNKNOWN"
+            assert len(res_ood["recommendations"]) == 0
+            assert "specialized in Bureau of Indian Standards" in res_ood["answer"]
+            print("PASSED: handle_chat('write a python program for factorial') returned out-of-domain message without vector search!")
 
-    # 7. GENERAL CONVERSATION TEST: "who are you?"
-    res_who = handle_chat("who are you?")
-    assert res_who["intent"] == "GENERAL_CONVERSATION"
-    assert len(res_who["recommendations"]) == 0
-    print("PASSED: handle_chat('who are you?') returned general conversation without vector search!")
+            # 7. GENERAL CONVERSATION TEST: "who are you?"
+            res_who = handle_chat("who are you?")
+            assert res_who["intent"] == "GENERAL_CONVERSATION"
+            assert len(res_who["recommendations"]) == 0
+            print("PASSED: handle_chat('who are you?') returned general conversation without vector search!")
 
-    # 8. MULTILINGUAL GREETING: "नमस्ते"
-    res_hi_lang = handle_chat("नमस्ते", lang="hi")
-    assert res_hi_lang["intent"] == "GREETING"
-    assert len(res_hi_lang["recommendations"]) == 0
-    assert "नमस्ते! मैं मानक-एआई" in res_hi_lang["answer"]
-    print("PASSED: handle_chat('नमस्ते', lang='hi') returned Hindi greeting without vector search!")
+            # 8. MULTILINGUAL GREETING: "नमस्ते"
+            res_hi_lang = handle_chat("नमस्ते", lang="hi")
+            assert res_hi_lang["intent"] == "GREETING"
+            assert len(res_hi_lang["recommendations"]) == 0
+            assert "नमस्ते! मैं मानक-एआई" in res_hi_lang["answer"]
+            print("PASSED: handle_chat('नमस्ते', lang='hi') returned Hindi greeting without vector search!")
 
-    # 9. DOMAIN QUERY ROUTING TEST:
-    # "Hi, which BIS standard applies to transformers?" MUST route to procurement and call vector search!
-    called_vector = False
-    def _mock_success_vector(query, top_k=10):
-        nonlocal called_vector
-        called_vector = True
-        return [{
-            "is_number": "IS 2026",
-            "title": "Power Transformers",
-            "category": "Electrotechnical",
-            "similarity": 0.92,
-            "scope": "Specifications for power transformers",
-            "source_excerpt": "Scope and testing for power transformers",
-        }]
+            # 9. DOMAIN QUERY ROUTING TEST:
+            # "Hi, which BIS standard applies to transformers?" MUST route to procurement and call vector search!
+            called_vector = False
+            def _mock_success_vector(query, top_k=10):
+                nonlocal called_vector
+                called_vector = True
+                return [{
+                    "is_number": "IS 2026",
+                    "title": "Power Transformers",
+                    "category": "Electrotechnical",
+                    "similarity": 0.92,
+                    "scope": "Specifications for power transformers",
+                    "source_excerpt": "Scope and testing for power transformers",
+                }]
 
-    mock_vector.vector_search = _mock_success_vector
-    res_mixed = handle_chat("Hi, which BIS standard applies to transformers?")
-    assert called_vector is True, "Vector search was NOT called for mixed procurement query!"
-    assert res_mixed["intent"] == "PROCUREMENT_RECOMMENDATION"
-    assert len(res_mixed["recommendations"]) > 0
-    assert "Section 1 — Recommendation" in res_mixed["answer"]
-    print("PASSED: handle_chat('Hi, which BIS standard applies to transformers?') reached vector search and returned full recommendation!")
+            mock_vector.vector_search = _mock_success_vector
+            res_mixed = handle_chat("Hi, which BIS standard applies to transformers?")
+            assert called_vector is True, "Vector search was NOT called for mixed procurement query!"
+            assert res_mixed["intent"] == "PROCUREMENT_RECOMMENDATION"
+            assert len(res_mixed["recommendations"]) > 0
+            assert "Section 1 — Recommendation" in res_mixed["answer"]
+            print("PASSED: handle_chat('Hi, which BIS standard applies to transformers?') reached vector search and returned full recommendation!")
+
+    finally:
+        if orig_vs is not None:
+            sys.modules["app.retrieval.vector_search"] = orig_vs
+        else:
+            sys.modules.pop("app.retrieval.vector_search", None)
 
     print("ALL HANDLE_CHAT ROUTING TESTS PASSED SUCCESSFULLY!")
 

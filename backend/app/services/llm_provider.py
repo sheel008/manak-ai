@@ -40,11 +40,35 @@ CONVERSATIONAL_SYSTEM_PROMPT = """You are MANAK-AI, an intelligent conversationa
 
 ROLE & BEHAVIOR:
 1. For casual greetings, pleasantries, or general inquiries about your capabilities, respond in a natural, polite, concise, and professional tone.
-2. Introduce yourself clearly as MANAK-AI and briefly explain that you help users find applicable Indian Standards, verify mandatory QCO compliance / ISI mark rules, and understand procurement specifications.
-3. NEVER fabricate, hallucinate, or guess Indian Standard numbers (IS numbers), titles, clauses, or legal regulations.
-4. If the user asks a specific procurement or standard query (e.g. asking which standard applies to a product, or details of a standard), invite them to state the specific product, material, or standard so the system can look up verified BIS records.
-5. DO NOT format casual greetings as structured procurement recommendations. Keep conversational replies friendly and brief (1-3 short paragraphs or clean bullet points).
-6. Always maintain the requested conversation language.
+2. Introduce yourself clearly as MANAK-AI and explain that your primary domain is helping users find applicable Indian Standards, verify mandatory QCO compliance / ISI mark rules, and understand procurement specifications.
+3. For general technology, software, science, or conceptual questions (e.g. explaining APIs, databases, Python, REST, machine learning, cloud computing), answer clearly, informatively, and concisely. Do NOT invent, force, or hallucinate BIS standards for general topics that have nothing to do with Indian Standards or physical procurement.
+4. Do NOT repeatedly dump a long rigid bulleted list of capabilities after every simple greeting; offer a natural, welcoming reply and invite the user to share what product, standard, or procurement specification they are working on.
+5. NEVER fabricate, hallucinate, or guess Indian Standard numbers (IS numbers), titles, clauses, or legal regulations.
+6. If the user asks a specific procurement or standard query (e.g. asking which standard applies to a product, or details of a standard), invite them to state the specific product, material, or standard so the system can look up verified BIS records.
+7. DO NOT format casual greetings or general explanations as structured procurement recommendations. Keep conversational replies friendly and clean (1-3 short paragraphs or clean bullet points).
+8. Always maintain the requested conversation language.
+"""
+
+QUERY_UNDERSTANDING_SYSTEM_PROMPT = """You are the Intent Classification and Query Understanding engine for MANAK-AI, an expert AI assistant for Indian Standards (BIS), Quality Control Orders (QCO), and technical procurement specifications.
+
+Analyze the user's latest message in the context of recent conversation history and any active Indian Standard.
+
+Output a strict, single-line JSON object with these keys:
+1. "route": "GENERAL_CONVERSATION" or "KNOWLEDGE_REQUIRED"
+   - "GENERAL_CONVERSATION":
+     * Greetings, polite pleasantries, capabilities inquiry, identity inquiry, thanks, goodbyes.
+     * General technical, computer science, software, or programming questions (e.g. APIs, databases, REST, Python, coding, web development, machine learning, cloud, operating systems).
+     * General knowledge, math, science, trivia, or questions that do NOT ask about physical procurement goods, materials, or Indian Standards (BIS/IS/QCO).
+   - "KNOWLEDGE_REQUIRED":
+     * Questions about physical products, materials, manufactured goods, engineering items, or equipment (e.g. steel, cement, pipes, helmets, cookers, wires, cables, valves, paints, solar modules, etc.).
+     * Questions about Indian Standards (IS), Bureau of Indian Standards (BIS), ISI mark, Quality Control Orders (QCO), mandatory certification, or testing methods.
+     * Questions regarding government procurement, tender specifications, GeM compliance, or procurement clauses.
+     * Contextual follow-up questions referencing a previously discussed product or standard (e.g. "Is certification mandatory?", "What is its scope?", "Tell me more").
+2. "intent": One of "GREETING", "GENERAL_CONVERSATION", "PROCUREMENT_RECOMMENDATION", "QCO_QUERY", "TECHNICAL_SPECIFICATION_QUERY", "DOCUMENT_QUERY", or "UNKNOWN".
+3. "search_query": If "route" is "KNOWLEDGE_REQUIRED", provide a focused search query in English optimized for vector semantic search. For contextual follow-ups, synthesize the active standard/product with the user query (e.g. "Certification requirement for high strength deformed steel bars under IS 1786"). If "route" is "GENERAL_CONVERSATION", set to null.
+4. "is_contextual_follow_up": boolean, true if the message relies on or asks about the previously discussed standard/product.
+
+CRITICAL: Return ONLY a raw JSON object. No markdown fences, no explanatory text.
 """
 
 LANGUAGE_NAMES = {
@@ -53,6 +77,50 @@ LANGUAGE_NAMES = {
     "mr": "Marathi (मराठी)",
     "ta": "Tamil (தமிழ்)",
     "kn": "Kannada (ಕನ್ನಡ)",
+}
+
+
+REQUIRED_HEADINGS = {
+    "en": [
+        "### Section 1 — Recommendation",
+        "### Section 2 — Why This Matches",
+        "### Section 3 — Certification Status",
+        "### Section 4 — Related Standards",
+        "### Section 5 — Evidence",
+        "### Section 6 — Suggested Follow-up Questions",
+    ],
+    "hi": [
+        "### खंड 1 — अनुशंसा",
+        "### खंड 2 — यह मानक क्यों मेल खाता है",
+        "### खंड 3 — प्रमाणन स्थिति",
+        "### खंड 4 — संबंधित मानक",
+        "### खंड 5 — आधिकारिक साक्ष्य",
+        "### खंड 6 — अनुवर्ती प्रश्न",
+    ],
+    "mr": [
+        "### विभाग 1 — शिफारस",
+        "### विभाग 2 — हे मानक का जुळते",
+        "### विभाग 3 — प्रमाणीकरण स्थिती",
+        "### विभाग 4 — संबंधित मानके",
+        "### विभाग 5 — अधिकृत पुरावा",
+        "### विभाग 6 — सुचवलेले फॉलो-अप प्रश्न",
+    ],
+    "ta": [
+        "### பிரிவு 1 — பரிந்துரை",
+        "### பிரிவு 2 — இந்த தரம் ஏன் பொருந்துகிறது",
+        "### பிரிவு 3 — சான்றிதழ் நிலை",
+        "### பிரிவு 4 — தொடர்புடைய தரநிலைகள்",
+        "### பிரிவு 5 — உத்தியோகபூர்வ ஆதாரம்",
+        "### பிரிவு 6 — பரிந்துரைக்கப்பட்ட பின்தொடர் கேள்விகள்",
+    ],
+    "kn": [
+        "### ವಿಭಾಗ 1 — ಶಿಫಾರಸು",
+        "### ವಿಭಾಗ 2 — ಈ ಮಾನಕ ಏಕೆ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ",
+        "### ವಿಭಾಗ 3 — ಪ್ರಮಾಣೀಕರಣ ಸ್ಥಿತಿ",
+        "### ವಿಭಾಗ 4 — ಸಂಬಂಧಿತ ಮಾನಕಗಳು",
+        "### ವಿಭಾಗ 5 — ಅಧಿಕೃತ ಪುರಾವೆ",
+        "### ವಿಭಾಗ 6 — ಸೂಚಿಸಲಾದ ಫಾಲೋ-ಅಪ್ ಪ್ರಶ್ನೆಗಳು",
+    ],
 }
 
 
@@ -75,8 +143,11 @@ def _build_context_prompt(query: str, standard: Dict[str, Any], qco: Dict[str, A
             f"Generate the response strictly in {target_lang_name}.\n"
             f"IMPORTANT: NEVER translate IS numbers (e.g., IS 456, IS 1786, IS 4985), "
             f"official Indian Standard titles, or gazette/QCO identifiers. "
-            f"Translate only the explanations, recommendations, section titles, and guidance text.\n"
+            f"Translate only the explanations, recommendations, and guidance text.\n"
         )
+
+    target_headings = REQUIRED_HEADINGS.get(lang, REQUIRED_HEADINGS["en"])
+    headings_block = "\n".join(target_headings)
 
     return f"""USER QUERY: {query}
 
@@ -95,6 +166,10 @@ RETRIEVED BIS STANDARD:
 - Related Standards (Normative References): {related_str}
 - Official Source Excerpt: "{excerpt}"
 {lang_instruction}
+REQUIRED SECTION HEADINGS:
+You MUST structure the response using EXACTLY these 6 markdown headings in order:
+{headings_block}
+
 Generate the grounded response adhering strictly to the 6 required sections.
 """
 
@@ -394,6 +469,35 @@ class FallbackProvider:
             int_obj, meta = classify_intent(message)
         return build_conversational_response(int_obj, meta, message, lang=lang)
 
+    def understand_query(self, message: str,
+                         history: Optional[List[Dict[str, Any]]] = None,
+                         last_standard: Optional[Dict[str, Any]] = None,
+                         lang: str = "en") -> Dict[str, Any]:
+        """Deterministic rule-based query understanding for fallback."""
+        from app.services.intent_router import classify_intent, Intent
+        has_std = bool(last_standard)
+        intent, meta = classify_intent(message, session_has_standard=has_std)
+
+        is_conv = intent in (Intent.GREETING, Intent.GENERAL_CONVERSATION, Intent.DOCUMENT_QUERY, Intent.UNKNOWN)
+        route = "GENERAL_CONVERSATION" if is_conv else "KNOWLEDGE_REQUIRED"
+
+        is_follow_up = False
+        follow_up_triggers = ["mandatory", "qco", "isi", "certification", "scope", "specification", "test", "amendment", "it", "this", "that", "more", "tell me", "detail", "details", "about"]
+        if last_standard:
+            if len(message.split()) <= 8 or any(w in message.lower() for w in follow_up_triggers):
+                is_follow_up = True
+                search_query = f"{message} {last_standard.get('is_number', '')} {last_standard.get('title', '')}"
+                is_conv = False
+                route = "KNOWLEDGE_REQUIRED"
+                intent = Intent.PROCUREMENT_RECOMMENDATION
+
+        return {
+            "route": route,
+            "intent": intent.value,
+            "search_query": search_query if route == "KNOWLEDGE_REQUIRED" else None,
+            "is_contextual_follow_up": is_follow_up
+        }
+
 
 class GroqProvider:
     """Groq Cloud API integration using OpenAI-compatible REST API.
@@ -402,10 +506,48 @@ class GroqProvider:
     Safe: zero secrets logged, graceful fallback on error, rate limit, or timeout.
     """
 
+    DEFAULT_MODEL = "llama-3.3-70b-versatile"
+    FALLBACK_MODEL = "openai/gpt-oss-120b"
+
     def __init__(self, api_key: str, model: Optional[str] = None):
         self.api_key = api_key.strip().strip('"').strip("'")
-        self.model = model or os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"
+        env_model = os.environ.get("GROQ_MODEL")
+        self.model = model or env_model or self.DEFAULT_MODEL
         self.api_url = "https://api.groq.com/openai/v1/chat/completions"
+
+    def _post_with_fallback(self, payload: dict, timeout: int = 6) -> Optional[dict]:
+        """Execute request to Groq with automatic model fallback if model is 404/inaccessible."""
+        import requests
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+        candidate_models = [self.model]
+        if self.DEFAULT_MODEL not in candidate_models:
+            candidate_models.append(self.DEFAULT_MODEL)
+        if self.FALLBACK_MODEL not in candidate_models:
+            candidate_models.append(self.FALLBACK_MODEL)
+
+        for attempt_model in candidate_models:
+            payload["model"] = attempt_model
+            try:
+                res = requests.post(self.api_url, headers=headers, json=payload, timeout=timeout)
+                if res.status_code == 200:
+                    self.model = attempt_model  # Remember working model
+                    return res.json()
+                elif res.status_code == 404 and "model" in res.text:
+                    logger.warning("Groq model '%s' not found (404), attempting fallback model...", attempt_model)
+                    continue
+                else:
+                    logger.warning("Groq API error (status %d): %s", res.status_code, res.text[:150])
+                    return None
+            except requests.Timeout:
+                logger.warning("Groq API timed out after %ds", timeout)
+                return None
+            except Exception as e:
+                logger.warning("Groq API request failed: %s", type(e).__name__)
+                return None
+        return None
 
     def generate_response(self, query: str, standard: Dict[str, Any], qco: Dict[str, Any],
                           related: List[str], evidence: List[Dict[str, str]],
@@ -414,14 +556,9 @@ class GroqProvider:
                           follow_up: List[str],
                           lang: str = "en") -> Optional[str]:
         """Generate polished grounded response using retrieved BIS/QCO context."""
-        import requests
         prompt = _build_context_prompt(
             query, standard, qco, related, evidence, confidence, matched_specs, overlapping_keywords, lang=lang
         )
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
-        }
         payload = {
             "model": self.model,
             "messages": [
@@ -431,25 +568,13 @@ class GroqProvider:
             "temperature": 0.1,
             "max_tokens": 1024
         }
-        try:
-            res = requests.post(self.api_url, headers=headers, json=payload, timeout=8)
-            if res.status_code == 200:
-                data = res.json()
-                choices = data.get("choices", [])
-                if choices:
-                    content = choices[0].get("message", {}).get("content")
-                    if content and content.strip():
-                        return content.strip()
-            else:
-                logger.warning(
-                    "Groq API error in generate_response (status %d): %s",
-                    res.status_code,
-                    res.text[:150]
-                )
-        except requests.Timeout:
-            logger.warning("Groq API timed out after 8s during grounded response generation")
-        except Exception as e:
-            logger.warning("Groq API grounded call failed: %s", type(e).__name__)
+        data = self._post_with_fallback(payload, timeout=8)
+        if data:
+            choices = data.get("choices", [])
+            if choices:
+                content = choices[0].get("message", {}).get("content")
+                if content and content.strip():
+                    return content.strip()
         return None
 
     def generate_conversational_response(self, message: str,
@@ -457,7 +582,6 @@ class GroqProvider:
                                          lang: str = "en",
                                          system_context: Optional[str] = None) -> Optional[str]:
         """Generate conversational response for greetings and general inquiries."""
-        import requests
         target_lang = LANGUAGE_NAMES.get(lang, "English")
         sys_prompt = system_context or CONVERSATIONAL_SYSTEM_PROMPT
         if lang and lang != "en":
@@ -479,35 +603,68 @@ class GroqProvider:
 
         messages.append({"role": "user", "content": message})
 
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
-        }
         payload = {
             "model": self.model,
             "messages": messages,
             "temperature": 0.5,
             "max_tokens": 512
         }
-        try:
-            res = requests.post(self.api_url, headers=headers, json=payload, timeout=6)
-            if res.status_code == 200:
-                data = res.json()
-                choices = data.get("choices", [])
-                if choices:
-                    content = choices[0].get("message", {}).get("content")
-                    if content and content.strip():
-                        return content.strip()
-            else:
-                logger.warning(
-                    "Groq API error in generate_conversational_response (status %d): %s",
-                    res.status_code,
-                    res.text[:150]
-                )
-        except requests.Timeout:
-            logger.warning("Groq API timed out after 6s during conversational response generation")
-        except Exception as e:
-            logger.warning("Groq API conversational call failed: %s", type(e).__name__)
+        data = self._post_with_fallback(payload, timeout=6)
+        if data:
+            choices = data.get("choices", [])
+            if choices:
+                content = choices[0].get("message", {}).get("content")
+                if content and content.strip():
+                    return content.strip()
+        return None
+
+    def understand_query(self, message: str,
+                         history: Optional[List[Dict[str, Any]]] = None,
+                         last_standard: Optional[Dict[str, Any]] = None,
+                         lang: str = "en") -> Optional[Dict[str, Any]]:
+        """Classify user intent and formulate search query using Groq LLM."""
+        context_parts = []
+        if last_standard:
+            is_num = last_standard.get("is_number", "")
+            title = last_standard.get("title", "")
+            context_parts.append(f"Active Discussed Standard: {is_num} — {title}")
+
+        if history:
+            recent_turns = []
+            for item in history[-4:]:
+                r = item.get("role", "")
+                c = item.get("content", "")
+                if r in ("user", "assistant") and c:
+                    clean_c = c[:200].replace("\n", " ").strip()
+                    recent_turns.append(f"{r.capitalize()}: {clean_c}")
+            if recent_turns:
+                context_parts.append("Recent Conversation:\n" + "\n".join(recent_turns))
+
+        context_str = "\n\n".join(context_parts) if context_parts else "No previous conversation context."
+        user_prompt = f"{context_str}\n\nLatest User Message: {message}\n\nJSON Classification:"
+
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": QUERY_UNDERSTANDING_SYSTEM_PROMPT},
+                {"role": "user", "content": user_prompt}
+            ],
+            "temperature": 0.0,
+            "max_tokens": 350
+        }
+        data = self._post_with_fallback(payload, timeout=5)
+        if data:
+            choices = data.get("choices", [])
+            if choices:
+                content = choices[0].get("message", {}).get("content", "").strip()
+                content = re.sub(r"^```(?:json)?\s*", "", content)
+                content = re.sub(r"\s*```$", "", content).strip()
+                try:
+                    parsed = json.loads(content)
+                    if isinstance(parsed, dict) and "route" in parsed:
+                        return parsed
+                except json.JSONDecodeError:
+                    logger.warning("Failed to decode JSON from Groq understand_query: %s", content[:100])
         return None
 
 
@@ -583,6 +740,48 @@ class GeminiFlashProvider:
                         return parts[0]["text"].strip()
         except Exception as e:
             logger.warning("Gemini Flash conversational call failed: %s", type(e).__name__)
+        return None
+
+    def understand_query(self, message: str,
+                         history: Optional[List[Dict[str, Any]]] = None,
+                         last_standard: Optional[Dict[str, Any]] = None,
+                         lang: str = "en") -> Optional[Dict[str, Any]]:
+        import requests
+
+        context_parts = []
+        if last_standard:
+            context_parts.append(f"Active Discussed Standard: {last_standard.get('is_number')} — {last_standard.get('title')}")
+        if history:
+            for item in history[-4:]:
+                r = item.get("role", "")
+                c = item.get("content", "")
+                if r in ("user", "assistant") and c:
+                    context_parts.append(f"{r.capitalize()}: {c[:200].strip()}")
+        context_str = "\n".join(context_parts) if context_parts else "No previous context."
+        user_prompt = f"{context_str}\n\nLatest User Message: {message}\n\nJSON Classification:"
+
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={self.api_key}"
+        payload = {
+            "system_instruction": {"parts": [{"text": QUERY_UNDERSTANDING_SYSTEM_PROMPT}]},
+            "contents": [{"parts": [{"text": user_prompt}]}],
+            "generationConfig": {"temperature": 0.0, "maxOutputTokens": 200}
+        }
+        try:
+            res = requests.post(url, json=payload, timeout=4)
+            if res.status_code == 200:
+                data = res.json()
+                candidates = data.get("candidates", [])
+                if candidates:
+                    parts = candidates[0].get("content", {}).get("parts", [])
+                    if parts and parts[0].get("text"):
+                        content = parts[0]["text"].strip()
+                        content = re.sub(r"^```(?:json)?\s*", "", content)
+                        content = re.sub(r"\s*```$", "", content).strip()
+                        parsed = json.loads(content)
+                        if isinstance(parsed, dict) and "route" in parsed:
+                            return parsed
+        except Exception as e:
+            logger.warning("Gemini Flash understand_query call failed: %s", type(e).__name__)
         return None
 
 
@@ -662,6 +861,51 @@ class OpenAIProvider:
             logger.warning("OpenAI conversational API call failed: %s", type(e).__name__)
         return None
 
+    def understand_query(self, message: str,
+                         history: Optional[List[Dict[str, Any]]] = None,
+                         last_standard: Optional[Dict[str, Any]] = None,
+                         lang: str = "en") -> Optional[Dict[str, Any]]:
+        import requests
+
+        context_parts = []
+        if last_standard:
+            context_parts.append(f"Active Discussed Standard: {last_standard.get('is_number')} — {last_standard.get('title')}")
+        if history:
+            for item in history[-4:]:
+                r = item.get("role", "")
+                c = item.get("content", "")
+                if r in ("user", "assistant") and c:
+                    context_parts.append(f"{r.capitalize()}: {c[:200].strip()}")
+        context_str = "\n".join(context_parts) if context_parts else "No previous context."
+        user_prompt = f"{context_str}\n\nLatest User Message: {message}\n\nJSON Classification:"
+
+        url = "https://api.openai.com/v1/chat/completions"
+        headers = {"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}
+        payload = {
+            "model": "gpt-4o-mini",
+            "messages": [
+                {"role": "system", "content": QUERY_UNDERSTANDING_SYSTEM_PROMPT},
+                {"role": "user", "content": user_prompt}
+            ],
+            "temperature": 0.0,
+            "max_tokens": 200
+        }
+        try:
+            res = requests.post(url, headers=headers, json=payload, timeout=4)
+            if res.status_code == 200:
+                data = res.json()
+                choices = data.get("choices", [])
+                if choices:
+                    content = choices[0].get("message", {}).get("content", "").strip()
+                    content = re.sub(r"^```(?:json)?\s*", "", content)
+                    content = re.sub(r"\s*```$", "", content).strip()
+                    parsed = json.loads(content)
+                    if isinstance(parsed, dict) and "route" in parsed:
+                        return parsed
+        except Exception as e:
+            logger.warning("OpenAI understand_query call failed: %s", type(e).__name__)
+        return None
+
 
 def get_llm_provider():
     """Factory function returning configured LLM provider with safe fallback.
@@ -695,19 +939,23 @@ def get_llm_provider():
         logger.warning("LLM_PROVIDER='openai' but OPENAI_API_KEY is not configured. Falling back to FallbackProvider.")
         return FallbackProvider()
 
-    # Implicit detection if LLM_PROVIDER is not explicitly specified
-    groq_key = os.environ.get("GROQ_API_KEY", "").strip()
-    if groq_key:
-        model = os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"
-        return GroqProvider(groq_key, model=model)
+    if provider_name in ("fallback", "none", "off", "disabled"):
+        return FallbackProvider()
 
-    gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if gemini_key:
-        return GeminiFlashProvider(gemini_key)
+    # Implicit detection only if LLM_PROVIDER is not explicitly specified
+    if not provider_name:
+        groq_key = os.environ.get("GROQ_API_KEY", "").strip()
+        if groq_key:
+            model = os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"
+            return GroqProvider(groq_key, model=model)
 
-    openai_key = os.environ.get("OPENAI_API_KEY", "").strip()
-    if openai_key:
-        return OpenAIProvider(openai_key)
+        gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
+        if gemini_key:
+            return GeminiFlashProvider(gemini_key)
+
+        openai_key = os.environ.get("OPENAI_API_KEY", "").strip()
+        if openai_key:
+            return OpenAIProvider(openai_key)
 
     return FallbackProvider()
 

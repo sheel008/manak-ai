@@ -162,8 +162,8 @@ def _calculate_confidence(sim: float, kw_score: float, spec_score: float, cat_sc
         # Moderate confidence band (70 - 89)
         norm = 72 + int(min(16, max(0, (raw_final - 20) * 0.6)))
     else:
-        # Exploratory band (< 70)
-        norm = max(42, min(69, int(raw_final * 1.5)))
+        # Exploratory / Low-confidence band (< 70)
+        norm = int(max(0, min(65, raw_final * 1.5)))
 
     return int(round(norm))
 
@@ -228,21 +228,63 @@ def handle_chat(message: str, session_id: Optional[str] = None,
     session = _chat_sessions[sid]
 
     effective_lang = _detect_language(raw_query, default_lang=lang)
+    session_history = history if history is not None else session.get("messages", [])
+    last_std = session.get("last_standard")
 
-    # ── Intent Routing Layer (BEFORE expensive semantic search) ──
-    has_prev_standard = bool(session.get("last_standard"))
-    intent, intent_meta = classify_intent(raw_query, session_has_standard=has_prev_standard)
+    llm = get_llm_provider()
 
-    # For non-search intents (GREETING, GENERAL_CONVERSATION, DOCUMENT_QUERY, UNKNOWN / OUT_OF_DOMAIN):
+    # ── Step A: LLM-Assisted Query Understanding & Intent Routing ──
+    understanding = None
+    if not isinstance(llm, FallbackProvider):
+        try:
+            understanding = llm.understand_query(
+                raw_query,
+                history=session_history,
+                last_standard=last_std,
+                lang=effective_lang
+            )
+        except Exception as e:
+            logger.warning("LLM query understanding failed: %s", type(e).__name__)
+            understanding = None
+
+    # Fallback to deterministic routing if LLM understanding was unavailable or failed
+    if not understanding:
+        has_prev_standard = bool(last_std)
+        det_intent, intent_meta = classify_intent(raw_query, session_has_standard=has_prev_standard)
+        is_conv = det_intent in (Intent.GREETING, Intent.GENERAL_CONVERSATION, Intent.DOCUMENT_QUERY, Intent.UNKNOWN)
+
+        is_follow_up = False
+        search_query = raw_query
+        follow_up_triggers = ["mandatory", "qco", "isi", "certification", "scope", "specification", "test", "amendment", "it", "this", "that", "more", "tell me", "detail", "details", "about"]
+        if last_std and (len(raw_query.split()) <= 8 or any(w in raw_query.lower() for w in follow_up_triggers)):
+            is_follow_up = True
+            search_query = f"{raw_query} {last_std.get('is_number', '')} {last_std.get('title', '')}"
+            is_conv = False
+            det_intent = Intent.PROCUREMENT_RECOMMENDATION
+
+        understanding = {
+            "route": "GENERAL_CONVERSATION" if is_conv else "KNOWLEDGE_REQUIRED",
+            "intent": det_intent.value,
+            "search_query": search_query if not is_conv else None,
+            "is_contextual_follow_up": is_follow_up,
+        }
+
+    route = understanding.get("route", "KNOWLEDGE_REQUIRED")
+    intent_val = understanding.get("intent", "PROCUREMENT_RECOMMENDATION")
+
+    # For non-search / general conversational intents (GREETING, GENERAL_CONVERSATION, DOCUMENT_QUERY, UNKNOWN):
     # Return immediately WITHOUT running embedding generation or semantic vector search.
-    if intent in (Intent.GREETING, Intent.GENERAL_CONVERSATION, Intent.DOCUMENT_QUERY, Intent.UNKNOWN):
+    if route == "GENERAL_CONVERSATION":
         conv_answer = None
         conv_follow_up = DEFAULT_FOLLOW_UPS.get(effective_lang, DEFAULT_FOLLOW_UPS.get(lang, DEFAULT_FOLLOW_UPS["en"]))
 
-        # For casual greetings and general conversation, use configured LLM provider (Groq / Gemini / OpenAI)
-        if intent in (Intent.GREETING, Intent.GENERAL_CONVERSATION):
-            llm = get_llm_provider()
-            session_history = history if history is not None else session.get("messages", [])
+        # For document analysis or unknown out-of-domain requests, return dedicated domain guardrail guidance
+        if intent_val == Intent.DOCUMENT_QUERY.value:
+            conv_answer = build_conversational_response(Intent.DOCUMENT_QUERY, {}, raw_query, lang=effective_lang)
+        elif intent_val == Intent.UNKNOWN.value:
+            conv_answer = build_conversational_response(Intent.UNKNOWN, {}, raw_query, lang=effective_lang)
+        else:
+            # Greetings, capabilities, thanks, polite conversation -> Groq directly
             try:
                 conv_answer = llm.generate_conversational_response(
                     message=raw_query,
@@ -253,9 +295,13 @@ def handle_chat(message: str, session_id: Optional[str] = None,
                 logger.warning("Conversational LLM response generation failed: %s", type(e).__name__)
                 conv_answer = None
 
-        # Fallback to deterministic responses if LLM is unavailable or failed
-        if not conv_answer:
-            conv_answer = build_conversational_response(intent, intent_meta, raw_query, lang=effective_lang)
+            # Fallback to deterministic responses if LLM is unavailable or failed
+            if not conv_answer:
+                try:
+                    int_enum = Intent(intent_val)
+                except Exception:
+                    int_enum = Intent.GREETING
+                conv_answer = build_conversational_response(int_enum, {}, raw_query, lang=effective_lang)
 
         session["messages"].append({"role": "user", "content": raw_query})
         session["messages"].append({
@@ -267,7 +313,7 @@ def handle_chat(message: str, session_id: Optional[str] = None,
         })
 
         return {
-            "intent": intent.value,
+            "intent": intent_val,
             "query": raw_query,
             "answer": conv_answer,
             "recommendations": [],
@@ -281,15 +327,18 @@ def handle_chat(message: str, session_id: Optional[str] = None,
             "citations": [],
         }
 
-    # Resolve context from conversation history (e.g. follow-up question referencing previous standard)
-    search_query = raw_query
-    is_follow_up = False
-    last_std = session.get("last_standard")
+    # ── Step B: Knowledge Retrieval Pipeline (Semantic Search + Reranking + QCO) ──
+    is_follow_up = bool(understanding.get("is_contextual_follow_up", False))
+    reformulated = understanding.get("search_query")
+    search_query = reformulated if (is_follow_up and reformulated) else raw_query
 
-    follow_up_triggers = ["mandatory", "qco", "isi", "certification", "scope", "specification", "test", "amendment", "it", "this", "that"]
-    if last_std and (len(raw_query.split()) <= 6 or any(w in raw_query.lower() for w in follow_up_triggers)):
-        is_follow_up = True
-        search_query = f"{raw_query} {last_std.get('is_number', '')} {last_std.get('title', '')}"
+    # Also verify follow-up trigger fallback if not already flagged as follow-up
+    if not is_follow_up and last_std:
+        follow_up_triggers = ["mandatory", "qco", "isi", "certification", "scope", "specification", "test", "amendment", "it", "this", "that", "more"]
+        if len(raw_query.split()) <= 6 or any(w in raw_query.lower() for w in follow_up_triggers):
+            is_follow_up = True
+            if not reformulated or reformulated == raw_query:
+                search_query = f"{raw_query} {last_std.get('is_number', '')} {last_std.get('title', '')}"
 
     # Multilingual query bridge: extract Indic tokens and append English synonyms for vector search
     is_indic = any(ord(c) > 127 for c in raw_query)
@@ -364,8 +413,24 @@ def handle_chat(message: str, session_id: Optional[str] = None,
 
     scored.sort(key=lambda s: s["confidence"], reverse=True)
 
-    # If no results or below minimum floor, return abstention response
-    if not scored:
+    abstain_thresh = getattr(config, "ABSTAIN_THRESHOLD", 40.0)
+
+    top_conf = scored[0]["confidence"] if scored else 0
+    top_sim = scored[0]["sim"] if scored else 0.0
+    top_kw = scored[0]["kw"] if scored else 0.0
+    top_spec = scored[0]["spec"] if scored else 0.0
+
+    is_poor_match = (
+        not direct_match
+        and not is_follow_up
+        and (
+            top_conf < abstain_thresh
+            or (top_sim < 0.28 and top_kw < 15.0 and top_spec <= 0.0)
+        )
+    )
+
+    # If no results or poor match below threshold, return abstention response
+    if not scored or is_poor_match:
         abstain_messages = {
             "hi": "वर्तमान बीआईएस मानक संग्रह से इस विनिर्देश को सत्यापित नहीं किया जा सका। कृपया उत्पाद विवरण की जांच करें या विशिष्ट पैरामीटर (जैसे सामग्री, ग्रेड, वोल्टेज, दबाव या आयाम) प्रदान करें।",
             "mr": "सध्याच्या बीआयएस मानक संग्रहातून या विनिर्देशाची पडताळणी करता आली नाही. कृपया उत्पादन वर्णन तपासा किंवा विशिष्ट निकष (जसे की साहित्य, श्रेणी, व्होल्टेज किंवा आकारमान) प्रदान करा.",
@@ -380,7 +445,7 @@ def handle_chat(message: str, session_id: Optional[str] = None,
         session["messages"].append({"role": "user", "content": raw_query})
         session["messages"].append({"role": "assistant", "content": abstain_text, "citations": []})
         return {
-            "intent": intent.value,
+            "intent": intent_val,
             "query": raw_query,
             "answer": abstain_text,
             "recommendations": [],
@@ -527,6 +592,27 @@ def handle_chat(message: str, session_id: Optional[str] = None,
             logger.warning("LLM grounded response generation failed: %s", type(e).__name__)
             answer = None
 
+    if answer:
+        expected_sec1 = (
+            "खंड 1" if target_lang == "hi"
+            else ("பிரிவு 1" if target_lang == "ta"
+            else ("विभाग 1" if target_lang == "mr"
+            else ("ವಿಭಾಗ 1" if target_lang == "kn"
+            else "Section 1")))
+        )
+        if expected_sec1 not in answer:
+            answer = None
+        elif "Section 6" not in answer and "Suggested Follow-up Questions" not in answer and "अनुवर्ती प्रश्न" not in answer:
+            sec6_title = (
+                "### खंड 6 — अनुवर्ती प्रश्न" if target_lang == "hi"
+                else ("### பிரிவு 6 — பரிந்துரைக்கப்பட்ட பின்தொடர் கேள்விகள்" if target_lang == "ta"
+                else ("### विभाग 6 — सुचवलेले फॉलो-अप प्रश्न" if target_lang == "mr"
+                else ("### ವಿಭಾಗ 6 — ಸೂಚಿಸಲಾದ ಫಾಲೋ-ಅಪ್ ಪ್ರಶ್ನೆಗಳು" if target_lang == "kn"
+                else "### Section 6 — Suggested Follow-up Questions")))
+            )
+            follow_up_lines = "\n".join([f"{i+1}. {q}" for i, q in enumerate(follow_up)])
+            answer = f"{answer.rstrip()}\n\n{sec6_title}\n{follow_up_lines}"
+
     if not answer:
         answer = FallbackProvider().generate_response(
             query=raw_query,
@@ -555,7 +641,7 @@ def handle_chat(message: str, session_id: Optional[str] = None,
     })
 
     return {
-        "intent": intent.value,
+        "intent": intent_val,
         "query": raw_query,
         "answer": answer,
         "recommendations": recommendations,

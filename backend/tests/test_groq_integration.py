@@ -308,5 +308,66 @@ class TestGroqLLMIntegration(unittest.TestCase):
             self.assertEqual(called_kwargs.get("lang"), expected_lang)
 
 
+    # ─────────────────────────────────────────────────────────────
+    # PART 10: General Tech & Conceptual Queries (No Random BIS Standards)
+    # ─────────────────────────────────────────────────────────────
+    @patch.dict(os.environ, {"LLM_PROVIDER": "groq", "GROQ_API_KEY": "dummy_key"})
+    @patch("app.retrieval.vector_search.vector_search")
+    @patch.object(GroqProvider, "understand_query")
+    @patch.object(GroqProvider, "generate_conversational_response")
+    def test_general_tech_questions_route_to_conversation(self, mock_conv, mock_understand, mock_vs):
+        """General tech questions must route to GENERAL_CONVERSATION with zero vector search."""
+        mock_understand.return_value = {
+            "route": "GENERAL_CONVERSATION",
+            "intent": "GENERAL_CONVERSATION",
+            "search_query": None,
+            "is_contextual_follow_up": False
+        }
+        mock_conv.return_value = "An API is an interface; a database is data storage."
+
+        general_tech_queries = [
+            "What is the difference between an API and a database?",
+            "What is Python?",
+            "How does a REST API work?",
+            "Explain machine learning simply.",
+        ]
+
+        for query in general_tech_queries:
+            mock_vs.reset_mock()
+            mock_conv.reset_mock()
+
+            res = handle_chat(query, session_id="sess_tech_test")
+            self.assertEqual(res["intent"], "GENERAL_CONVERSATION", f"Failed for {query}")
+            self.assertEqual(len(res["recommendations"]), 0, f"Got recommendations for {query}")
+            self.assertIsNone(res["qco"])
+            mock_vs.assert_not_called()
+            self.assertNotIn("IS 17631", res["answer"])
+            self.assertNotIn("Office Furniture", res["answer"])
+
+    @patch("app.retrieval.vector_search.vector_search")
+    def test_fallback_general_tech_questions_no_random_bis_standards(self, mock_vs):
+        """Even with fallback/deterministic routing, general tech questions must not return BIS standards."""
+        from app.services.intent_router import classify_intent, Intent
+
+        general_tech_queries = [
+            "What is the difference between an API and a database?",
+            "What is Python?",
+            "How does a REST API work?",
+            "Explain machine learning simply.",
+        ]
+
+        for query in general_tech_queries:
+            intent, meta = classify_intent(query)
+            self.assertEqual(intent, Intent.GENERAL_CONVERSATION, f"Intent mismatch for {query}")
+
+            res = handle_chat(query, session_id="sess_fallback_tech")
+            self.assertEqual(res["intent"], "GENERAL_CONVERSATION")
+            self.assertEqual(len(res["recommendations"]), 0)
+            self.assertIsNone(res["qco"])
+            mock_vs.assert_not_called()
+            self.assertNotIn("IS 17631", res["answer"])
+
+
 if __name__ == "__main__":
     unittest.main()
+

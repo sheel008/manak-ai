@@ -84,6 +84,23 @@ GENERAL_CONVERSATION_PATTERNS = [
     (r"\b(?:bye|goodbye|see\s+you|cya|farewell)\b", "bye"),
 ]
 
+GENERAL_TECH_CONVERSATION_PATTERNS = [
+    r"\bwhat\s+is\s+the\s+difference\s+between\b",
+    r"\bwhat\s+is\s+(?:an?\s+)?(?:api|rest\s*api|database|db|python|machine\s*learning|deep\s*learning|git|docker|sql|cloud)\b",
+    r"\bhow\s+does\s+(?:an?\s+)?(?:api|rest|database|machine\s*learning|neural\s*network)\s+work\b",
+    r"\bexplain\s+(?:machine\s*learning|deep\s*learning|neural\s*network|rest\s*api|database|api|python)\b",
+]
+
+DOMAIN_COMMODITY_KEYWORDS = [
+    r"\b(?:steel|tmt|rebar|cement|concrete|pipe|pipes|tube|tubes|helmet|helmets|cooker|cookers|wire|wires|cable|cables)\b",
+    r"\b(?:paint|paints|varnish|enamel|glass|glazing|solar|pv|panel|plywood|timber|wood|board)\b",
+    r"\b(?:valve|valves|extinguisher|extinguishers|cylinder|cylinders|transformer|transformers|battery|batteries|led|lighting|luminaire)\b",
+    r"\b(?:switch|socket|fuse|mcb|circuit\s+breaker|insulator|insulation|aggregate|mortar|brick|bricks|tile|tiles)\b",
+    r"\b(?:sanitary|geyser|heater|pump|pumps|motor|motors|generator|compressor|fan|iron|appliance|appliances)\b",
+    r"\b(?:footwear|shoe|shoes|boot|boots|textile|textiles|fabric|yarn|thread|tarpaulin|mask|ppe|gloves)\b",
+    r"\b(?:fertilizer|pesticide|polymer|plastic|plastics|rubber|tyre|tyres|tire|tires|furniture|chair|chairs|desk)\b",
+]
+
 # Procurement indicator words
 PROCUREMENT_INDICATORS = [
     r"\b(?:which|what)\s+(?:bis\s+)?standard\b",
@@ -204,12 +221,19 @@ def classify_intent(message: str, session_has_standard: bool = False) -> Tuple[I
                 meta["conv_type"] = conv_type
                 return Intent.GENERAL_CONVERSATION, meta
 
-    # 5. Check for Document Query
+    # 5. Check for General Tech / Conceptual questions (e.g. API vs database, Python, machine learning)
+    if not is_bis_related:
+        for pat in GENERAL_TECH_CONVERSATION_PATTERNS:
+            if re.search(pat, lower, re.IGNORECASE):
+                meta["conv_type"] = "general_tech"
+                return Intent.GENERAL_CONVERSATION, meta
+
+    # 6. Check for Document Query
     for pat in DOCUMENT_PATTERNS:
         if re.search(pat, lower, re.IGNORECASE):
             return Intent.DOCUMENT_QUERY, meta
 
-    # 6. Check for Domain Queries (QCO, Technical Spec, Procurement Recommendation)
+    # 7. Check for Domain Queries (QCO, Technical Spec, Procurement Recommendation)
     return _classify_domain_query(raw, session_has_standard, meta)
 
 
@@ -239,11 +263,20 @@ def _classify_domain_query(text: str, session_has_standard: bool, meta: Dict[str
         return Intent.TECHNICAL_SPECIFICATION_QUERY, meta
 
     # Follow-up query in ongoing conversation
-    if session_has_standard and (len(text.split()) <= 4):
+    follow_up_triggers = ["it", "this", "that", "more", "tell me", "explain", "detail", "details", "scope", "about", "mandatory", "qco", "isi"]
+    if session_has_standard and (len(text.split()) <= 8 or any(w in lower for w in follow_up_triggers)):
         return Intent.PROCUREMENT_RECOMMENDATION, meta
 
-    # Default domain intent is procurement recommendation
-    return Intent.PROCUREMENT_RECOMMENDATION, meta
+    # Check for explicit procurement indicators or recognized domain commodities
+    has_procurement_ind = any(re.search(pat, lower, re.IGNORECASE) for pat in PROCUREMENT_INDICATORS)
+    has_commodity = any(re.search(pat, lower, re.IGNORECASE) for pat in DOMAIN_COMMODITY_KEYWORDS)
+
+    if has_procurement_ind or has_commodity:
+        return Intent.PROCUREMENT_RECOMMENDATION, meta
+
+    # Do not assume every unknown question is a BIS procurement query.
+    # Questions without domain keywords route safely to GENERAL_CONVERSATION
+    return Intent.GENERAL_CONVERSATION, meta
 
 
 def build_conversational_response(intent: Intent, meta: Dict[str, Any], query: str, lang: str = "en") -> str:
